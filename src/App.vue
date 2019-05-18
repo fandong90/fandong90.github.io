@@ -4,16 +4,18 @@
         <el-main :style="{'height': mainHeight+'px'}">
             <router-view></router-view>
         </el-main>
-        <el-footer>Footer</el-footer>
+        <blog-footer></blog-footer>
     </el-container>
 </template>
 
 <script>
 import blogHeader from '@/component/header/header';
+import blogFooter from '@/component/footer/footer';
 export default {
    name: "App",
    components:{
-       blogHeader
+       blogHeader,
+       blogFooter
    },
    data(){
        return {
@@ -42,16 +44,8 @@ export default {
    .el-container{
        padding: 0px 0px;
        margin: -8px -8px;
+       flex-direction: column;
+       background-color: #E9EEF3;
    }
-   .el-footer {
-    background-color: #2B3A42;
-    color: #333;
-    text-align: center;
-    line-height: 60px;
-  }
-  .el-main {
-    background-color: #E9EEF3;
-    color: #333;
-    text-align: center;
-  }
+
 </style>

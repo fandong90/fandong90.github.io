@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head></head>
-    <body>
-        首页
-        <a href="./dist/index.html"> 呵呵</a>
+    <body onload="load">
+        <div style="width:100%" id="app">
+            <div style="width:300px; height:300px;margin: auto auto;">
+                  <div>
+                      freeNewBird Blog
+                  </div>
+                  <div>
+                      进入
+                  </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+         var appHeight=300;
+          window.onresize=function(){
+              appHeight= document.documentElement.clientHeight;
+          }
+          function load(){
+              window.onresize=function(){
+                  var app= document.getElementById('app');
+                  app.style.height=appHeight+'px';
+              }
+          }
+        </script>
     </body>
 </html>

@@ -49,16 +49,23 @@ export default {
             });
             index ++;
         });
-   }
+      }
    }
 }
 </script>
 
 <style>
     .el-header, .el-footer {
-    background-color:#fff;
+    background-color: #E9EEF3;
     color: #333;
     text-align: center;
     line-height: 60px;
+    padding: 0px 0px;
+  }
+  .el-main {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 0px 20px;
   }
 </style>
