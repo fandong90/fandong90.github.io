@@ -17,9 +17,11 @@
 <script>
 
 import blogTitle from './title/title.vue';
+import blogBody  from './body/body.vue';
 export default {
     components:{
-        blogTitle
+        blogTitle,
+        blogBody
     }
 }
 </script>
