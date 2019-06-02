@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ManifestPlugin     = require("webpack-manifest-plugin");
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-
+const rules = require('./rules.config');
 module.exports = {
   mode: 'development',
   entry: {
@@ -15,31 +15,7 @@ module.exports = {
     path: path.resolve(__dirname ,'..','dist'),
   },
   module: {
-    rules: [
-    {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
-      {
-         test: /\.(png|svg|jpg|gif)$/,
-         use: [
-           'file-loader'
-         ]
-       },
-       {
-               test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [
-                  'file-loader'
-                ]
-       },
-       {
-           test:/\.vue$/,
-           loader:'vue-loader'
-       }
-   ]
+    rules: rules.config
   },
   plugins:[
      new CleanWebpackPlugin(),
@@ -61,6 +37,6 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname,'..','dist'),
     host: 'localhost',
-    port: 8085,
+    port: 8086,
   }
 };

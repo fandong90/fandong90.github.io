@@ -1,3 +1,4 @@
  const Marked = require('marked');
- const html = Marked('# Marked in browser\n\nRendered by **marked**.');
+ const html = Marked("```* This two-line bullet won't break * This two-line bullet will break ```");
  
+console.log(html);

@@ -10,11 +10,15 @@
             <div style="display:inline-block;float:left;padding:10px 10px;">
                 <span class="bar"></span><span class="bar-text">模式简介</span>
             </div>
+            <div v-html="desc">
+                
+            </div>
         </div>
         <div class="selection-box">
             <div style="display:inline-block;float:left;padding:10px 10px;">
                 <span class="bar"></span><span class="bar-text">UML关系图</span>
             </div>
+            <div v-html="uml"></div>
         </div>
          <div class="selection-box">
             <div>
@@ -25,10 +29,18 @@
             </div>
             <div style="padding: 3px;">
                     <el-tabs v-model="activeName" @tab-click="handleClick">
-                        <el-tab-pane label="JavaScript" name="Javascript">Javascript</el-tab-pane>
-                        <el-tab-pane label="Python" name="Python">Python</el-tab-pane>
-                        <el-tab-pane label="Java" name="Java">Java</el-tab-pane>
-                        <el-tab-pane label="C#" name="cSharp">C#</el-tab-pane>
+                        <el-tab-pane label="JavaScript" name="Javascript">
+                            <div v-html="javascript"></div>
+                        </el-tab-pane>
+                        <el-tab-pane label="Python" name="Python">
+                             <div v-html="python"></div>
+                        </el-tab-pane>
+                        <el-tab-pane label="Java" name="Java">
+                             <div v-html="java"></div>
+                        </el-tab-pane>
+                        <el-tab-pane label="C#" name="cSharp">
+                             <div v-html="cSharp"></div>
+                        </el-tab-pane>
                     </el-tabs>
                 </div>
         </div>
@@ -36,19 +48,48 @@
 </template>
 
 <script>
+const Marked = require('marked');
+import patterns from '../common/index';
+
 export default {
    data(){
        return {
           title:'',
-          activeName:'Javascript'
+          activeName:'Javascript',
+          desc:'',
+          uml:'',
+          javascript:'',
+          python:'',
+          java:'',
+          cSharp:''
        }
    },
    mounted(){
-       this.title = this.$route.query.title;
+       this.setChapter();
    },
    methods:{
        handleClick(tab){
            console.log(tab);
+       },
+       setChapter(){
+           this.title = this.$route.query.title;
+           let alias = this.$route.query.alias;
+           let selected=  patterns.filter((item)=>{
+               if(item.name == alias){
+                   return true;
+               }else
+               return false;
+           });
+           fetch(selected[0].desc).then((data)=>{
+                this.desc = Marked(data);
+           });
+           
+           
+           this.uml = Marked(selected[0].uml);
+           this.javascript = Marked(selected[0].code[0].value);
+           this.python     = Marked(selected[0].code[0].value);
+           this.java       = Marked(selected[0].code[0].value);
+           this.cSharp     = Marked(selected[0].code[0].value);
        }
    }
 }
@@ -56,7 +97,7 @@ export default {
 
 <style>
    .selection-box{
-       height: 300px;
+       height: auto;
        border:1px solid #f1f1f1;
        margin: 0px 20px;
        width:auto;
