@@ -1,6 +1,6 @@
 
-import jsClass from 'docs/zh-CN/web-js-class.md';
-import vueRouternote from 'docs/zh-CN/web-vue-route-js.md';
+import jsClass from '../../docs/zh-CN/web-js-class.md';
+import vueRouternote from '../../docs/zh-CN/web-vue-route-js.md';
 
 const webpageList = [
     {
