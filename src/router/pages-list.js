@@ -10,7 +10,7 @@ const pages=[
    {
         name : "webFont",
         component: webFont,
-        title: "前端博文"
+        title: "前端博文",
    },{
         name : "designPatter",
         component: designPatter,

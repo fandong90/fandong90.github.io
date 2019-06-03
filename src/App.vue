@@ -47,5 +47,10 @@ export default {
        flex-direction: column;
        background-color: #E9EEF3;
    }
+   .content{
+       text-align: left;
+       padding-left:10px;
+       padding-bottom: 10px;
+   }
 
 </style>

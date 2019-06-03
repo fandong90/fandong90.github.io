@@ -73,7 +73,8 @@ module.exports = function (src) {
 
   const res = (
     `<template>\n` +
-    `<div class="content">${html}</div>\n` +
+    `<div class="content">`+
+    `${html}</div>\n` +
     `</template>\n`
   )
   cache.set(key, res);

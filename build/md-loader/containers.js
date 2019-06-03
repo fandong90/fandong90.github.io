@@ -2,10 +2,10 @@ const container = require('markdown-it-container')
 
 module.exports = md => {
   md
-    .use(...createContainer('tip', 'TIP'))
-    .use(...createContainer('warnning', 'WARNNING'))
-    .use(...createContainer('danger', 'DANGER'))
-    .use(...createContainer('success','SUCCESS'))
+    .use(...createContainer('tip', ''))
+    .use(...createContainer('warnning', ''))
+    .use(...createContainer('danger', ''))
+    .use(...createContainer('success',''))
     // explicitly escape Vue syntax
     .use(container, 'v-pre', {
       render: (tokens, idx) => tokens[idx].nesting === 1

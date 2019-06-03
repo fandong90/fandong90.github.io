@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import pages from './pages-list';
 import pagesInner from './pages-inner-list';
+import webpagesList from '../pages/webFont/web-page-list';
 Vue.use(VueRouter);
 
 const routes=[];
@@ -19,6 +20,17 @@ pagesInner.forEach(item => {
         component: item.component
     });
 });
+
+/***webFont 前端博文*/
+
+webpagesList.forEach(item=>{
+        routes.push({
+            path:'/'+item.name,
+            component: item.component
+        });
+});
+
+/**** */
 
 //设定默认首页
 

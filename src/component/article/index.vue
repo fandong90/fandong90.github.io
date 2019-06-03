@@ -2,10 +2,10 @@
     <div>
         <blog-title>
             <template v-slot:bgWall>
-                heheheheeheheheh
+               
             </template>
             <template v-slot:titleWall>
-                坏蛋是如何炼成的
+                
             </template>
         </blog-title>
         <div>

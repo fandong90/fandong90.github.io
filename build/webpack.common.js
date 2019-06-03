@@ -30,7 +30,8 @@ module.exports = {
   resolve: {
     extensions: ['.json', '.js', '.jsx','.vue'],
     alias:{
-        '@': path.resolve(__dirname,'..','src')
+        '@': path.resolve(__dirname,'..','src'),
+        "docs":path.resolve(__dirname,'..','src/docs')
     }
   },
   devtool: 'source-map',
