@@ -58841,7 +58841,17 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "content" }, [
-      _c("p", [_vm._v("#ES6 class 类")]),
+      _c("h1", { attrs: { id: "es6-class-%E7%B1%BB" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#es6-class-%E7%B1%BB", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" ES6 class 类")
+      ]),
       _vm._v(" "),
       _c("h2", { attrs: { id: "%E7%B1%BB%E6%98%AF%E4%BB%80%E4%B9%88" } }, [
         _c(
@@ -72236,4 +72246,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-0605e9687cb5f16c695d.js.map
+//# sourceMappingURL=app-b93846c48ddfbf0b35b5.js.map

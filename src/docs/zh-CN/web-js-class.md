@@ -1,4 +1,4 @@
-#ES6 class 类
+# ES6 class 类
 
 ## 类是什么
 
