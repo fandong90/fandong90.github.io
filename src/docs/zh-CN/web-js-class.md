@@ -5,7 +5,9 @@
 类实际上是个“特殊的函数”，就像你能够定义的函数表达式和函数声明一样，类语法有两个组成部分：类表达式和类声明。
 
 ## 如何定义一个类
+
 ~~~
+
 class Shape {
   constructor(height, width) {
     this.height = height;

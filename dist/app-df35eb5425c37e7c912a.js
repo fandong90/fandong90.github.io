@@ -3684,7 +3684,7 @@ exports.push([module.i, "\n.el-timeline-item__timestamp.is-top {\n    text-align
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".custom-block{\n    width:100%;\n    height: auto;\n    padding: 3px 3px;\n}\n.custom-block-title{\n    text-align: left;\n    padding-left: 30px;\n    font-size: 16px;\n    font-weight: bold;\n}\n.tip{\n    border-left: 6px solid #8e8e8e;\n    background-color:#f0f0f0;\n}\n.warnning{\n    border-left:6px solid yellow;\n    background-color: #FFFFCE;\n}\n.success{\n    border-left:6px solid green;\n    background-color: #CEFFCE;\n}\n.danger {\n    border-left:6px solid red;\n    background-color: #FFD2D2;\n}\n", ""]);
+exports.push([module.i, ".custom-block{\n    width:clac(100% -12px);\n    height: auto;\n    padding: 3px 3px;\n}\n.custom-block-title{\n    text-align: left;\n    padding-left: 30px;\n    font-size: 16px;\n    font-weight: bold;\n}\n.tip{\n    border-left: 6px solid #8e8e8e;\n    background-color:#f0f0f0;\n}\n.warnning{\n    border-left:6px solid yellow;\n    background-color: #FFFFCE;\n}\n.success{\n    border-left:6px solid green;\n    background-color: #CEFFCE;\n}\n.danger {\n    border-left:6px solid red;\n    background-color: #FFD2D2;\n}\n", ""]);
 
 
 
@@ -58901,6 +58901,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("pre", { staticClass: "hljs" }, [
         _c("code", [
+          _vm._v("\n"),
           _c("span", { staticClass: "hljs-class" }, [
             _c("span", { staticClass: "hljs-keyword" }, [_vm._v("class")]),
             _vm._v(" "),
@@ -59053,6 +59054,1419 @@ var staticRenderFns = [
           },
           [_vm._v("javascript MDN")]
         )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/web-js-memory-management.md?vue&type=template&id=cdd9262e&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/web-js-memory-management.md?vue&type=template&id=cdd9262e& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c(
+        "h1",
+        {
+          attrs: {
+            id:
+              "javascript-%E7%9A%84%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E3%80%81%E6%B3%84%E6%BC%8F%E3%80%81%E8%B0%83%E8%AF%95"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#javascript-%E7%9A%84%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E3%80%81%E6%B3%84%E6%BC%8F%E3%80%81%E8%B0%83%E8%AF%95",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" javaScript 的内存管理、泄漏、调试")
+        ]
+      ),
+      _vm._v(" "),
+      _c("p", [_c("em", [_c("strong", [_vm._v("来自MDN")])])]),
+      _vm._v(" "),
+      _c(
+        "h2",
+        {
+          attrs: {
+            id: "%E5%86%85%E5%AD%98%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href: "#%E5%86%85%E5%AD%98%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 内存生命周期")
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "warnning custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              " 1、分配你所需要的内存\n2、使用分配到的内存（读、写）\n3、不需要时将其释放\\归还\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h2",
+        {
+          attrs: {
+            id: "javascript%E7%9A%84%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#javascript%E7%9A%84%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" JavaScript的内存分配")
+        ]
+      ),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" n = "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("123")]),
+          _vm._v("; "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 给数值变量分配内存")
+          ]),
+          _vm._v("\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" s = "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"azerty"')]),
+          _vm._v("; "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 给字符串分配内存")
+          ]),
+          _vm._v("\n\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" o = {\n  "),
+          _c("span", { staticClass: "hljs-attr" }, [_vm._v("a")]),
+          _vm._v(": "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(",\n  "),
+          _c("span", { staticClass: "hljs-attr" }, [_vm._v("b")]),
+          _vm._v(": "),
+          _c("span", { staticClass: "hljs-literal" }, [_vm._v("null")]),
+          _vm._v("\n}; "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 给对象及其包含的值分配内存")
+          ]),
+          _vm._v("\n\n"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 给数组及其包含的值分配内存（就像对象一样）")
+          ]),
+          _vm._v("\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" a = ["),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(", "),
+          _c("span", { staticClass: "hljs-literal" }, [_vm._v("null")]),
+          _vm._v(", "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"abra"')]),
+          _vm._v("]; \n\n"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("function")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("f")]),
+            _vm._v("("),
+            _c("span", { staticClass: "hljs-params" }, [_vm._v("a")]),
+            _vm._v(")")
+          ]),
+          _vm._v("{\n  "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("return")]),
+          _vm._v(" a + "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v(";\n} "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 给函数（可调用的对象）分配内存")
+          ]),
+          _vm._v("\n\n"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 函数表达式也能分配一个对象")
+          ]),
+          _vm._v("\nsomeElement.addEventListener("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'click'")]),
+          _vm._v(", "),
+          _c("span", { staticClass: "hljs-function" }, [
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("function")]),
+            _vm._v("("),
+            _c("span", { staticClass: "hljs-params" }),
+            _vm._v(")")
+          ]),
+          _vm._v("{\n  someElement.style.backgroundColor = "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'blue'")]),
+          _vm._v(";\n}, "),
+          _c("span", { staticClass: "hljs-literal" }, [_vm._v("false")]),
+          _vm._v(");\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h2",
+        {
+          attrs: {
+            id:
+              "%E9%80%9A%E8%BF%87%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#%E9%80%9A%E8%BF%87%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 通过函数调用分配内存")
+        ]
+      ),
+      _vm._v(" "),
+      _c("p", [_vm._v("有些函数调用结果是分配对象内存：")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" d = "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("new")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("Date")]),
+          _vm._v("(); "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 分配一个 Date 对象")
+          ]),
+          _vm._v("\n\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" e = "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("document")]),
+          _vm._v(".createElement("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'div'")]),
+          _vm._v("); "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 分配一个 DOM 元素")
+          ]),
+          _vm._v("\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("分配新变量或者新对象")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" s = "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"azerty"')]),
+          _vm._v(";\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" s2 = s.substr("),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(", "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3")]),
+          _vm._v("); "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// s2 是一个新的字符串")
+          ]),
+          _vm._v("\n"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 因为字符串是不变量，")
+          ]),
+          _vm._v("\n"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// JavaScript 可能决定不分配内存，")
+          ]),
+          _vm._v("\n"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 只是存储了 [0-3] 的范围。")
+          ]),
+          _vm._v("\n\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" a = ["),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"ouais ouais"')]),
+          _vm._v(", "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"nan nan"')]),
+          _vm._v("];\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" a2 = ["),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"generation"')]),
+          _vm._v(", "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"nan nan"')]),
+          _vm._v("];\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" a3 = a.concat(a2); \n"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 新数组有四个元素，是 a 连接 a2 的结果")
+          ]),
+          _vm._v("\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "success custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v("* 定义对象的时刻，就分配了对象\n* 通过函数调用分配内存\n")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h2", { attrs: { id: "%E4%BD%BF%E7%94%A8%E5%80%BC" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E4%BD%BF%E7%94%A8%E5%80%BC",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 使用值")
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "使用值的过程实际上是对分配内存进行读取与写入的操作。读取与写入可能是写入一个变量或者一个对象的属性值，甚至传递函数的参数。"
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "h2",
+        {
+          attrs: {
+            id:
+              "%E5%BD%93%E5%86%85%E5%AD%98%E4%B8%8D%E5%86%8D%E9%9C%80%E8%A6%81%E4%BD%BF%E7%94%A8%E6%97%B6%E9%87%8A%E6%94%BE"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#%E5%BD%93%E5%86%85%E5%AD%98%E4%B8%8D%E5%86%8D%E9%9C%80%E8%A6%81%E4%BD%BF%E7%94%A8%E6%97%B6%E9%87%8A%E6%94%BE",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 当内存不再需要使用时释放")
+        ]
+      ),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "大多数内存管理的问题都在这个阶段。在这里最艰难的任务是找到“所分配的内存确实已经不再需要了”。它往往要求开发人员来确定在程序中哪一块内存不再需要并且释放它。"
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "高级语言解释器嵌入了“垃圾回收器”，它的主要工作是跟踪内存的分配和使用，以便当分配的内存不再使用时，自动释放它。这只能是一个近似的过程，因为要知道是否仍然需要某块内存是无法判定的（无法通过某种算法解决）。"
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "danger custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [_c("code", [_vm._v(" 以上来自MDN。。。。\n")])])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/web-react-ios.md?vue&type=template&id=8b861212&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/web-react-ios.md?vue&type=template&id=8b861212& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c(
+        "h1",
+        {
+          attrs: {
+            id:
+              "react-native--ios-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#react-native--ios-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" React Native -IOS 开发环境搭建")
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "h2",
+        {
+          attrs: {
+            id: "web%E6%9E%B6%E6%9E%84%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#web%E6%9E%B6%E6%9E%84%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" web架构（基础）")
+        ]
+      ),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 安装依赖")
+      ]),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            "* \n必须安装的依赖有：Node、Watchman 和 React Native 命令行工具以及 Xcode。\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "npm-%E9%95%9C%E5%83%8F" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#npm-%E9%95%9C%E5%83%8F", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" npm 镜像")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("npm config set registry https:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//registry.npm.taobao.org --global")
+          ]),
+          _vm._v("\nnpm config set disturl https:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//npm.taobao.org/dist --global")
+          ]),
+          _vm._v("\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h3",
+        {
+          attrs: {
+            id:
+              "yarn%E3%80%81react-native-%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%EF%BC%88react-native-cli%EF%BC%89"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#yarn%E3%80%81react-native-%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%EF%BC%88react-native-cli%EF%BC%89",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" Yarn、React Native 的命令行工具（react-native-cli）")
+        ]
+      ),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("npm install -g yarn react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-cli\n* param: -g : 表示全局安装使用\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "yarn-%E9%95%9C%E5%83%8F" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#yarn-%E9%95%9C%E5%83%8F", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" yarn 镜像")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("yarn config set registry https:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//registry.npm.taobao.org --global")
+          ]),
+          _vm._v("\nyarn config set disturl https:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//npm.taobao.org/dist --global")
+          ]),
+          _vm._v("\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 创建项目")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(" init AwesomeProject\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 运行项目")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("cd AwesomeProject\nreact-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(" run-ios\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "tips" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#tips", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" tips")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "   这样启动很可能遇到问题，我遇到的问题是 IOS 模拟器启动了，但是未启动,需要对照xcode commandline tool ，\n   \n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 解决办法")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "\t npm install\n\t 根据提示，会让你安装对应的 xcode command line.\n\t 然后编译项目，在启动即可。\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "hot-reloading" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#hot-reloading", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" Hot reloading")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [_vm._v("    热加载，在编辑的时候就可看出，改变。\n    \n")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "warnning custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("p", [
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "https://reactnative.cn/docs/debugging.html#%E8%87%AA%E5%8A%A8%E5%88%B7%E6%96%B0"
+              }
+            },
+            [_vm._v("调试自动刷新")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _c(
+            "a",
+            { attrs: { href: "https://reactnative.cn/docs/getting-started/" } },
+            [_vm._v("React Native 官网文档")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "%E9%83%A8%E7%BD%B2%E6%89%93%E5%8C%85" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E9%83%A8%E7%BD%B2%E6%89%93%E5%8C%85",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 部署打包")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "tip custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("p", [_vm._v("IOS  上还需要申请，暂时没有做，应为要RMB。")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/web-react-native.md?vue&type=template&id=e4bd1ae2&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/web-react-native.md?vue&type=template&id=e4bd1ae2& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("h1", { attrs: { id: "react-navigation" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#react-navigation", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" React-Navigation")
+      ]),
+      _vm._v(" "),
+      _c("h2", { attrs: { id: "%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 前端架构")
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "%E5%87%86%E5%A4%87" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#%E5%87%86%E5%A4%87", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 准备")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("    "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/*安装组件*/")]),
+          _vm._v(
+            "\n\tnpm install --save react-navigation\n\t\n\tnpm install --save react-"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-gesture-handler\n\t\n\t"),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/*添加依赖*/")]),
+          _vm._v("\n\treact-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(" link react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-gesture-handler\n\t\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "tips" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#tips", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" tips")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "\t如果是通过react-cli 脚手架打包的工程可能出现安装时缺少依赖，我的根据官网上教程指导，就出现这个问题。\n\t问题：\n\tbogon:AwesomeProject fandong$ npm install -g react-navigation\n    npm WARN react-navigation@"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3.8")]),
+          _vm._v(".1 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(
+            " a peer of react@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-navigation@"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3.8")]),
+          _vm._v(".1 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(" a peer of react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(
+            "@* but none is installed. You must install peer dependencies yourself.\n    npm WARN "
+          ),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@react")]),
+          _vm._v("-navigation/"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3.4")]),
+          _vm._v(".1 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(
+            " a peer of react@* but none is installed. You must install peer dependencies yourself.\n    npm WARN "
+          ),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@react")]),
+          _vm._v("-navigation/"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3.4")]),
+          _vm._v(".1 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(" a peer of react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(
+            "@* but none is installed. You must install peer dependencies yourself.\n    npm WARN "
+          ),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@react")]),
+          _vm._v("-navigation/"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3.4")]),
+          _vm._v(".1 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(" a peer of react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(
+            "-gesture-handler@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-navigation-tabs@"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.1")]),
+          _vm._v(".2 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(
+            " a peer of react@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-navigation-tabs@"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.1")]),
+          _vm._v(".2 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(" a peer of react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(
+            "@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-navigation-drawer@"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.2")]),
+          _vm._v(".1 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(
+            " a peer of react@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-navigation-drawer@"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.2")]),
+          _vm._v(".1 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(" a peer of react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(
+            "@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-navigation-drawer@"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.2")]),
+          _vm._v(".1 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(" a peer of react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-gesture-handler@^"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.0")]),
+          _vm._v(
+            ".12 but none is installed. You must install peer dependencies yourself.\n    npm WARN "
+          ),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@react")]),
+          _vm._v("-navigation/core@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3.3")]),
+          _vm._v(".1 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(
+            " a peer of react@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-navigation-stack@"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.3")]),
+          _vm._v(".0 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(
+            " a peer of react@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-navigation-stack@"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.3")]),
+          _vm._v(".0 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(" a peer of react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(
+            "@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-navigation-stack@"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.3")]),
+          _vm._v(".0 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(" a peer of react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-gesture-handler@^"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.0")]),
+          _vm._v(
+            ".0 but none is installed. You must install peer dependencies yourself.\n    npm WARN react-"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-screens@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.0")]),
+          _vm._v(".0-alpha.22 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(
+            " a peer of react@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-screens@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.0")]),
+          _vm._v(".0-alpha.22 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(" a peer of react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(
+            "@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-safe-area-view@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0.13")]),
+          _vm._v(".1 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(
+            " a peer of react@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-safe-area-view@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0.13")]),
+          _vm._v(".1 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(" a peer of react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(
+            "@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-tab-view@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.3")]),
+          _vm._v(".4 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(
+            " a peer of react@* but none is installed. You must install peer dependencies yourself.\n    npm WARN react-"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-tab-view@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.3")]),
+          _vm._v(".4 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("requires")]),
+          _vm._v(" a peer of react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(
+            "@* but none is installed. You must install peer dependencies yourself.\n    提示缺少： react@*\n             react-"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("@*\n             react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-gesture-handler@*\n             这可能是由于版本"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3")]),
+          _vm._v(
+            ".X导致的，官网也有相应的提示。\n             如：Since react-navigation@"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3")]),
+          _vm._v(".x depends on the "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("new")]),
+          _vm._v(" React.createContext API, which is added in react@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("16.3")]),
+          _vm._v(".x, we will require react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("@^"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0.54")]),
+          _vm._v(".x. Also, react-navigation@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3")]),
+          _vm._v(".x needs react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(
+            "-gesture-handler to work, you will need to make sure that the version of react-"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v("-gesture-handler you are using matches your current react-"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("native")]),
+          _vm._v(
+            " version.\n   根据提示 npm install --save react@* ,等等即可。\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "%E5%AF%BC%E8%88%AAapi" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#%E5%AF%BC%E8%88%AAapi", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 导航API")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "    basic: 顶部导航条\n    createStackNavigator\n       uage:\n       \t\t createStackNavigator({\n\t\t\t\t\t\t\t\t\t\t  Home: {\n\t\t\t\t\t\t\t\t\t\t    screen: HomeScreen\n\t\t\t\t\t\t\t\t\t\t  }\n\t\t\t\t\t\t\t\t\t\t )\n\t\t参数： Home: 自定义对象，\n\t\t      screen: 显示的对象，这里我定义了的一个HomeScreen\n\t\t     \n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_c("em", [_c("strong", [_vm._v("HomeScreen组件")])])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+          _vm._v(" React, { Component } from "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'react'")]),
+          _vm._v(";\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+          _vm._v(" {View, Text,Button, Alert} from "),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'react-native'")
+          ]),
+          _vm._v(";\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+          _vm._v(" styles from "),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'../basic/style'")
+          ]),
+          _vm._v(";\n"),
+          _c("span", { staticClass: "hljs-class" }, [
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("class")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("HomeScreen")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("extends")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("Component")]),
+            _vm._v(" ")
+          ]),
+          _vm._v("{\n    "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("static")]),
+          _vm._v(" navigationOptions={\n        headerTitle:<Text>"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'uuu'")]),
+          _vm._v(
+            "</Text>,\n        headerRight:(\n            <Button\n                onPress={()=>Alert.alert("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"hehe"')]),
+          _vm._v(")}\n                title="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"Info"')]),
+          _vm._v("\n                color="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"blue"')]),
+          _vm._v(
+            "\n            />\n        )\n    };\n    componentWillMount(){\n        "
+          ),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v('//Alert.alert("Will Mount... Home");')
+          ]),
+          _vm._v("\n    }\n    componentWillUnmount(){\n        "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v('//Alert.alert("Unmount Home");')
+          ]),
+          _vm._v("\n    }\n    render() { \n        "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("return")]),
+          _vm._v(
+            " (  \n            <View style={styles.container}>\n                <Text>Home Screen</Text>\n                <Button\n                    title="
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"touch me"')]),
+          _vm._v("\n                    onPress={()=>"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(".props.navigation.navigate("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'Details'")]),
+          _vm._v(",{\n                        id:"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'home1'")]),
+          _vm._v(",\n                        other:"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'done'")]),
+          _vm._v(
+            "\n                    })}\n                >\n                </Button>\n                <Button\n                title="
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"touch me"')]),
+          _vm._v("\n                onPress={()=>"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(".props.navigation.navigate("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'ModalScreen'")]),
+          _vm._v(",{\n                    id:"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'home1'")]),
+          _vm._v(",\n                    other:"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'done'")]),
+          _vm._v(
+            "\n                })}\n            >\n            </Button>\n            </View>\n        );\n    }\n}\nexport "
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("default")]),
+          _vm._v(" HomeScreen;\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "%E5%AF%BC%E8%88%AA%E5%87%BD%E6%95%B0" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E5%AF%BC%E8%88%AA%E5%87%BD%E6%95%B0",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 导航函数")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "   在React Native 开发中，每个组件props 会引入navigation 这个组件对象，常用的函数有;\n   \n      navigate(<componentName>,{params"
+          ),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/*option*/")]),
+          _vm._v("})\n      push(<componentName>,{params"),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/*option*/")]),
+          _vm._v("})\n      \n      区别： 这个函数使用都能通过"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(".props.navigation.navigate("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'Details'")]),
+          _vm._v(
+            ") 到对应的界面。如果当前的界面就是Details 时，使用navigate 不在出现切换界面的效果，即不会导航。\n           push不同，push会把这个Details 继续入栈，想下web 中，访问的网页历史记录。\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h3",
+        {
+          attrs: {
+            id:
+              "%E4%BC%A0%E5%8F%82%E3%80%81%E6%B7%BB%E5%8A%A0%E5%8F%82%E6%95%B0%E3%80%81%E5%8E%BB%E5%8F%82%E6%95%B0"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#%E4%BC%A0%E5%8F%82%E3%80%81%E6%B7%BB%E5%8A%A0%E5%8F%82%E6%95%B0%E3%80%81%E5%8E%BB%E5%8F%82%E6%95%B0",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 传参、添加参数、去参数")
+        ]
+      ),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t navigate(<componentName>,{params"),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/*option*/")]),
+          _vm._v("})\n    push(<componentName>,{params"),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/*option*/")]),
+          _vm._v(
+            "})\n    第二参数即。\n    \n    添加参数 setParam(key,value)\n    去参数： getParam(key,defaultValue)\n    第二个有个默认值需要注意下。\n\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "%E5%AF%BC%E8%88%AA%E6%A8%A1%E5%BC%8F" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E5%AF%BC%E8%88%AA%E6%A8%A1%E5%BC%8F",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 导航模式")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(" 默然是左右切换加载 ，第二种为 modal 即上下加载。\n "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v(
+            " AppNavigator = createStackNavigator({\n  Home:{\n    screen: HomeScreen,\n    navigationOptions: () => ({\n      title: "
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'首页'")]),
+          _vm._v(
+            "\n    })\n  },\n  Details:{\n    screen:DetailScreen,\n    navigationOptions:({navigation})=>{\n      "
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("return")]),
+          _vm._v(" {title: navigation.getParam("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"id"')]),
+          _vm._v(","),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"no-id"')]),
+          _vm._v(
+            ")};\n    }\n  },\n  ModalScreen:{\n      screen:ModalScreen,\n      navigationOptions:()=>({\n          title:"
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'Modal'")]),
+          _vm._v("\n      })\n  }\n},{\n  initialRouteName:"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"Home"')]),
+          _vm._v(",\n  mode:"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'modal'")]),
+          _vm._v(",\n  "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//headerMode:'none'")
+          ]),
+          _vm._v("\n});\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v(" AppContainer=createAppContainer(AppNavigator);\n \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h3",
+        {
+          attrs: {
+            id:
+              "%E5%AF%BC%E8%88%AA%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#%E5%AF%BC%E8%88%AA%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 导航的生命周期")
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "warnning custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "  组件跳转当前界面A，表示A 入栈，会触发 组件的生命周期即 componentWillMount 事件触发，如果从A 切换到B，不会触发A 的\n\ncomponentWillUnMount 事件，B的componentWillMount 触发，但是B 切换到A时，B会触发componentWillUnMount。应为A并没有出栈。\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h3",
+        {
+          attrs: {
+            id:
+              "%E5%AF%BC%E8%88%AA%E7%9A%84%E6%A0%B7%E5%BC%8F%E8%B0%83%E6%95%B4"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#%E5%AF%BC%E8%88%AA%E7%9A%84%E6%A0%B7%E5%BC%8F%E8%B0%83%E6%95%B4",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 导航的样式调整")
+        ]
+      ),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/*自定义导航头*/")
+          ]),
+          _vm._v("\n\t"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("static")]),
+          _vm._v(
+            " navigationOptions = {\n    headerTitle: <LogoTitle />,\n    headerRight: (\n      <Button\n        onPress={() => alert("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'This is a button!'")
+          ]),
+          _vm._v(")}\n        title="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"Info"')]),
+          _vm._v("\n        color="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"#fff"')]),
+          _vm._v("\n      />\n    ),\n  };\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { attrs: { id: "%E5%85%B6%E4%BB%96%E5%AF%BC%E8%88%AAapi" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E5%85%B6%E4%BB%96%E5%AF%BC%E8%88%AAapi",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 其他导航API")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "\tcreateBottomTabNavigator\n\t：同第一个\n\t\n\tcreateDrawerNavigator\n\tusage：\n\t\t\t"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("static")]),
+          _vm._v(" navigationOptions = {\n\t\t    drawerLabel: "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'Home'")]),
+          _vm._v(
+            ",\n\t\t    drawerIcon: ({ tintColor }) => (\n\t\t      <Image\n\t\t        source={require("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'./chats-icon.png'")
+          ]),
+          _vm._v(
+            ")}\n\t\t        style={[styles.icon, {tintColor: tintColor}]}\n\t\t      />\n\t\t    ),\n\t\t  };\n\t\n\tcreateSwitchNavigator\n\tusage:\n\t\t\t"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v(
+            " AppStack = createStackNavigator({ Home: HomeScreen, Other: OtherScreen });\n\t\t\t"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v(
+            " AuthStack = createStackNavigator({ SignIn: SignInScreen });\n\t\t\t\n\t\t\t"
+          ),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("export "),
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("default")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-title" }, [
+              _vm._v("createAppContainer")
+            ]),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v(
+                "(createSwitchNavigator(\n\t\t\t  {\n\t\t\t    AuthLoading: AuthLoadingScreen,\n\t\t\t    App: AppStack,\n\t\t\t    Auth: AuthStack,\n\t\t\t  },\n\t\t\t  {\n\t\t\t    initialRouteName: "
+              ),
+              _c("span", { staticClass: "hljs-string" }, [
+                _vm._v("'AuthLoading'")
+              ]),
+              _vm._v(",\n\t\t\t  }\n\t\t\t)")
+            ]),
+            _vm._v(")")
+          ]),
+          _vm._v(";\n\t\t\t\n\t\t\t--\n\t\t\tAuthLoadingScreen 中调用："),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(".props.navigation.navigate(userToken ? "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'App'")]),
+          _vm._v(" : "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'Auth'")]),
+          _vm._v(");\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "success custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "如有不当，尽情指出！，感谢！\n\n[Navigation 官网API地址](https://reactnavigation.org/docs/en/auth-flow.html)\n"
+            )
+          ])
+        ])
       ])
     ])
   }
@@ -71510,6 +72924,165 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/web-js-memory-management.md":
+/*!****************************************************!*\
+  !*** ./src/docs/zh-CN/web-js-memory-management.md ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _web_js_memory_management_md_vue_type_template_id_cdd9262e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./web-js-memory-management.md?vue&type=template&id=cdd9262e& */ "./src/docs/zh-CN/web-js-memory-management.md?vue&type=template&id=cdd9262e&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _web_js_memory_management_md_vue_type_template_id_cdd9262e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _web_js_memory_management_md_vue_type_template_id_cdd9262e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/web-js-memory-management.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/web-js-memory-management.md?vue&type=template&id=cdd9262e&":
+/*!***********************************************************************************!*\
+  !*** ./src/docs/zh-CN/web-js-memory-management.md?vue&type=template&id=cdd9262e& ***!
+  \***********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_js_memory_management_md_vue_type_template_id_cdd9262e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./web-js-memory-management.md?vue&type=template&id=cdd9262e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/web-js-memory-management.md?vue&type=template&id=cdd9262e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_js_memory_management_md_vue_type_template_id_cdd9262e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_js_memory_management_md_vue_type_template_id_cdd9262e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/web-react-ios.md":
+/*!*****************************************!*\
+  !*** ./src/docs/zh-CN/web-react-ios.md ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _web_react_ios_md_vue_type_template_id_8b861212___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./web-react-ios.md?vue&type=template&id=8b861212& */ "./src/docs/zh-CN/web-react-ios.md?vue&type=template&id=8b861212&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _web_react_ios_md_vue_type_template_id_8b861212___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _web_react_ios_md_vue_type_template_id_8b861212___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/web-react-ios.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/web-react-ios.md?vue&type=template&id=8b861212&":
+/*!************************************************************************!*\
+  !*** ./src/docs/zh-CN/web-react-ios.md?vue&type=template&id=8b861212& ***!
+  \************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_react_ios_md_vue_type_template_id_8b861212___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./web-react-ios.md?vue&type=template&id=8b861212& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/web-react-ios.md?vue&type=template&id=8b861212&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_react_ios_md_vue_type_template_id_8b861212___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_react_ios_md_vue_type_template_id_8b861212___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/web-react-native.md":
+/*!********************************************!*\
+  !*** ./src/docs/zh-CN/web-react-native.md ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _web_react_native_md_vue_type_template_id_e4bd1ae2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./web-react-native.md?vue&type=template&id=e4bd1ae2& */ "./src/docs/zh-CN/web-react-native.md?vue&type=template&id=e4bd1ae2&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _web_react_native_md_vue_type_template_id_e4bd1ae2___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _web_react_native_md_vue_type_template_id_e4bd1ae2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/web-react-native.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/web-react-native.md?vue&type=template&id=e4bd1ae2&":
+/*!***************************************************************************!*\
+  !*** ./src/docs/zh-CN/web-react-native.md?vue&type=template&id=e4bd1ae2& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_react_native_md_vue_type_template_id_e4bd1ae2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./web-react-native.md?vue&type=template&id=e4bd1ae2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/web-react-native.md?vue&type=template&id=e4bd1ae2&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_react_native_md_vue_type_template_id_e4bd1ae2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_react_native_md_vue_type_template_id_e4bd1ae2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/web-vue-route-js.md":
 /*!********************************************!*\
   !*** ./src/docs/zh-CN/web-vue-route-js.md ***!
@@ -72058,11 +73631,35 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_web_js_class_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../docs/zh-CN/web-js-class.md */ "./src/docs/zh-CN/web-js-class.md");
 /* harmony import */ var _docs_zh_CN_web_vue_route_js_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../docs/zh-CN/web-vue-route-js.md */ "./src/docs/zh-CN/web-vue-route-js.md");
+/* harmony import */ var _docs_zh_CN_web_react_native_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../docs/zh-CN/web-react-native.md */ "./src/docs/zh-CN/web-react-native.md");
+/* harmony import */ var _docs_zh_CN_web_react_ios_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../docs/zh-CN/web-react-ios.md */ "./src/docs/zh-CN/web-react-ios.md");
+/* harmony import */ var _docs_zh_CN_web_js_memory_management_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../docs/zh-CN/web-js-memory-management.md */ "./src/docs/zh-CN/web-js-memory-management.md");
+
+
 
 
 
 
 const webpageList = [
+    {
+        
+        name: "javaMemoryManagent",
+        component: _docs_zh_CN_web_js_memory_management_md__WEBPACK_IMPORTED_MODULE_4__["default"],
+        title: "JavaScript 内存管理、泄漏、调试",
+        timestamp: '2016/5/12'
+    },
+    {
+        name: "reactNativeBasic",
+        component: _docs_zh_CN_web_react_native_md__WEBPACK_IMPORTED_MODULE_2__["default"],
+        title: "React Native -IOS 导航",
+        timestamp: '2016/3/12'
+    },
+    {
+        name: "reactNativeIOS",
+        component: _docs_zh_CN_web_react_ios_md__WEBPACK_IMPORTED_MODULE_3__["default"],
+        title: "React Native 基础框架搭建",
+        timestamp: '2016/3/11'
+    },
     {
         name:'vueRouternote',
         component: _docs_zh_CN_web_vue_route_js_md__WEBPACK_IMPORTED_MODULE_1__["default"],
@@ -72246,4 +73843,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-b93846c48ddfbf0b35b5.js.map
+//# sourceMappingURL=app-df35eb5425c37e7c912a.js.map
