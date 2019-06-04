@@ -25,3 +25,8 @@
     border-left:6px solid red;
     background-color: #FFD2D2;
 }
+h2:hover{
+   transform: translateX(15px);
+   transition-delay: 300ms;
+
+}
