@@ -59283,6 +59283,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("pre", { staticClass: "hljs" }, [
         _c("code", [
+          _vm._v("\t   "),
           _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
           _vm._v(" d = "),
           _c("span", { staticClass: "hljs-keyword" }, [_vm._v("new")]),
@@ -59292,7 +59293,7 @@ var staticRenderFns = [
           _c("span", { staticClass: "hljs-comment" }, [
             _vm._v("// 分配一个 Date 对象")
           ]),
-          _vm._v("\n\n"),
+          _vm._v("\n\n      "),
           _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
           _vm._v(" e = "),
           _c("span", { staticClass: "hljs-built_in" }, [_vm._v("document")]),
@@ -59306,56 +59307,21 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("p", [_vm._v("分配新变量或者新对象")]),
+      _c("p", [
+        _vm._v(
+          '分配新变量或者新对象\n···\nvar s = "azerty";\nvar s2 = s.substr(0, 3); // s2 是一个新的字符串\n// 因为字符串是不变量，\n// JavaScript 可能决定不分配内存，\n// 只是存储了 [0-3] 的范围。'
+        )
+      ]),
       _vm._v(" "),
-      _c("pre", { staticClass: "hljs" }, [
+      _c("pre", [
         _c("code", [
-          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
-          _vm._v(" s = "),
-          _c("span", { staticClass: "hljs-string" }, [_vm._v('"azerty"')]),
-          _vm._v(";\n"),
-          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
-          _vm._v(" s2 = s.substr("),
-          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
-          _vm._v(", "),
-          _c("span", { staticClass: "hljs-number" }, [_vm._v("3")]),
-          _vm._v("); "),
-          _c("span", { staticClass: "hljs-comment" }, [
-            _vm._v("// s2 是一个新的字符串")
-          ]),
-          _vm._v("\n"),
-          _c("span", { staticClass: "hljs-comment" }, [
-            _vm._v("// 因为字符串是不变量，")
-          ]),
-          _vm._v("\n"),
-          _c("span", { staticClass: "hljs-comment" }, [
-            _vm._v("// JavaScript 可能决定不分配内存，")
-          ]),
-          _vm._v("\n"),
-          _c("span", { staticClass: "hljs-comment" }, [
-            _vm._v("// 只是存储了 [0-3] 的范围。")
-          ]),
-          _vm._v("\n\n"),
-          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
-          _vm._v(" a = ["),
-          _c("span", { staticClass: "hljs-string" }, [_vm._v('"ouais ouais"')]),
-          _vm._v(", "),
-          _c("span", { staticClass: "hljs-string" }, [_vm._v('"nan nan"')]),
-          _vm._v("];\n"),
-          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
-          _vm._v(" a2 = ["),
-          _c("span", { staticClass: "hljs-string" }, [_vm._v('"generation"')]),
-          _vm._v(", "),
-          _c("span", { staticClass: "hljs-string" }, [_vm._v('"nan nan"')]),
-          _vm._v("];\n"),
-          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
-          _vm._v(" a3 = a.concat(a2); \n"),
-          _c("span", { staticClass: "hljs-comment" }, [
-            _vm._v("// 新数组有四个元素，是 a 连接 a2 的结果")
-          ]),
-          _vm._v("\n")
+          _vm._v(
+            '\tvar a = ["ouais ouais", "nan nan"];\n\tvar a2 = ["generation", "nan nan"];\n\tvar a3 = a.concat(a2); \n\t// 新数组有四个元素，是 a 连接 a2 的结果\n'
+          )
         ])
       ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("···")]),
       _vm._v(" "),
       _c("div", { staticClass: "success custom-block" }, [
         _c("p", { staticClass: "custom-block-title" }),
@@ -59429,6 +59395,214 @@ var staticRenderFns = [
         _c("p", { staticClass: "custom-block-title" }),
         _vm._v(" "),
         _c("pre", [_c("code", [_vm._v(" 以上来自MDN。。。。\n")])])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h1",
+        {
+          attrs: {
+            id:
+              "%E5%A6%82%E4%BD%95%E4%BA%A7%E7%94%9F%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#%E5%A6%82%E4%BD%95%E4%BA%A7%E7%94%9F%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 如何产生内存泄漏")
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "danger custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("对象创建未及时清除，全局变量的创建（引用计数——垃圾回收）")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/**未定义 var 声明，内部引用，导致无法清除*/")
+          ]),
+          _vm._v("\n\t"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("function")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("foo")]),
+            _vm._v("("),
+            _c("span", { staticClass: "hljs-params" }),
+            _vm._v(")")
+          ]),
+          _vm._v("{\n\t    bar="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"this is bar"')]),
+          _vm._v(";\n\t}\n\t\n\t"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/**this window 对象*/")
+          ]),
+          _vm._v("\n\t"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("function")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("foo")]),
+            _vm._v("("),
+            _c("span", { staticClass: "hljs-params" }),
+            _vm._v(")")
+          ]),
+          _vm._v("{\n\t    "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(".bar="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"this is bar"')]),
+          _vm._v(";\n\t}\n\t\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "success custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("p", [_vm._v("使用 ’use strict' 进行javascript 解析")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "danger custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("ul", [_c("li", [_vm._v("对象的循环引用 （引用计数——垃圾回收）")])])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/**/")]),
+          _vm._v("\n   "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" obj = "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("new")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("Object")]),
+          _vm._v("();\n   "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v(" obj2 = "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("new")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("Object")]),
+          _vm._v("();\n   obj.p = obj2;\n   obj2.p= obj;\n   \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h1",
+        {
+          attrs: {
+            id: "%E6%A0%87%E8%AE%B0%E6%89%AB%E6%8F%8F%E7%AE%97%E6%B3%95"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href: "#%E6%A0%87%E8%AE%B0%E6%89%AB%E6%8F%8F%E7%AE%97%E6%B3%95",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 标记扫描算法")
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "success custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v(
+              "垃圾回收器构建“roots”列表。Roots 通常是代码中保留引用的全局变量。在 \tJavaScript 中，“window” 对象可以作为 root 全局变量示例。"
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "所有的 roots 被检查并标记为 active（即不是垃圾）。所有的 children 也被递\t归检查。从 root 能够到达的一切都不被认为是垃圾。"
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "所有为被标记为 active 的内存可以被认为是垃圾了。收集器限制可以释放这些内存并\t将其返回到操作系统。"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src: "http://fandong90.github.io/dist/static/img/markSweep.gif",
+            alt: "标记扫描"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "tip custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [_c("code", [_vm._v("循环引用不是问题。\n")])])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("setInterval 这个不会自动结束。")])]),
+      _vm._v(" "),
+      _c("div", { staticClass: "danger custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "使用setInterval 调用的函数中创建了全局变量，每次执行都创建一次，闭包的使用。\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E5%A6%82%E4%BD%95%E6%A3%80%E6%B5%8B" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E5%A6%82%E4%BD%95%E6%A3%80%E6%B5%8B",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 如何检测")
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _vm._v("使用chrome 开发工具\n"),
+          _c("img", {
+            attrs: {
+              src: "http://fandong90.github.io/dist/static/img/heapChrom.png",
+              alt: "标记扫描"
+            }
+          })
+        ])
       ])
     ])
   }
@@ -73843,4 +74017,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-cc822ea8e5bafb394644.js.map
+//# sourceMappingURL=app-2230e3f21873e9db2cad.js.map

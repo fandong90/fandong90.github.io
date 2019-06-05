@@ -2,7 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ManifestPlugin     = require("webpack-manifest-plugin");
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const rules = require('./rules.config');
 module.exports = {
   mode: 'development',
@@ -25,7 +26,12 @@ module.exports = {
          inject:true
      }),
      new ManifestPlugin(),
-     new VueLoaderPlugin()
+     new VueLoaderPlugin(),
+     new CopyPlugin([
+      { from: path.resolve(__dirname,'..','static'), 
+        to: path.resolve(__dirname,'..','dist/static') 
+      }
+    ]),
   ],
   resolve: {
     extensions: ['.json', '.js', '.jsx','.vue'],
