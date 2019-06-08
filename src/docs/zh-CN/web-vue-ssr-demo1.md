@@ -108,7 +108,7 @@
   ```
    创建的目录结构如下：
    
-   [demo1目录结构图](http://fandong90.github.io/dist/static/img/demo1frame.png)
+   ![demo1目录结构图](http://fandong90.github.io/dist/static/img/demo1frame.png)
    
    		*src : 用于编写Vue相关源码位置
    		*build: 用与webpack打包编译，启动nodejs

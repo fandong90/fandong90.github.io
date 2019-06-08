@@ -63861,16 +63861,13 @@ var staticRenderFns = [
           _c("p", [_vm._v("创建的目录结构如下：")]),
           _vm._v(" "),
           _c("p", [
-            _c(
-              "a",
-              {
-                attrs: {
-                  href:
-                    "http://fandong90.github.io/dist/static/img/demo1frame.png"
-                }
-              },
-              [_vm._v("demo1目录结构图")]
-            )
+            _c("img", {
+              attrs: {
+                src:
+                  "http://fandong90.github.io/dist/static/img/demo1frame.png",
+                alt: "demo1目录结构图"
+              }
+            })
           ]),
           _vm._v(" "),
           _c("pre", [
@@ -77845,4 +77842,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-d8fbae962dbabee42687.js.map
+//# sourceMappingURL=app-796eae247867fc92da06.js.map

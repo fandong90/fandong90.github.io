@@ -1,14 +1,7 @@
 {
-  "app.js": "app-d8fbae962dbabee42687.js",
-  "app.js.map": "app-d8fbae962dbabee42687.js.map",
+  "app.js": "app-796eae247867fc92da06.js",
+  "app.js.map": "app-796eae247867fc92da06.js.map",
   "element-icons.woff": "535877f50039c0cb49a6196a5b7517cd.woff",
   "element-icons.ttf": "732389ded34cb9c52dd88271f1345af9.ttf",
-  "index.html": "index.html",
-  "static/.DS_Store": "static/.DS_Store",
-  "static/asset/md.style.css": "static/asset/md.style.css",
-  "static/img/.DS_Store": "static/img/.DS_Store",
-  "static/img/demo1frame.png": "static/img/demo1frame.png",
-  "static/img/heapChrom.png": "static/img/heapChrom.png",
-  "static/img/markSweep.gif": "static/img/markSweep.gif",
-  "static/jsmind/jsmind.css": "static/jsmind/jsmind.css"
+  "index.html": "index.html"
 }
