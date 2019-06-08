@@ -4,7 +4,14 @@ import vueRouternote from '../../docs/zh-CN/web-vue-route-js.md';
 import reactNativeBasic   from '../../docs/zh-CN/web-react-native.md';
 import reactNativeIOS    from '../../docs/zh-CN/web-react-ios.md';
 import javaMemoryManagent from '../../docs/zh-CN/web-js-memory-management.md';
+import vueSsrDemo1 from '../../docs/zh-CN/web-vue-ssr-demo1.md';
 const webpageList = [
+    {
+        name: "vueSsrDemo1",
+        component: vueSsrDemo1,
+        title: "Vue SSR 搭建- ",
+        timestamp: '2017/5/12'
+    },
     {
         
         name: "javaMemoryManagent",
