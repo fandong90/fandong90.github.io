@@ -3645,6 +3645,21 @@ exports.push([module.i, "\njmnodes{\n    left:0px;\n}\ncanvas{\n    left:0px;\n}
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./src/pages/microService/index.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/pages/microService/index.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "\n.el-timeline-item__timestamp.is-top {\n  text-align: left;\n}\nh4:hover {\n  text-decoration: underline;\n  cursor: pointer;\n}\n", ""]);
+
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./src/pages/webFont/index.vue?vue&type=style&index=0&lang=css&":
 /*!***********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/pages/webFont/index.vue?vue&type=style&index=0&lang=css& ***!
@@ -60435,6 +60450,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./src/pages/microService/index.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/pages/microService/index.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./src/pages/microService/index.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./src/pages/webFont/index.vue?vue&type=style&index=0&lang=css&":
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/pages/webFont/index.vue?vue&type=style&index=0&lang=css& ***!
@@ -61590,13 +61635,42 @@ const jsMind = __webpack_require__(/*! jsmind */ "./node_modules/jsmind/js/jsmin
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _micro_page_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./micro-page-list */ "./src/pages/microService/micro-page-list.js");
 //
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {},
+  data() {
+    return {
+      data: _micro_page_list__WEBPACK_IMPORTED_MODULE_0__["default"]
+    };
+  },
+  created() {},
+  mounted() {},
+  methods: {
+    handleClick(name, title) {
 
+      this.$router.push(name);
+    }
+  }
 });
 
 
@@ -61649,6 +61723,226 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/docker-centos-rstart.md?vue&type=template&id=32e44129&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/docker-centos-rstart.md?vue&type=template&id=32e44129& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("h1", { attrs: { id: "docker-centos-7-%E5%88%9B%E5%BB%BA--" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#docker-centos-7-%E5%88%9B%E5%BB%BA--",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" Docker CentOS 7 创建 -")
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E4%BB%80%E4%B9%88%E6%98%AFdocker" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E4%BB%80%E4%B9%88%E6%98%AFdocker",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 什么是DOCKER")
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从Apache2.0协议开源。"
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。"
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。"
+        )
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "docker-%E6%9E%B6%E6%9E%84%E5%9B%BE" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#docker-%E6%9E%B6%E6%9E%84%E5%9B%BE",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" docker 架构图")
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src: "http://fandong90.github.io/dist/static/img/dockerarch.png",
+            alt: "docker service"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E8%A1%8C%E5%8A%A8" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#%E8%A1%8C%E5%8A%A8", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 行动")
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("查看linux 内核 版本")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   uname -r\n   \n   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/*我的linux版本*/")
+          ]),
+          _vm._v("\n   [root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
+          _vm._v("01 ~]# uname -r\n    "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3.10")]),
+          _vm._v(".0-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("862.14")]),
+          _vm._v(".4.el7.x86_64\n   [root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
+          _vm._v("01 ~]# \n   \n   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/*必须linux 内核 3.1 版本以上*/")
+          ]),
+          _vm._v("\n   \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("配置yum 工具")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "  sudo yum install -y  yum-utils device-mapper-persistent-data  lvm2\n  \n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            "* yum-utils: yum 下载rpm依赖包工具\n* device-mapper-persistent-data lvm2  用与docker 存放数据\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("配置yum docker repo")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\n  sudo yum-config-manager --add-repo  https:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//download.docker.com/linux/centos/docker-ce.repo")
+          ]),
+          _vm._v("\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("开始安装")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "\n   sudo yum install docker-ce docker-ce-cli containerd.io\n\t\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("验证安装")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/*启动docker*/")
+          ]),
+          _vm._v("\n\tsudo systemctl start docker\n\t\n   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/*查看服务是否启动成功*/")
+          ]),
+          _vm._v("\n\t\n\tsystemctl -t service\n\t\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src: "http://fandong90.github.io/dist/static/img/dockerservice.png",
+            alt: "docker service"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("使用hello-world 验证docker安装是否OK")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [_vm._v("  sudo docker run hello-world\n  \n")])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src:
+              "http://fandong90.github.io/dist/static/img/dockervaildHello.png",
+            alt: "docker service"
+          }
+        })
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
 
 
 /***/ }),
@@ -65053,7 +65347,47 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("微服务架构")])
+  return _c(
+    "div",
+    [
+      _c(
+        "el-timeline",
+        _vm._l(_vm.data, function(item) {
+          return _c(
+            "el-timeline-item",
+            {
+              key: item.name,
+              attrs: {
+                timestamp: item.timestamp,
+                reverse: "false",
+                placement: "top"
+              }
+            },
+            [
+              _c("el-card", [
+                _c(
+                  "h4",
+                  {
+                    on: {
+                      click: function($event) {
+                        return _vm.handleClick(item.name, item.title)
+                      }
+                    }
+                  },
+                  [_vm._v(_vm._s(item.title))]
+                ),
+                _vm._v(" "),
+                _c("p", [_vm._v("new bird update " + _vm._s(item.timestamp))])
+              ])
+            ],
+            1
+          )
+        }),
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -76656,6 +76990,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/docker-centos-rstart.md":
+/*!************************************************!*\
+  !*** ./src/docs/zh-CN/docker-centos-rstart.md ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _docker_centos_rstart_md_vue_type_template_id_32e44129___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./docker-centos-rstart.md?vue&type=template&id=32e44129& */ "./src/docs/zh-CN/docker-centos-rstart.md?vue&type=template&id=32e44129&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _docker_centos_rstart_md_vue_type_template_id_32e44129___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _docker_centos_rstart_md_vue_type_template_id_32e44129___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/docker-centos-rstart.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/docker-centos-rstart.md?vue&type=template&id=32e44129&":
+/*!*******************************************************************************!*\
+  !*** ./src/docs/zh-CN/docker-centos-rstart.md?vue&type=template&id=32e44129& ***!
+  \*******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_docker_centos_rstart_md_vue_type_template_id_32e44129___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./docker-centos-rstart.md?vue&type=template&id=32e44129& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/docker-centos-rstart.md?vue&type=template&id=32e44129&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_docker_centos_rstart_md_vue_type_template_id_32e44129___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_docker_centos_rstart_md_vue_type_template_id_32e44129___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/web-js-class.md":
 /*!****************************************!*\
   !*** ./src/docs/zh-CN/web-js-class.md ***!
@@ -77464,7 +77851,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_vue_vue_type_template_id_272f8c18___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=272f8c18& */ "./src/pages/microService/index.vue?vue&type=template&id=272f8c18&");
 /* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./src/pages/microService/index.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.vue?vue&type=style&index=0&lang=css& */ "./src/pages/microService/index.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -77472,7 +77861,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _index_vue_vue_type_template_id_272f8c18___WEBPACK_IMPORTED_MODULE_0__["render"],
   _index_vue_vue_type_template_id_272f8c18___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -77504,6 +77893,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/pages/microService/index.vue?vue&type=style&index=0&lang=css&":
+/*!***************************************************************************!*\
+  !*** ./src/pages/microService/index.vue?vue&type=style&index=0&lang=css& ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./src/pages/microService/index.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "./src/pages/microService/index.vue?vue&type=template&id=272f8c18&":
 /*!*************************************************************************!*\
   !*** ./src/pages/microService/index.vue?vue&type=template&id=272f8c18& ***!
@@ -77519,6 +77924,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_272f8c18___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./src/pages/microService/micro-page-list.js":
+/*!***************************************************!*\
+  !*** ./src/pages/microService/micro-page-list.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _docs_zh_CN_docker_centos_rstart_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../docs/zh-CN/docker-centos-rstart.md */ "./src/docs/zh-CN/docker-centos-rstart.md");
+
+
+const  mircoList =[
+    {
+        name: "dockerRstart",
+        component: _docs_zh_CN_docker_centos_rstart_md__WEBPACK_IMPORTED_MODULE_0__["default"],
+        title: "Docker 安装创建--开始 ",
+        timestamp: '2017/5/12'
+    }
+];
+
+/* harmony default export */ __webpack_exports__["default"] = (mircoList);
 
 /***/ }),
 
@@ -77690,6 +78120,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_list__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages-list */ "./src/router/pages-list.js");
 /* harmony import */ var _pages_inner_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages-inner-list */ "./src/router/pages-inner-list.js");
 /* harmony import */ var _pages_webFont_web_page_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/webFont/web-page-list */ "./src/pages/webFont/web-page-list.js");
+/* harmony import */ var _pages_microService_micro_page_list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/microService/micro-page-list */ "./src/pages/microService/micro-page-list.js");
+
 
 
 
@@ -77722,7 +78154,14 @@ _pages_webFont_web_page_list__WEBPACK_IMPORTED_MODULE_4__["default"].forEach(ite
         });
 });
 
-/**** */
+/****micro */
+
+_pages_microService_micro_page_list__WEBPACK_IMPORTED_MODULE_5__["default"].forEach(item=>{
+    routes.push({
+        path:'/'+item.name,
+        component:item.component
+    })
+})
 
 //设定默认首页
 
@@ -77842,4 +78281,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-d2aaed85115b91daa600.js.map
+//# sourceMappingURL=app-3a46d5ca131a0d9c61be.js.map

@@ -7,4 +7,6 @@ module.exports= function getlangAdapter(name){
     if(name.indexOf('java')>-1 || name.indexOf('javascript')<=-1){
         return 'java';
     }
+    
+    return 'bash';
 };

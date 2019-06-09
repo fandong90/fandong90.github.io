@@ -63,6 +63,7 @@ module.exports = function (src) {
 
   mdLang = getlangAdapter(file);
   
+  
 
   // 重新模式下构建时使用缓存以提高性能
   if (cached && (isProd || /\?vue/.test(this.resourceQuery))) {
@@ -70,7 +71,7 @@ module.exports = function (src) {
   }
 
   const html = md.render(src)
-
+   
   const res = (
     `<template>\n` +
     `<div class="content">`+
