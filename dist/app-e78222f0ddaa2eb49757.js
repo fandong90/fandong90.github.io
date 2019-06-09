@@ -61667,7 +61667,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted() {},
   methods: {
     handleClick(name, title) {
-
+      
       this.$router.push(name);
     }
   }
@@ -78281,4 +78281,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-3a46d5ca131a0d9c61be.js.map
+//# sourceMappingURL=app-e78222f0ddaa2eb49757.js.map
