@@ -61937,6 +61937,18 @@ var staticRenderFns = [
             alt: "docker service"
           }
         })
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("卸载：")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "\t sudo yum remove docker-ce docker-ce-cli containerd.io\n\t \n\t sudo rm -rf /"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+          _vm._v("/lib/docker\n\t \n")
+        ])
       ])
     ])
   }
@@ -78281,4 +78293,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-7f7334b586a0398906a5.js.map
+//# sourceMappingURL=app-a6cf187cf13b4735a155.js.map

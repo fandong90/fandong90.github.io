@@ -77,6 +77,14 @@ Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级�
 ![docker service](http://fandong90.github.io/dist/static/img/dockervaildHello.png)
 
 
+ 卸载：
+ 
+ ```
+ 	 sudo yum remove docker-ce docker-ce-cli containerd.io
+ 	 
+ 	 sudo rm -rf /var/lib/docker
+ 	 
+ ```
 
 	
 	
