@@ -61838,7 +61838,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("pre", { staticClass: "hljs" }, [
         _c("code", [
-          _vm._v("   uname -r\n   \n   "),
+          _vm._v("\n   uname -r\n   \n   "),
           _c("span", { staticClass: "hljs-comment" }, [
             _vm._v("/*我的linux版本*/")
           ]),
@@ -78293,4 +78293,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-a6cf187cf13b4735a155.js.map
+//# sourceMappingURL=app-527cbe5c0fa6fd50854d.js.map
