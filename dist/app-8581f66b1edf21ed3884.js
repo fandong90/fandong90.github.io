@@ -62320,6 +62320,18 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [_vm._v("我们启动了四个线程： 8813 8814 8815 8816")]),
       _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/*统计端口执行的个数*/")
+          ]),
+          _vm._v("\n   grep -o "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("8813")]),
+          _vm._v(" a.txt | wc -w \n   \n")
+        ])
+      ]),
+      _vm._v(" "),
       _c("p", [
         _c("img", {
           attrs: {
@@ -79027,4 +79039,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-1cf76e278e3ecbcf9cb8.js.map
+//# sourceMappingURL=app-8581f66b1edf21ed3884.js.map

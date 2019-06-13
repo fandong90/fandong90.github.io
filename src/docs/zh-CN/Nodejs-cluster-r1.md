@@ -94,6 +94,12 @@
    
    我们启动了四个线程： 8813 8814 8815 8816
    
+   ```
+      /*统计端口执行的个数*/
+      grep -o 8813 a.txt | wc -w 
+      
+   ```
+   
    ![test](http://fandong90.github.io/dist/static/img/nodeclustertestcount.png)
    
    测试发现，基本上是均衡的。
