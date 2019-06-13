@@ -5,7 +5,14 @@ import reactNativeBasic   from '../../docs/zh-CN/web-react-native.md';
 import reactNativeIOS    from '../../docs/zh-CN/web-react-ios.md';
 import javaMemoryManagent from '../../docs/zh-CN/web-js-memory-management.md';
 import vueSsrDemo1 from '../../docs/zh-CN/web-vue-ssr-demo1.md';
+import nodejsclusterr1 from '../../docs/zh-CN/Nodejs-cluster-r1.md';
 const webpageList = [
+    {
+        name: "nodejsclusterr1",
+        component: nodejsclusterr1,
+        title: "nodejs cluster 使用",
+        timestamp: '2017/5/14'
+    },
     {
         name: "vueSsrDemo1",
         component: vueSsrDemo1,

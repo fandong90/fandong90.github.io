@@ -61998,6 +61998,348 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Nodejs-cluster-r1.md?vue&type=template&id=1763062e&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Nodejs-cluster-r1.md?vue&type=template&id=1763062e& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("h1", { attrs: { id: "nodejs-cluster-%E9%9B%86%E7%BE%A4" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#nodejs-cluster-%E9%9B%86%E7%BE%A4",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" Nodejs  Cluster 集群")
+      ]),
+      _vm._v(" "),
+      _c(
+        "h2",
+        {
+          attrs: { id: "%E4%B8%BA%E4%BB%80%E4%B9%88%E5%87%BA%E7%8E%B0-cluster" }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href: "#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%87%BA%E7%8E%B0-cluster",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 为什么出现 Cluster")
+        ]
+      ),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _vm._v("Nodejs 是运行在单线程中，cluster 的出现为了利用多核特性。")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h2", { attrs: { id: "%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 工作原理")
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [
+            _vm._v(
+              "The worker processes are spawned using the child_process.fork() method, so that they can communicate with the parent via IPC and pass server handles back and forth."
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [
+            _vm._v(
+              "The first one (and the default one on all platforms except Windows), is the round-robin approach, where the master process listens on a port, accepts new connections and distributes them across the workers in a round-robin fashion, with some built-in smarts to avoid overloading a worker process."
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h2", { attrs: { id: "%E8%A1%8C%E5%8A%A8" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#%E8%A1%8C%E5%8A%A8", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 行动")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t\t"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v(" cluster = "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("require")]),
+          _vm._v("("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'cluster'")]),
+          _vm._v(");\n\t\t"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v(" http = "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("require")]),
+          _vm._v("("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'http'")]),
+          _vm._v(");\n\t\t"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v("  numCpus= "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("require")]),
+          _vm._v("("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'os'")]),
+          _vm._v(").cpus().length;\n\t\t"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v("  app = "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("require")]),
+          _vm._v("("),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'./express-server'")
+          ]),
+          _vm._v(");\n\t\t\n\t\t"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("if")]),
+          _vm._v("(cluster.isMaster){\n\t\t    "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+          _vm._v(".log("),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("`主进程 "),
+            _c("span", { staticClass: "hljs-subst" }, [
+              _vm._v("${process.pid}")
+            ]),
+            _vm._v(" 正在运行`")
+          ]),
+          _vm._v(");\n\t\t\n\t\t    "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("for")]),
+          _vm._v("("),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("let")]),
+          _vm._v(" i="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(";i< numCpus;i++){\n\t\t       "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v(" worker =  cluster.fork();\n\t\t       worker.on("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'disconnect'")]),
+          _vm._v(",()=>{\n\t\t            "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+          _vm._v(".log("),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("`工作进程 "),
+            _c("span", { staticClass: "hljs-subst" }, [
+              _vm._v("${worker.process.pid}")
+            ]),
+            _vm._v(" 失去了连接`")
+          ]),
+          _vm._v(");\n\t\t        });\n\t\t      worker.on("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"error"')]),
+          _vm._v(",(error)=>{\n\t\t         "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+          _vm._v(
+            ".log(...error);\n\t\t      });\n\t\t      \n\t\t    }\n\t\t    cluster.on("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'exit'")]),
+          _vm._v(",(Worker,code,signal)=>{\n\t\t        "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+          _vm._v(".log("),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("`工作进程 "),
+            _c("span", { staticClass: "hljs-subst" }, [
+              _vm._v("${worker.process.pid}")
+            ]),
+            _vm._v(" 已退出`")
+          ]),
+          _vm._v(");\n\t\t    });\n\t\t}"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("else")]),
+          _vm._v("{\n\t\t\n\t\t    "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v(
+            " server =  http.createServer(app);\n\t\t    \n\t\t    server.on("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'error'")]),
+          _vm._v(",(error)=>{\n\t\t        "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+          _vm._v(".log(...error);\n\t\t    });\n\t\t\n\t\t    server.on("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"close"')]),
+          _vm._v(",()=>{\n\t\t        "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+          _vm._v(".log("),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("`"),
+            _c("span", { staticClass: "hljs-subst" }, [
+              _vm._v("${process.pid}")
+            ]),
+            _vm._v(" close`")
+          ]),
+          _vm._v(");\n\t\t    })\n\t\t\n\t\t    server.on("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'connection'")]),
+          _vm._v(",()=>{\n\t\t       "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// console.log(`${process.pid} connection`);")
+          ]),
+          _vm._v("\n\t\t    });\n\t\t    server.listen("),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("8000")]),
+          _vm._v(",(hostname,backlog)=>{\n\t\t        "),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+          _vm._v(".log("),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("`工作进程 "),
+            _c("span", { staticClass: "hljs-subst" }, [
+              _vm._v("${process.pid}")
+            ]),
+            _vm._v(" 已启动`")
+          ]),
+          _vm._v(");\n\t\t    });\n\t\t   \n\t}\n\t"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//来自nodejs 官网")
+          ]),
+          _vm._v("\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("这个代码我加入express 作为服务器监听。")]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src:
+              "http://fandong90.github.io/dist/static/img/nodejsclusterserver.png",
+            alt: "Nodejs服务启动"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "主线程负责监听端口，主线程负责发送消息给工作线程处理，本文测试了资源分配，是否均衡。"
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("测试：")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t\t"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//使用 curl ，开启两个shell，同时连续请求1000次。")
+          ]),
+          _vm._v("\n\t\t"),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/*curl.sh*/")]),
+          _vm._v("\n\t\t[root@hadoop01 test]# cat curl.sh \n \t#!"),
+          _c("span", { staticClass: "hljs-regexp" }, [_vm._v("/bin/")]),
+          _vm._v("bash\n \t\n \t"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("for")]),
+          _vm._v(" i "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("in")]),
+          _vm._v(" $(seq "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1000")]),
+          _vm._v(")\n \t"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("do")]),
+          _vm._v("\n \t   curl http:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//192.168.1.104:8000 >>a.txt")
+          ]),
+          _vm._v("\n \t   echo  "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"\\n"')]),
+          _vm._v(">>a.txt\n \tdone\n \t[root@hadoop01 test]# \n \t\n \t"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//把这个sh文件拷贝到另一台机器上，我这里是虚拟机。")
+          ]),
+          _vm._v("\n \t[root@hadoop01 test]# scp -r curl.sh  root@"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v(".1")]),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v(".124")]),
+          _vm._v(":"),
+          _c("span", { staticClass: "hljs-regexp" }, [_vm._v("/opt/")]),
+          _vm._v("nodejs/test/\n \t\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("启动./curl.sh")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("     "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/*添加sh执行命令*/")
+          ]),
+          _vm._v("\n\t\t chmod u+x curl.sh \n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("测试结果")])]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src:
+              "http://fandong90.github.io/dist/static/img/nodeclusterfilea.png",
+            alt: "请求结果"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("我们启动了四个线程： 8813 8814 8815 8816")]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src:
+              "http://fandong90.github.io/dist/static/img/nodeclustertestcount.png",
+            alt: "test"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("测试发现，基本上是均衡的。")])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/docker-centos-rstart.md?vue&type=template&id=32e44129&":
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/docker-centos-rstart.md?vue&type=template&id=32e44129& ***!
@@ -77326,6 +77668,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/Nodejs-cluster-r1.md":
+/*!*********************************************!*\
+  !*** ./src/docs/zh-CN/Nodejs-cluster-r1.md ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Nodejs_cluster_r1_md_vue_type_template_id_1763062e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Nodejs-cluster-r1.md?vue&type=template&id=1763062e& */ "./src/docs/zh-CN/Nodejs-cluster-r1.md?vue&type=template&id=1763062e&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Nodejs_cluster_r1_md_vue_type_template_id_1763062e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Nodejs_cluster_r1_md_vue_type_template_id_1763062e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/Nodejs-cluster-r1.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/Nodejs-cluster-r1.md?vue&type=template&id=1763062e&":
+/*!****************************************************************************!*\
+  !*** ./src/docs/zh-CN/Nodejs-cluster-r1.md?vue&type=template&id=1763062e& ***!
+  \****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Nodejs_cluster_r1_md_vue_type_template_id_1763062e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./Nodejs-cluster-r1.md?vue&type=template&id=1763062e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Nodejs-cluster-r1.md?vue&type=template&id=1763062e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Nodejs_cluster_r1_md_vue_type_template_id_1763062e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Nodejs_cluster_r1_md_vue_type_template_id_1763062e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/docker-centos-rstart.md":
 /*!************************************************!*\
   !*** ./src/docs/zh-CN/docker-centos-rstart.md ***!
@@ -78397,6 +78792,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_web_react_ios_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../docs/zh-CN/web-react-ios.md */ "./src/docs/zh-CN/web-react-ios.md");
 /* harmony import */ var _docs_zh_CN_web_js_memory_management_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../docs/zh-CN/web-js-memory-management.md */ "./src/docs/zh-CN/web-js-memory-management.md");
 /* harmony import */ var _docs_zh_CN_web_vue_ssr_demo1_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../docs/zh-CN/web-vue-ssr-demo1.md */ "./src/docs/zh-CN/web-vue-ssr-demo1.md");
+/* harmony import */ var _docs_zh_CN_Nodejs_cluster_r1_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../docs/zh-CN/Nodejs-cluster-r1.md */ "./src/docs/zh-CN/Nodejs-cluster-r1.md");
+
 
 
 
@@ -78405,6 +78802,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const webpageList = [
+    {
+        name: "nodejsclusterr1",
+        component: _docs_zh_CN_Nodejs_cluster_r1_md__WEBPACK_IMPORTED_MODULE_6__["default"],
+        title: "nodejs cluster 使用",
+        timestamp: '2017/5/14'
+    },
     {
         name: "vueSsrDemo1",
         component: _docs_zh_CN_web_vue_ssr_demo1_md__WEBPACK_IMPORTED_MODULE_5__["default"],
@@ -78624,4 +79027,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-3c1d384cc6ede936b472.js.map
+//# sourceMappingURL=app-1cf76e278e3ecbcf9cb8.js.map

@@ -1,6 +1,6 @@
 {
-  "app.js": "app-3c1d384cc6ede936b472.js",
-  "app.js.map": "app-3c1d384cc6ede936b472.js.map",
+  "app.js": "app-1cf76e278e3ecbcf9cb8.js",
+  "app.js.map": "app-1cf76e278e3ecbcf9cb8.js.map",
   "element-icons.woff": "535877f50039c0cb49a6196a5b7517cd.woff",
   "element-icons.ttf": "732389ded34cb9c52dd88271f1345af9.ttf",
   "index.html": "index.html",
@@ -14,5 +14,8 @@
   "static/img/dockervaildHello.png": "static/img/dockervaildHello.png",
   "static/img/heapChrom.png": "static/img/heapChrom.png",
   "static/img/markSweep.gif": "static/img/markSweep.gif",
+  "static/img/nodeclusterfilea.png": "static/img/nodeclusterfilea.png",
+  "static/img/nodeclustertestcount.png": "static/img/nodeclustertestcount.png",
+  "static/img/nodejsclusterserver.png": "static/img/nodejsclusterserver.png",
   "static/jsmind/jsmind.css": "static/jsmind/jsmind.css"
 }
