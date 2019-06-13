@@ -62584,6 +62584,145 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/docker-push-r3.md?vue&type=template&id=34f3bb06&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/docker-push-r3.md?vue&type=template&id=34f3bb06& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c(
+        "h1",
+        {
+          attrs: {
+            id:
+              "docker-%E5%88%9B%E5%BB%BA%E4%B8%89-%E6%8E%A8%E9%80%81%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E5%85%B1%E4%BA%AB"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#docker-%E5%88%9B%E5%BB%BA%E4%B8%89-%E6%8E%A8%E9%80%81%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E5%85%B1%E4%BA%AB",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" Docker 创建三  推送远程仓库共享")
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "h1",
+        {
+          attrs: {
+            id:
+              "%E5%88%9B%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E9%95%9C%E5%83%8F%E6%8E%A8%E9%80%81%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#%E5%88%9B%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E9%95%9C%E5%83%8F%E6%8E%A8%E9%80%81%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 创建好的本地镜像推送远程服务器")
+        ]
+      ),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/*命令*/")]),
+          _vm._v(
+            "\n   docker tag image username/repo:tag\n   \n   ----创建OK\n   \n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("推送到远程")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   docker tag friendlyhello fandong90/get-started:part2\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "   ----推送到\n   \n   docker push fandong90/get-started:part2\n   \n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("删除本地镜像")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\tdocker image rm fandong90/get-started:part2\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("运行镜像")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   docker rum -d -p "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("4000")]),
+          _vm._v(":"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("80")]),
+          _vm._v(" fandong90/get-started:part2\n   \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("结果")])]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src:
+              "http://fandong90.github.io/dist/static/img/dockerreporesult.png",
+            alt: "dockerreporesult"
+          }
+        })
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/web-js-class.md?vue&type=template&id=ee3f4040&":
 /*!*************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/web-js-class.md?vue&type=template&id=ee3f4040& ***!
@@ -77786,6 +77925,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/docker-push-r3.md":
+/*!******************************************!*\
+  !*** ./src/docs/zh-CN/docker-push-r3.md ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _docker_push_r3_md_vue_type_template_id_34f3bb06___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./docker-push-r3.md?vue&type=template&id=34f3bb06& */ "./src/docs/zh-CN/docker-push-r3.md?vue&type=template&id=34f3bb06&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _docker_push_r3_md_vue_type_template_id_34f3bb06___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _docker_push_r3_md_vue_type_template_id_34f3bb06___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/docker-push-r3.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/docker-push-r3.md?vue&type=template&id=34f3bb06&":
+/*!*************************************************************************!*\
+  !*** ./src/docs/zh-CN/docker-push-r3.md?vue&type=template&id=34f3bb06& ***!
+  \*************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_docker_push_r3_md_vue_type_template_id_34f3bb06___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./docker-push-r3.md?vue&type=template&id=34f3bb06& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/docker-push-r3.md?vue&type=template&id=34f3bb06&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_docker_push_r3_md_vue_type_template_id_34f3bb06___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_docker_push_r3_md_vue_type_template_id_34f3bb06___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/web-js-class.md":
 /*!****************************************!*\
   !*** ./src/docs/zh-CN/web-js-class.md ***!
@@ -78681,9 +78873,17 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_docker_centos_rstart_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../docs/zh-CN/docker-centos-rstart.md */ "./src/docs/zh-CN/docker-centos-rstart.md");
 /* harmony import */ var _docs_zh_CN_Docker_devops_r2_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../docs/zh-CN/Docker-devops-r2.md */ "./src/docs/zh-CN/Docker-devops-r2.md");
+/* harmony import */ var _docs_zh_CN_docker_push_r3_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../docs/zh-CN/docker-push-r3.md */ "./src/docs/zh-CN/docker-push-r3.md");
+
 
 
 const  mircoList =[
+    {
+        name: "dockerpushr3",
+        component: _docs_zh_CN_docker_push_r3_md__WEBPACK_IMPORTED_MODULE_2__["default"],
+        title: "Docker 安装创建三 推送远程服务器 ",
+        timestamp: '2017/5/15'
+    },
     {
         name: "dockerdevops2",
         component: _docs_zh_CN_Docker_devops_r2_md__WEBPACK_IMPORTED_MODULE_1__["default"],
@@ -79039,4 +79239,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-2c9f3ce44d44332fe5f3.js.map
+//# sourceMappingURL=app-e12ce9e53b0b031755ab.js.map

@@ -1,6 +1,13 @@
 import dockerRstart from '../../docs/zh-CN/docker-centos-rstart.md';
 import dockerdevops2 from '../../docs/zh-CN/Docker-devops-r2.md';
+import dockerpushr3  from '../../docs/zh-CN/docker-push-r3.md';
 const  mircoList =[
+    {
+        name: "dockerpushr3",
+        component: dockerpushr3,
+        title: "Docker 安装创建三 推送远程服务器 ",
+        timestamp: '2017/5/15'
+    },
     {
         name: "dockerdevops2",
         component: dockerdevops2,

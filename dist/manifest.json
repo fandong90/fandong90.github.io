@@ -1,6 +1,6 @@
 {
-  "app.js": "app-2c9f3ce44d44332fe5f3.js",
-  "app.js.map": "app-2c9f3ce44d44332fe5f3.js.map",
+  "app.js": "app-e12ce9e53b0b031755ab.js",
+  "app.js.map": "app-e12ce9e53b0b031755ab.js.map",
   "element-icons.woff": "535877f50039c0cb49a6196a5b7517cd.woff",
   "element-icons.ttf": "732389ded34cb9c52dd88271f1345af9.ttf",
   "index.html": "index.html",
@@ -10,6 +10,7 @@
   "static/img/contianervsvirtual.png": "static/img/contianervsvirtual.png",
   "static/img/demo1frame.png": "static/img/demo1frame.png",
   "static/img/dockerarch.png": "static/img/dockerarch.png",
+  "static/img/dockerreporesult.png": "static/img/dockerreporesult.png",
   "static/img/dockerservice.png": "static/img/dockerservice.png",
   "static/img/dockervaildHello.png": "static/img/dockervaildHello.png",
   "static/img/heapChrom.png": "static/img/heapChrom.png",
