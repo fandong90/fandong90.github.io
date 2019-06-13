@@ -86,6 +86,7 @@
    ```
         /*添加sh执行命令*/
    		 chmod u+x curl.sh 
+		 ./curl.sh
    
    ```
    * 测试结果

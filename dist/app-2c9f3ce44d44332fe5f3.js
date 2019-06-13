@@ -62302,7 +62302,7 @@ var staticRenderFns = [
           _c("span", { staticClass: "hljs-comment" }, [
             _vm._v("/*添加sh执行命令*/")
           ]),
-          _vm._v("\n\t\t chmod u+x curl.sh \n\n")
+          _vm._v("\n\t\t chmod u+x curl.sh \n \t ./curl.sh\n\n")
         ])
       ]),
       _vm._v(" "),
@@ -79039,4 +79039,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-8581f66b1edf21ed3884.js.map
+//# sourceMappingURL=app-2c9f3ce44d44332fe5f3.js.map
