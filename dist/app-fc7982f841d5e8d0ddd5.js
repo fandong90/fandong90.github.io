@@ -62915,7 +62915,7 @@ var staticRenderFns = [
           _c("span", { staticClass: "hljs-comment" }, [
             _vm._v("/*swarm node 初始化*/")
           ]),
-          _vm._v("\n   docker swarm init \n   \n")
+          _vm._v("\n   docker swarm init  \n   \n")
         ])
       ]),
       _vm._v(" "),
@@ -79640,4 +79640,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-28e89709d881d5f36335.js.map
+//# sourceMappingURL=app-fc7982f841d5e8d0ddd5.js.map

@@ -55,11 +55,11 @@ Luckily it’s very easy to define, run, and scale services with the Docker plat
   
   ```
      /*swarm node 初始化*/
-     docker swarm init 
+     docker swarm init  
      
   ```
 
-   给服务设定别名 getstartedlab
+给服务设定别名 getstartedlab
   
   ```
   		/* run */
