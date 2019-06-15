@@ -73,7 +73,8 @@ Luckily it’s very easy to define, run, and scale services with the Docker plat
      docker service ls
      
  ```
-     ![vsr4](http://fandong90.github.io/dist/static/img/dockerservicework4.png)
+ ![vsr4](http://fandong90.github.io/dist/static/img/dockerservicework4.png)
+     
      
  ```
  	 /* 使用服务别名查看服务*/

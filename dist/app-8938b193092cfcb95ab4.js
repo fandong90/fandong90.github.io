@@ -62949,12 +62949,14 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("pre", [
-        _c("code", [
-          _vm._v(
-            " ![vsr4](http://fandong90.github.io/dist/static/img/dockerservicework4.png)\n"
-          )
-        ])
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src:
+              "http://fandong90.github.io/dist/static/img/dockerservicework4.png",
+            alt: "vsr4"
+          }
+        })
       ]),
       _vm._v(" "),
       _c("pre", { staticClass: "hljs" }, [
@@ -79636,4 +79638,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-1990e8e83a1490572e0e.js.map
+//# sourceMappingURL=app-8938b193092cfcb95ab4.js.map
