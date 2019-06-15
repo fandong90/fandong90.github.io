@@ -62723,6 +62723,342 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/docker-service-r4.md?vue&type=template&id=2c0bd4f6&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/docker-service-r4.md?vue&type=template&id=2c0bd4f6& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c(
+        "h1",
+        {
+          attrs: { id: "docker-%E5%88%9B%E5%BB%BA-service-%E8%BF%90%E8%A1%8C" }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href: "#docker-%E5%88%9B%E5%BB%BA-service-%E8%BF%90%E8%A1%8C",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" Docker 创建 Service 运行")
+        ]
+      ),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "about-services" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#about-services", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" About Services")
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _vm._v(
+            "In a distributed application, different pieces of the app are called “services”. For example, if you imagine a video sharing site, it probably includes a service for storing application data in a database, a service for video transcoding in the background after a user uploads something, a service for the front-end, and so on."
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Services are really just “containers in production.” A service only runs one image, but it codifies the way that image runs—what ports it should use, how many replicas of the container should run so the service has the capacity it needs, and so on. Scaling a service changes the number of container instances running that piece of software, assigning more computing resources to the service in the process."
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Luckily it’s very easy to define, run, and scale services with the Docker platform -- just write a docker-compose.yml file."
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("--[来自docker 教程]")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v("docker 的服务可以根据配置文件，设定副本的个数，分配计算资源。")
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("write docker-compose.yml")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v("这里使用vscode 安装docker 插件，会快速生成docker模板。")
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("img", {
+              attrs: {
+                src:
+                  "http://fandong90.github.io/dist/static/img/dockerservicework1.png",
+                alt: "vsr1"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("img", {
+              attrs: {
+                src:
+                  "http://fandong90.github.io/dist/static/img/dockerservicework2.png",
+                alt: "vsr2"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("\t"),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("/*docker-compose.yml*/")
+              ]),
+              _vm._v("\n\tversion: "),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"3"')]),
+              _vm._v(
+                "\n\tservices:\n\t  web:\n\t    # replace username/repo:tag with your name and image details\n\t    image: fandong90/get-started:part2\n\t    deploy:\n\t      replicas: "
+              ),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("5")]),
+              _vm._v(
+                "\n\t      resources:\n\t        limits:\n\t          cpus: "
+              ),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"0.1"')]),
+              _vm._v("\n\t          memory: "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("50")]),
+              _vm._v(
+                "M\n\t      restart_policy:\n\t        condition: on-failure\n\t    ports:\n\t      - "
+              ),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"4000:80"')]),
+              _vm._v(
+                "\n\t    networks:\n\t      - webnet\n\tnetworks:\n\t  webnet:\n\t\n"
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [
+              _vm._v("Pull "),
+              _c("em", [
+                _c("strong", [
+                  _vm._v("docker创建三（fandong90/get-started:part2）")
+                ])
+              ]),
+              _vm._v(" from the registry.")
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "Run 5 instances of that image as a service called web, limiting each one to use, at most, 10% of a single core of CPU time (this could also be e.g. “1.5” to mean 1 and half core for each), and 50MB of RAM."
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Immediately restart containers if one fails.")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Map port 4000 on the host to web’s port 80.")]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "Instruct web’s containers to share port 80 via a load-balanced network called webnet. (Internally, the containers themselves publish to web’s port 80 at an ephemeral port.)"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "define the webnet network with the default settings (which is a load-balanced overlay network)."
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E5%90%AF%E5%8A%A8" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#%E5%90%AF%E5%8A%A8", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 启动")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/*swarm node 初始化*/")
+          ]),
+          _vm._v("\n   docker swarm init \n   \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("给服务设定别名 getstartedlab")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t\t"),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/* run */")]),
+          _vm._v(
+            "\n\t\tdocker stack deploy -c docker-compose.yml getstartedlab\n\t\t\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            " ![vsr3](http://fandong90.github.io/dist/static/img/dockerservicework3.png)\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("    "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/* 查看服务 */")
+          ]),
+          _vm._v("\n    \n    docker service ls\n    \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            " ![vsr4](http://fandong90.github.io/dist/static/img/dockerservicework4.png)\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/* 使用服务别名查看服务*/")
+          ]),
+          _vm._v("\n\t \n\t docker service ps getstartedlab_web\n\t \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src:
+              "http://fandong90.github.io/dist/static/img/dockerservicework5.png",
+            alt: "vsr5"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/* 请求 */")]),
+          _vm._v("\n   \n   [root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@bogon")]),
+          _vm._v(" myapp]# curl -"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("4")]),
+          _vm._v(" http:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//localhost:4000")
+          ]),
+          _vm._v("\n   \t<h3>Hello World!</h3><b>Hostname:</b> "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("25219")]),
+          _vm._v(
+            "d88ae6c<br/><b>Visits:</b> <i>cannot connect to Redis, counter disabled</i>\n    [root"
+          ),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@bogon")]),
+          _vm._v(" myapp]# \n    \n    \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("更新 docker-compose.yml")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "\t\tdocker stack deploy -c docker-compose.yml getstartedlab\n\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("shutdown service")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("     "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("/*删除服务*/")]),
+          _vm._v("\n\t\tdocker stack rm getstartedlab\n\t\t\n\t\t"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("/*退出swarm*/")
+          ]),
+          _vm._v("\n\t\tdocker swarm leave --force\n\t\t\n\t\t[root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@bogon")]),
+          _vm._v(
+            " myapp]# docker stack rm getstartedlab\n   \tRemoving service getstartedlab_web\n   \tRemoving network getstartedlab_webnet\n   \t[root"
+          ),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@bogon")]),
+          _vm._v(
+            " myapp]# docker swarm leave --force\n   \tNode left the swarm.\n   \t\n   \t[root"
+          ),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@bogon")]),
+          _vm._v(
+            " myapp]# docker service ls\n   \tError response from daemon: This node is not a swarm manager. Use "
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"docker swarm init"')
+          ]),
+          _vm._v(" or \t\t"),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"docker swarm join"')
+          ]),
+          _vm._v(" to connect "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(" node to swarm and "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("try")]),
+          _vm._v(" again.\n   \t[root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@bogon")]),
+          _vm._v(" myapp]# \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("---本文完")])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/web-js-class.md?vue&type=template&id=ee3f4040&":
 /*!*************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/web-js-class.md?vue&type=template&id=ee3f4040& ***!
@@ -77978,6 +78314,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/docker-service-r4.md":
+/*!*********************************************!*\
+  !*** ./src/docs/zh-CN/docker-service-r4.md ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _docker_service_r4_md_vue_type_template_id_2c0bd4f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./docker-service-r4.md?vue&type=template&id=2c0bd4f6& */ "./src/docs/zh-CN/docker-service-r4.md?vue&type=template&id=2c0bd4f6&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _docker_service_r4_md_vue_type_template_id_2c0bd4f6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _docker_service_r4_md_vue_type_template_id_2c0bd4f6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/docker-service-r4.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/docker-service-r4.md?vue&type=template&id=2c0bd4f6&":
+/*!****************************************************************************!*\
+  !*** ./src/docs/zh-CN/docker-service-r4.md?vue&type=template&id=2c0bd4f6& ***!
+  \****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_docker_service_r4_md_vue_type_template_id_2c0bd4f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./docker-service-r4.md?vue&type=template&id=2c0bd4f6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/docker-service-r4.md?vue&type=template&id=2c0bd4f6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_docker_service_r4_md_vue_type_template_id_2c0bd4f6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_docker_service_r4_md_vue_type_template_id_2c0bd4f6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/web-js-class.md":
 /*!****************************************!*\
   !*** ./src/docs/zh-CN/web-js-class.md ***!
@@ -78874,10 +79263,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_docker_centos_rstart_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../docs/zh-CN/docker-centos-rstart.md */ "./src/docs/zh-CN/docker-centos-rstart.md");
 /* harmony import */ var _docs_zh_CN_Docker_devops_r2_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../docs/zh-CN/Docker-devops-r2.md */ "./src/docs/zh-CN/Docker-devops-r2.md");
 /* harmony import */ var _docs_zh_CN_docker_push_r3_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../docs/zh-CN/docker-push-r3.md */ "./src/docs/zh-CN/docker-push-r3.md");
+/* harmony import */ var _docs_zh_CN_docker_service_r4_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../docs/zh-CN/docker-service-r4.md */ "./src/docs/zh-CN/docker-service-r4.md");
+
 
 
 
 const  mircoList =[
+    {
+        name: "dockerservicer4",
+        component: _docs_zh_CN_docker_service_r4_md__WEBPACK_IMPORTED_MODULE_3__["default"],
+        title: "Docker 创建四 Service ",
+        timestamp: '2017/5/16'
+    },
     {
         name: "dockerpushr3",
         component: _docs_zh_CN_docker_push_r3_md__WEBPACK_IMPORTED_MODULE_2__["default"],
@@ -79239,4 +79636,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-e12ce9e53b0b031755ab.js.map
+//# sourceMappingURL=app-1990e8e83a1490572e0e.js.map
