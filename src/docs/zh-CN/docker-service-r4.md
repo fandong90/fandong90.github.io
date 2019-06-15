@@ -58,14 +58,16 @@ Luckily it’s very easy to define, run, and scale services with the Docker plat
      docker swarm init 
      
   ```
-  * 给服务设定别名 getstartedlab
+
+   给服务设定别名 getstartedlab
   
   ```
   		/* run */
   		docker stack deploy -c docker-compose.yml getstartedlab
   		
   ```
-     ![vsr3](http://fandong90.github.io/dist/static/img/dockerservicework3.png)
+
+![vsr3](http://fandong90.github.io/dist/static/img/dockerservicework3.png)
      
  ```
      /* 查看服务 */
@@ -73,7 +75,8 @@ Luckily it’s very easy to define, run, and scale services with the Docker plat
      docker service ls
      
  ```
- ![vsr4](http://fandong90.github.io/dist/static/img/dockerservicework4.png)
+
+![vsr4](http://fandong90.github.io/dist/static/img/dockerservicework4.png)
      
      
  ```
@@ -82,6 +85,7 @@ Luckily it’s very easy to define, run, and scale services with the Docker plat
  	 docker service ps getstartedlab_web
  	 
  ```
+
    ![vsr5](http://fandong90.github.io/dist/static/img/dockerservicework5.png)
    
  ```

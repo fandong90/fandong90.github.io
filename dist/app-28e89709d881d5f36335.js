@@ -62919,7 +62919,7 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("ul", [_c("li", [_vm._v("给服务设定别名 getstartedlab")])]),
+      _c("p", [_vm._v("给服务设定别名 getstartedlab")]),
       _vm._v(" "),
       _c("pre", { staticClass: "hljs" }, [
         _c("code", [
@@ -62931,12 +62931,14 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("pre", [
-        _c("code", [
-          _vm._v(
-            " ![vsr3](http://fandong90.github.io/dist/static/img/dockerservicework3.png)\n"
-          )
-        ])
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src:
+              "http://fandong90.github.io/dist/static/img/dockerservicework3.png",
+            alt: "vsr3"
+          }
+        })
       ]),
       _vm._v(" "),
       _c("pre", { staticClass: "hljs" }, [
@@ -79638,4 +79640,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-8938b193092cfcb95ab4.js.map
+//# sourceMappingURL=app-28e89709d881d5f36335.js.map
