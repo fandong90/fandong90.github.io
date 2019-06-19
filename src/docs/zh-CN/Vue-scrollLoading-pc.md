@@ -83,6 +83,40 @@
    		* 创建注册函数 和 移除滚动事件函数
    		
    		```
+   		
+   		    function insertAndUpdate(option){
+		    let defaultOpition={
+		        val:'',
+		        oldVal:'',
+		        modifiers:'',
+		        callback:null
+		    };
+		
+		    let keys = Object.keys(option);
+		
+		    keys.forEach(key=>{
+		        defaultOpition[key] = option[key] || defaultOpition[key];
+		    });
+		
+		    //val 是否改变，改变则更新注册对象参数
+		
+		    let matchRegisterObj = registerObjs.filter(item=>{
+		        if(item.modifiers === defaultOpition.modifiers) return true;
+		        else return false;
+		    });
+		    
+		    if(matchRegisterObj.length>0){
+		        //注意要判读是否已执行，否则不替换val
+		        if(matchRegisterObj.isExec){
+		           matchRegisterObj[0].oldVal = matchRegisterObj[0].val;
+		        }
+		        matchRegisterObj[0].val = defaultOpition.val;
+		    }else{
+		        registerObjs.push(defaultOpition);
+		    }
+		}
+
+
    			/**
 			 * 
 			 * @param {注册滚动事件} options 
@@ -120,9 +154,11 @@
    		```
    		
    		* 核心
-		```
+   		
+   		
+	```
    		 function scrolling(){
-	    /**计算中窗体的 */
+	    //计算中窗体的/
 	
 	    let viewHeight = window.document.documentElement.clientHeight;
 	    let viewWidth  = window.document.documentElement.clientWidth;
@@ -164,11 +200,7 @@
 			    });
 			
 			}   	
-	
-		 /*
-		 * 请求数据示例
-		 * @param {*} paras 
-		 */
+       //请求示例
 		function requestData(paras){
 		    return new Promise((resolve,reject)=>{
 		        try{
@@ -179,9 +211,7 @@
 		    })
 		}
 		
-	
-    ```
-    
+	```
 	
 * 如何使用
 
@@ -190,63 +220,63 @@
    * 注册参数
    * 在mounted 中调用。
 
-```
-<template>
-    <div>
-        <div v-scroll-loading.a>{{data1}}</div>
-        <div v-scroll-loading.b.c>{{data2}}</div>
-    </div>
-</template>
-
-<script>
-import {
-    registerScrollLoading,
-    unRegisterScrollLoading
-} from './demo.js';
-export default {
-    data(){
-        return {
-            data1:'',
-            data2:''
-        }  
-    },
-    mounted(){
-        this.queryData();
-    },
-    methods:{
-        queryData(){
-             let _this=this;
-             let registerObjs=[
-                 {
-                     val:"uuu",
-                     modifiers:'a',
-                     callback:function(d){
-                         _this.data1=d;
-                     }
-                 },
-                 {
-                     val:"uuu",
-                     modifiers:'b.c',
-                     callback:function(d){
-                         _this.data2=d;
-                     }
-                 }
-             ];
-
-             registerScrollLoading(registerObjs);
-        }
-    },
-   destroyed(){
-       unRegisterScrollLoading();
-   }
-}
-</script>
-
-<style>
-
-</style>
-
-```
+	```
+	<template>
+	    <div>
+	        <div v-scroll-loading.a>{{data1}}</div>
+	        <div v-scroll-loading.b.c>{{data2}}</div>
+	    </div>
+	</template>
+	
+	<script>
+	import {
+	    registerScrollLoading,
+	    unRegisterScrollLoading
+	} from './demo.js';
+	export default {
+	    data(){
+	        return {
+	            data1:'',
+	            data2:''
+	        }  
+	    },
+	    mounted(){
+	        this.queryData();
+	    },
+	    methods:{
+	        queryData(){
+	             let _this=this;
+	             let registerObjs=[
+	                 {
+	                     val:"uuu",
+	                     modifiers:'a',
+	                     callback:function(d){
+	                         _this.data1=d;
+	                     }
+	                 },
+	                 {
+	                     val:"uuu",
+	                     modifiers:'b.c',
+	                     callback:function(d){
+	                         _this.data2=d;
+	                     }
+	                 }
+	             ];
+	
+	             registerScrollLoading(registerObjs);
+	        }
+	    },
+	   destroyed(){
+	       unRegisterScrollLoading();
+	   }
+	}
+	</script>
+	
+	<style>
+	
+	</style>
+	
+	```
 
 -----本文完
 	
