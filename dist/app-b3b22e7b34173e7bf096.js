@@ -63218,13 +63218,13 @@ var staticRenderFns = [
                     _vm._v("/*模块简称DiV*/")
                   ]),
                   _vm._v(
-                    "\n  elTop  =  DIV的Top偏移高度 小于 窗体滚动高度 + 窗体文档的可视高度   \t\t\t  elBottom = DIV的偏移高度   大于   窗体滚动高度 + 窗体文档的可视高度 \n  \n  "
+                    "\n  elTop  =  DIV的Top偏移高度 小于 窗体滚动高度 + 窗体文档的可视高度   \t\t\nelBottom = DIV的偏移高度 + 窗体文档的可视高度  大于   窗体滚动高度  \n  \n  "
                   ),
                   _c("span", { staticClass: "hljs-comment" }, [
                     _vm._v("/*左右同理*/")
                   ]),
                   _vm._v(
-                    "\n  \n   elTop  =  DIV的Left偏移长度 小于 窗体X轴长度 + 窗体文档的可视宽度   \t\t\t  elBottom = DIV的偏移长度     大于   窗体X轴长度 + 窗体文档的可视宽度 \n  \n"
+                    "\n  \n   elTop  =  DIV的Left偏移长度 小于 窗体X轴长度  + 窗体文档的可视宽度 \n  elBottom = DIV的偏移长度  + 窗体文档的可视宽度    大于   窗体X轴长度 \n  \n"
                   )
                 ])
               ])
@@ -63474,7 +63474,7 @@ var staticRenderFns = [
             _vm._v("//计算中窗体的/")
           ]),
           _vm._v(
-            "\n\n    let viewHeight = window.document.documentElement.clientHeight;\n    let viewWidth  = window.document.documentElement.clientWidth;\n    let scrollTop  = window.scrollY || window.pageYOffset;\n    let scrollLeft = window.scrollX || window.pageXOffset;\n\n    labelScrollLoadingEls.forEach(elObj=>{\n\n          let elTop = elObj.el.offsetTop -(viewHeight + scrollTop);\n          let elBottom = elObj.el.offsetHeight+scrollTop - viewHeight;\n          let elLeft =elObj.el.offsetLeft -(viewWidth + scrollLeft);\n          let elRight = elObj.el.offsetWidth + scrollLeft -viewWidth;\n\n          "
+            "\n\n    let viewHeight = window.document.documentElement.clientHeight;\n    let viewWidth  = window.document.documentElement.clientWidth;\n    let scrollTop  = window.scrollY || window.pageYOffset;\n    let scrollLeft = window.scrollX || window.pageXOffset;\n\n    labelScrollLoadingEls.forEach(elObj=>{\n\n          let elTop = elObj.el.offsetTop -(viewHeight + scrollTop);\n          let elBottom = elObj.el.offsetHeight + viewHeight-scrollTop;\n          let elLeft =elObj.el.offsetLeft -(viewWidth + scrollLeft);\n          let elRight = elObj.el.offsetWidth -viewWidth + scrollLeft ;\n\n          "
           ),
           _c("span", { staticClass: "hljs-keyword" }, [_vm._v("if")]),
           _vm._v("(elTop<"),
@@ -81063,4 +81063,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-f0e3fcaee0c2aa77bd8f.js.map
+//# sourceMappingURL=app-b3b22e7b34173e7bf096.js.map

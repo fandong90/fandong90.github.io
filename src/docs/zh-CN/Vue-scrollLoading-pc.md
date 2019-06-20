@@ -23,11 +23,13 @@
    		
    			```
    			   /*模块简称DiV*/
-   			  elTop  =  DIV的Top偏移高度 小于 窗体滚动高度 + 窗体文档的可视高度   			  elBottom = DIV的偏移高度   大于   窗体滚动高度 + 窗体文档的可视高度 
+   			  elTop  =  DIV的Top偏移高度 小于 窗体滚动高度 + 窗体文档的可视高度   		
+			elBottom = DIV的偏移高度 + 窗体文档的可视高度  大于   窗体滚动高度  
    			  
    			  /*左右同理*/
    			  
-   			   elTop  =  DIV的Left偏移长度 小于 窗体X轴长度 + 窗体文档的可视宽度   			  elBottom = DIV的偏移长度     大于   窗体X轴长度 + 窗体文档的可视宽度 
+   			   elTop  =  DIV的Left偏移长度 小于 窗体X轴长度  + 窗体文档的可视宽度 
+  			  elBottom = DIV的偏移长度  + 窗体文档的可视宽度    大于   窗体X轴长度 
    			  
       		```
       		
@@ -168,9 +170,9 @@
 	    labelScrollLoadingEls.forEach(elObj=>{
 	
 	          let elTop = elObj.el.offsetTop -(viewHeight + scrollTop);
-	          let elBottom = elObj.el.offsetHeight+scrollTop - viewHeight;
+	          let elBottom = elObj.el.offsetHeight + viewHeight-scrollTop;
 	          let elLeft =elObj.el.offsetLeft -(viewWidth + scrollLeft);
-	          let elRight = elObj.el.offsetWidth + scrollLeft -viewWidth;
+	          let elRight = elObj.el.offsetWidth -viewWidth + scrollLeft ;
 	
 	          if(elTop<0 && elBottom>0 && elLeft<0 && elRight>0){
 	              
