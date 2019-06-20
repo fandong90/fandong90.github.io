@@ -3,7 +3,14 @@ import dockerdevops2 from '../../docs/zh-CN/Docker-devops-r2.md';
 import dockerpushr3  from '../../docs/zh-CN/docker-push-r3.md';
 import dockerservicer4 from '../../docs/zh-CN/docker-service-r4.md';
 import mysqlStartr1 from '../../docs/zh-CN/MySql-start-r1.md';
+import mysqlTyper1  from '../../docs/zh-CN/Mysql-type-r1.md';
 const  mircoList =[
+    {
+        name: "mysqlTyper1",
+        component: mysqlTyper1,
+        title: "Mysql 数据类型-",
+        timestamp: '2017/5/17'
+    },
     {
         name: "mysqlStartr1",
         component: mysqlStartr1,

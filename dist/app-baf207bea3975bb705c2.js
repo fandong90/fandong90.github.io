@@ -62270,6 +62270,418 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Mysql-type-r1.md?vue&type=template&id=78be9894&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Mysql-type-r1.md?vue&type=template&id=78be9894& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c(
+        "h1",
+        { attrs: { id: "mysql-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B" } },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href: "#mysql-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" Mysql 数据类型")
+        ]
+      ),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("数值类型")]),
+          _vm._v(" "),
+          _c("table", [
+            _c("thead", [
+              _c("tr", [
+                _c("th", [_vm._v("类型")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("大小")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("范围（有符号）")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("范围 （无符号）")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("用途")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("td", [_vm._v("inyint")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("1 byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("（-128，127）")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("（0，256）")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("小整数值")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("mallint")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("2 byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("（-32768，32768）")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("（0，65535）")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("大整数值")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("ediumint")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("3byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("(-8388608,8388607)")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("(0,16777215)")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("大整数值")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("nt /integer")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("4byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("(2-31, 2+31),")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("(0,2+32)")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("大整数值")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("igint")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("8byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("2-127,2+127")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("(0,2+127)")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("极大整数值")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("loat")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("4byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("--")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("---")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("单精度浮点数")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("ouble")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("8byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("--")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("---")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("双精度浮点数")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("ecimal")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("decimal(m,d)，m>d,为m+2 和 d+2")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("依赖m和d的值")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("---")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("单精度浮点数")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("日期和时间类型")]),
+          _vm._v(" "),
+          _c("table", [
+            _c("thead", [
+              _c("tr", [
+                _c("th", [_vm._v("类型")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("大小")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("范围")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("格式")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("用途")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("td", [_vm._v("ate")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("3byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("1000y -9999y")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("YYYY-MM-DD")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("日期值")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("ime")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("3byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("----")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("HH:MM:SS")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("时间值")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("ear")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("1byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("--")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("YYYY")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("年份值")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("atetime")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("8 byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("--")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("YYYY-MM-DD HH:MM:SS")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("混合日期和时间")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("imestamp")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("4 byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("--")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("YYYYMMDD HHMMSS")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("时间戳")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("字符串类型")]),
+          _vm._v(" "),
+          _c("table", [
+            _c("thead", [
+              _c("tr", [
+                _c("th", [_vm._v("类型")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("大小")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("用途")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("td", [_vm._v("har")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("0-255 字节")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("定长字符串")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("archar")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("0-65535 字节")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("变长字节")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("inyblob")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("0-255 byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("不超过255个字符的二进制字符串")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("inytext")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("0-255")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("短文本字符串")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("lob")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("0-65535 byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("二进制形式的长文本数据")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("ext")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("0-65535 byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("长文本数据")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("ediumblob")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("0-16777215 byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("中等长度的文本数据")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("ediumtext")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("0-16777215 byte")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("中等长度文本字符串")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("ongblob")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("0-4294967295字节")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("二进制形式的大文本数据")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("ongtext")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("0-4 294 967 295字节")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("极大文本数据")])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h2", { attrs: { id: "%E8%A1%8C%E5%8A%A8" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#%E8%A1%8C%E5%8A%A8", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 行动")
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("char vs varchar")]),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [
+              _vm._v(
+                "1.char(n) 若存入字符数小于n，则以空格补于其后，查询之时再将空格去掉。所以 char 类型存储的字符串末尾不能有空格，varchar 不限于此。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "2.char(n) 固定长度，char(4) 不管是存入几个字符，都将占用 4 个字节，varchar 是存入的实际字符数 +1 个字节（n<=255）或2个字节(n>255)，所以 varchar(4),存入 3 个字符将占用 4 个字节。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v("3.char 类型的字符串检索速度要比 varchar 类型的快。")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("varchar vs text")]),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [
+              _vm._v(
+                "varchar 可指定 n，text 不能指定，内部存储 varchar 是存入的实际字符数 +1 个字节（n<=255）或 2 个字节(n>255)，text 是实际字符数 +2 个字节。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [_vm._v("text 类型不能有默认值。")]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "varchar 可直接创建索引，text 创建索引要指定前多少个字符。varchar 查询速度快于 text, 在都创建索引的情况下，text 的索引似乎不起作用。"
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "warnning custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [_c("code", [_vm._v("未完待续。。。\n")])])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Nodejs-cluster-r1.md?vue&type=template&id=1763062e&":
 /*!******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Nodejs-cluster-r1.md?vue&type=template&id=1763062e& ***!
@@ -79039,6 +79451,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/Mysql-type-r1.md":
+/*!*****************************************!*\
+  !*** ./src/docs/zh-CN/Mysql-type-r1.md ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Mysql_type_r1_md_vue_type_template_id_78be9894___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Mysql-type-r1.md?vue&type=template&id=78be9894& */ "./src/docs/zh-CN/Mysql-type-r1.md?vue&type=template&id=78be9894&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Mysql_type_r1_md_vue_type_template_id_78be9894___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Mysql_type_r1_md_vue_type_template_id_78be9894___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/Mysql-type-r1.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/Mysql-type-r1.md?vue&type=template&id=78be9894&":
+/*!************************************************************************!*\
+  !*** ./src/docs/zh-CN/Mysql-type-r1.md?vue&type=template&id=78be9894& ***!
+  \************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Mysql_type_r1_md_vue_type_template_id_78be9894___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./Mysql-type-r1.md?vue&type=template&id=78be9894& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Mysql-type-r1.md?vue&type=template&id=78be9894&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Mysql_type_r1_md_vue_type_template_id_78be9894___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Mysql_type_r1_md_vue_type_template_id_78be9894___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/Nodejs-cluster-r1.md":
 /*!*********************************************!*\
   !*** ./src/docs/zh-CN/Nodejs-cluster-r1.md ***!
@@ -80202,12 +80667,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_docker_push_r3_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../docs/zh-CN/docker-push-r3.md */ "./src/docs/zh-CN/docker-push-r3.md");
 /* harmony import */ var _docs_zh_CN_docker_service_r4_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../docs/zh-CN/docker-service-r4.md */ "./src/docs/zh-CN/docker-service-r4.md");
 /* harmony import */ var _docs_zh_CN_MySql_start_r1_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../docs/zh-CN/MySql-start-r1.md */ "./src/docs/zh-CN/MySql-start-r1.md");
+/* harmony import */ var _docs_zh_CN_Mysql_type_r1_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../docs/zh-CN/Mysql-type-r1.md */ "./src/docs/zh-CN/Mysql-type-r1.md");
+
 
 
 
 
 
 const  mircoList =[
+    {
+        name: "mysqlTyper1",
+        component: _docs_zh_CN_Mysql_type_r1_md__WEBPACK_IMPORTED_MODULE_5__["default"],
+        title: "Mysql 数据类型-",
+        timestamp: '2017/5/17'
+    },
     {
         name: "mysqlStartr1",
         component: _docs_zh_CN_MySql_start_r1_md__WEBPACK_IMPORTED_MODULE_4__["default"],
@@ -80590,4 +81063,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-35ad8d26cf90d1366f97.js.map
+//# sourceMappingURL=app-baf207bea3975bb705c2.js.map
