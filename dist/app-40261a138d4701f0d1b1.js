@@ -3684,7 +3684,7 @@ exports.push([module.i, "\n.el-timeline-item__timestamp.is-top {\n    text-align
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".custom-block{\n    width:clac(100% -12px);\n    height: auto;\n    padding: 3px 3px;\n}\n.custom-block-title{\n    text-align: left;\n    padding-left: 30px;\n    font-size: 16px;\n    font-weight: bold;\n}\n.tip{\n    border-left: 6px solid #8e8e8e;\n    background-color:#f0f0f0;\n}\n.warnning{\n    border-left:6px solid yellow;\n    background-color: #FFFFCE;\n}\n.success{\n    border-left:6px solid green;\n    background-color: #CEFFCE;\n}\n.danger {\n    border-left:6px solid red;\n    background-color: #FFD2D2;\n}\nh2:hover{\n   transform: translateX(15px);\n   transition-delay: 300ms;\n\n}\n", ""]);
+exports.push([module.i, ".custom-block{\n    width:clac(100% -12px);\n    height: auto;\n    padding: 3px 3px;\n}\n.custom-block-title{\n    text-align: left;\n    padding-left: 30px;\n    font-size: 16px;\n    font-weight: bold;\n}\n.tip{\n    border-left: 6px solid #8e8e8e;\n    background-color:#f0f0f0;\n}\n.warnning{\n    border-left:6px solid yellow;\n    background-color: #FFFFCE;\n}\n.success{\n    border-left:6px solid green;\n    background-color: #CEFFCE;\n}\n.danger {\n    border-left:6px solid red;\n    background-color: #FFD2D2;\n}\nh2:hover{\n   transform: translateX(15px);\n   transition-delay: 300ms;\n\n}\ntable {\n    margin: auto auto;\n    width: 100%;\n    text-align: center;\n    border-collapse: collapse;\n}\ntable thead > tr{\n    background: #474949;\n    color: white;\n    font-size: 16px;\n    font-weight: bold;\n    line-height: 50px;\n}\nth{\n    border:1px solid grey;\n}\n\ntable tbody > tr:nth-child(even) {\n    background: #f5f5f5;\n}\ntd{\n    border:1px solid grey;\n    line-height: 30px;\n}\n", ""]);
 
 
 
@@ -81063,4 +81063,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-76a1226d6a88614a88da.js.map
+//# sourceMappingURL=app-40261a138d4701f0d1b1.js.map
