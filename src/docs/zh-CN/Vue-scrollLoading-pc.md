@@ -174,6 +174,7 @@
 	          let elLeft =elObj.el.offsetLeft -(viewWidth + scrollLeft);
 	          let elRight = elObj.el.offsetWidth -viewWidth + scrollLeft ;
 	
+	
 	          if(elTop<0 && elBottom>0 && elLeft<0 && elRight>0){
 	              
 	              let matchRegisterObj = registerObjs.filter(item=>{
