@@ -80678,7 +80678,7 @@ const  mircoList =[
     {
         name: "mysqlTyper1",
         component: _docs_zh_CN_Mysql_type_r1_md__WEBPACK_IMPORTED_MODULE_5__["default"],
-        title: "Mysql 数据类型-",
+        title: "Mysql 数据类型",
         timestamp: '2017/5/17'
     },
     {
@@ -81063,4 +81063,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-baf207bea3975bb705c2.js.map
+//# sourceMappingURL=app-76a1226d6a88614a88da.js.map

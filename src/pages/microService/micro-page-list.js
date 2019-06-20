@@ -8,7 +8,7 @@ const  mircoList =[
     {
         name: "mysqlTyper1",
         component: mysqlTyper1,
-        title: "Mysql 数据类型-",
+        title: "Mysql 数据类型",
         timestamp: '2017/5/17'
     },
     {
