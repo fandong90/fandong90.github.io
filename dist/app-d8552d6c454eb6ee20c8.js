@@ -61998,6 +61998,299 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Express-start-r1.md?vue&type=template&id=41c486c6&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Express-start-r1.md?vue&type=template&id=41c486c6& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c(
+        "h1",
+        {
+          attrs: {
+            id:
+              "express-%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%90%AD%E5%BB%BA---"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#express-%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%90%AD%E5%BB%BA---",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" Express 学习使用搭建 --")
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "h1",
+        { attrs: { id: "%E4%BB%80%E4%B9%88%E6%98%AFexpress-%EF%BC%9F" } },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href: "#%E4%BB%80%E4%B9%88%E6%98%AFexpress-%EF%BC%9F",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 什么是Express ？")
+        ]
+      ),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("Web 应用程序")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Express 是一个保持最小规模的灵活的 Node.js Web 应用程序开发框架，为 Web 和移动应用程序提供一组强大的功能。"
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("API")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "使用您所选择的各种 HTTP 实用工具和中间件，快速方便地创建强大的 API。"
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("性能")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Express 提供精简的基本 Web 应用程序功能，而不会隐藏您了解和青睐的 Node.js 功能"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h1",
+        {
+          attrs: {
+            id:
+              "%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%85%88%E8%BF%90%E8%A1%8C%E5%86%8D%E8%AF%B4"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%85%88%E8%BF%90%E8%A1%8C%E5%86%8D%E8%AF%B4",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 行动，先运行再说")
+        ]
+      ),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("          "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//创建一个文件夹")
+          ]),
+          _vm._v(
+            "\n          \n          $ mkdir myapp\n          \n          $ cd myapp\n          \n          "
+          ),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// 使用npm 初始化")
+          ]),
+          _vm._v(
+            "\n          \n          $ npm init\n          \n          $ npm install express --save\n          \n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E5%88%9B%E5%BB%BA-server.js" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E5%88%9B%E5%BB%BA-server.js",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 创建 server.js")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v(" express = require("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'express'")]),
+          _vm._v(")\n    "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("const")]),
+          _vm._v(" app = express()\n   \n    app.get("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'/'")]),
+          _vm._v(", (req, res) => res.send("),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'Hello World!'")
+          ]),
+          _vm._v("))\n   \n    app.listen("),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3000")]),
+          _vm._v(", () => console.log("),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'Example app listening on port 3000!'")
+          ]),
+          _vm._v("))\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E5%90%AF%E5%8A%A8" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#%E5%90%AF%E5%8A%A8", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 启动")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [_vm._v("    node  server.js\n    \n")])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v("-----来自"),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "http://www.expressjs.com.cn/starter/hello-world.html"
+            }
+          },
+          [_vm._v("Express 官网")]
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "h1",
+        { attrs: { id: "%E5%B7%B2%E7%BB%8F%E5%90%AF%E5%8A%A8ok%E3%80%82" } },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href: "#%E5%B7%B2%E7%BB%8F%E5%90%AF%E5%8A%A8ok%E3%80%82",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" 已经启动OK。")
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "success custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              " 恭喜你已经启动了一个express。接下让我们一步步构建一个完整的web。\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E8%B7%AF%E7%94%B1" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#%E8%B7%AF%E7%94%B1", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 路由")
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("什么是路由？")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "url 请求的地址，express 根据设定的path，监听是post、get方法，路由到相应的地址中"
+            )
+          ]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("  app.get("),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v("'/'")]),
+              _vm._v(", (req, res) => res.send("),
+              _c("span", { staticClass: "hljs-string" }, [
+                _vm._v("'Hello World!'")
+              ]),
+              _vm._v("))\n  \n  "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//根路径，访问localhost:3000/ ")
+              ]),
+              _vm._v(
+                "\n  \n  express 监听到，会执行返回 hello world!\n  \n  \n"
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/MySql-start-r1.md?vue&type=template&id=2a5c6250&":
 /*!***************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/MySql-start-r1.md?vue&type=template&id=2a5c6250& ***!
@@ -79398,6 +79691,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/Express-start-r1.md":
+/*!********************************************!*\
+  !*** ./src/docs/zh-CN/Express-start-r1.md ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Express_start_r1_md_vue_type_template_id_41c486c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Express-start-r1.md?vue&type=template&id=41c486c6& */ "./src/docs/zh-CN/Express-start-r1.md?vue&type=template&id=41c486c6&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Express_start_r1_md_vue_type_template_id_41c486c6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Express_start_r1_md_vue_type_template_id_41c486c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/Express-start-r1.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/Express-start-r1.md?vue&type=template&id=41c486c6&":
+/*!***************************************************************************!*\
+  !*** ./src/docs/zh-CN/Express-start-r1.md?vue&type=template&id=41c486c6& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Express_start_r1_md_vue_type_template_id_41c486c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./Express-start-r1.md?vue&type=template&id=41c486c6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Express-start-r1.md?vue&type=template&id=41c486c6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Express_start_r1_md_vue_type_template_id_41c486c6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Express_start_r1_md_vue_type_template_id_41c486c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/MySql-start-r1.md":
 /*!******************************************!*\
   !*** ./src/docs/zh-CN/MySql-start-r1.md ***!
@@ -80821,6 +81167,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_web_vue_ssr_demo1_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../docs/zh-CN/web-vue-ssr-demo1.md */ "./src/docs/zh-CN/web-vue-ssr-demo1.md");
 /* harmony import */ var _docs_zh_CN_Nodejs_cluster_r1_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../docs/zh-CN/Nodejs-cluster-r1.md */ "./src/docs/zh-CN/Nodejs-cluster-r1.md");
 /* harmony import */ var _docs_zh_CN_Vue_scrollLoading_pc_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../docs/zh-CN/Vue-scrollLoading-pc.md */ "./src/docs/zh-CN/Vue-scrollLoading-pc.md");
+/* harmony import */ var _docs_zh_CN_Express_start_r1_md__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../docs/zh-CN/Express-start-r1.md */ "./src/docs/zh-CN/Express-start-r1.md");
+
 
 
 
@@ -80832,6 +81180,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const webpageList = [
+    {
+        name: "expressR1",
+        component: _docs_zh_CN_Express_start_r1_md__WEBPACK_IMPORTED_MODULE_8__["default"],
+        title: "Express 开始创建",
+        timestamp: '2017/5/16'
+    },
     {
         name: "vueScrollpc",
         component: _docs_zh_CN_Vue_scrollLoading_pc_md__WEBPACK_IMPORTED_MODULE_7__["default"],
@@ -81063,4 +81417,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-667f0cf757351757ea76.js.map
+//# sourceMappingURL=app-d8552d6c454eb6ee20c8.js.map
