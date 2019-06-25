@@ -61998,6 +61998,176 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Express-middleWare-r1.md?vue&type=template&id=c1745a40&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Express-middleWare-r1.md?vue&type=template&id=c1745a40& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("h1", { attrs: { id: "express-%E4%B8%AD%E9%97%B4%E4%BB%B6" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#express-%E4%B8%AD%E9%97%B4%E4%BB%B6",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" Express  中间件")
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("什么是中间件")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "一个js 函数：参数（req: requestObj, res :  responseObj, [next:function])"
+            )
+          ]),
+          _vm._v(" "),
+          _c("pre", [
+            _c("code", [
+              _vm._v(
+                "用于解析request对象、responseObj，可以在请求周期中，对请求的对象进行处理加工。\n"
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("官网给出：")]),
+          _vm._v(" "),
+          _c("pre", [
+            _c("code", [
+              _vm._v(
+                " *  做一些代码处理，如何记录logger，session等\n *  请求Request 或 Response 对象进行加工\n *  req-res 的整个生命周期\n *  在栈中执行下一个中间件\n"
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("img", {
+              attrs: {
+                src:
+                  "https://fandong90.github.io/dist/static/img/expressMiddlewareflow.png",
+                alt: "Middlewareflow"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("行动")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("如何定义一个中间件？")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("1、 写在 server.js 中")]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("     "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("/*必须添加路由之前*/")
+              ]),
+              _vm._v("\n     \n\t\t"),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(
+                " myLogger = function (req, res, next){\n\t\t\t\n\t\t\tconsole.log(req.ip);\n\t\t\t\n\t\t\tnext();\n\t\t}\n\t\t\n\t\tapp.use(myLogger);\n\t\t\n"
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("2、 单独一个文件")]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("     "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("module")]),
+              _vm._v("."),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("exports")]),
+              _vm._v(" = function (options){\n     \t"),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("return")]),
+              _vm._v(
+                " function(req, res, next){\n     \t\tconsole.log(req.ip);\n     \t\tconsole.log(`${options.id}`)\n     \t\tnext();\n     \t}\n     }\n\n"
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("在server.js 引用")]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("\n   "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" logger = require("),
+              _c("span", { staticClass: "hljs-string" }, [
+                _vm._v("'./logger.js'")
+              ]),
+              _vm._v(");\n   \n   app.use(logger({ id : "),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v("'1'")]),
+              _vm._v("}));\n   \n   \n   \n")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("启动：")]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [_vm._v("\n\t\tnpm run start\n\t\t\n")])
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("img", {
+              attrs: {
+                src:
+                  "https://fandong90.github.io/dist/static/img/middlewareresult.png",
+                alt: "result"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("发现返回打印了四次结果。为什么呢？")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "success custom-block" }, [
+            _c("p", { staticClass: "custom-block-title" }),
+            _vm._v(" "),
+            _c("pre", [
+              _c("code", [
+                _vm._v(
+                  " http 首先进行三次握手建立连接，然后根据根据路径解析html，等后续\n"
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Express-start-r1.md?vue&type=template&id=41c486c6&":
 /*!*****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Express-start-r1.md?vue&type=template&id=41c486c6& ***!
@@ -79691,6 +79861,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/Express-middleWare-r1.md":
+/*!*************************************************!*\
+  !*** ./src/docs/zh-CN/Express-middleWare-r1.md ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Express_middleWare_r1_md_vue_type_template_id_c1745a40___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Express-middleWare-r1.md?vue&type=template&id=c1745a40& */ "./src/docs/zh-CN/Express-middleWare-r1.md?vue&type=template&id=c1745a40&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Express_middleWare_r1_md_vue_type_template_id_c1745a40___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Express_middleWare_r1_md_vue_type_template_id_c1745a40___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/Express-middleWare-r1.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/Express-middleWare-r1.md?vue&type=template&id=c1745a40&":
+/*!********************************************************************************!*\
+  !*** ./src/docs/zh-CN/Express-middleWare-r1.md?vue&type=template&id=c1745a40& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Express_middleWare_r1_md_vue_type_template_id_c1745a40___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./Express-middleWare-r1.md?vue&type=template&id=c1745a40& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Express-middleWare-r1.md?vue&type=template&id=c1745a40&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Express_middleWare_r1_md_vue_type_template_id_c1745a40___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Express_middleWare_r1_md_vue_type_template_id_c1745a40___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/Express-start-r1.md":
 /*!********************************************!*\
   !*** ./src/docs/zh-CN/Express-start-r1.md ***!
@@ -81168,6 +81391,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_Nodejs_cluster_r1_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../docs/zh-CN/Nodejs-cluster-r1.md */ "./src/docs/zh-CN/Nodejs-cluster-r1.md");
 /* harmony import */ var _docs_zh_CN_Vue_scrollLoading_pc_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../docs/zh-CN/Vue-scrollLoading-pc.md */ "./src/docs/zh-CN/Vue-scrollLoading-pc.md");
 /* harmony import */ var _docs_zh_CN_Express_start_r1_md__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../docs/zh-CN/Express-start-r1.md */ "./src/docs/zh-CN/Express-start-r1.md");
+/* harmony import */ var _docs_zh_CN_Express_middleWare_r1_md__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../docs/zh-CN/Express-middleWare-r1.md */ "./src/docs/zh-CN/Express-middleWare-r1.md");
+
 
 
 
@@ -81180,6 +81405,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const webpageList = [
+    {
+        name: "expressMiddleware",
+        component: _docs_zh_CN_Express_middleWare_r1_md__WEBPACK_IMPORTED_MODULE_9__["default"],
+        title: "Express 中间件",
+        timestamp: '2017/5/16'
+    },
     {
         name: "expressR1",
         component: _docs_zh_CN_Express_start_r1_md__WEBPACK_IMPORTED_MODULE_8__["default"],
@@ -81417,4 +81648,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-d8552d6c454eb6ee20c8.js.map
+//# sourceMappingURL=app-1d854299d3364f7c3388.js.map

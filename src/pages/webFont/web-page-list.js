@@ -8,8 +8,15 @@ import vueSsrDemo1 from '../../docs/zh-CN/web-vue-ssr-demo1.md';
 import nodejsclusterr1 from '../../docs/zh-CN/Nodejs-cluster-r1.md';
 import vueScrollpc from '../../docs/zh-CN/Vue-scrollLoading-pc.md';
 import expressR1 from '../../docs/zh-CN/Express-start-r1.md';
+import expressMiddleware from '../../docs/zh-CN/Express-middleWare-r1.md';
 
 const webpageList = [
+    {
+        name: "expressMiddleware",
+        component: expressMiddleware,
+        title: "Express 中间件",
+        timestamp: '2017/5/16'
+    },
     {
         name: "expressR1",
         component: expressR1,
