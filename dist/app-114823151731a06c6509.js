@@ -63499,6 +63499,389 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Redis-start-r1.md?vue&type=template&id=4cf6be51&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Redis-start-r1.md?vue&type=template&id=4cf6be51& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("h1", { attrs: { id: "redis-%E4%BD%BF%E7%94%A8" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#redis-%E4%BD%BF%E7%94%A8", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" Redis 使用")
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("启动redis 服务")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [_vm._v("\n    ./redis-server  ../redis.conf\n\n")])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("启动客户端")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   ./redis-cli\n   \n   \n   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//启动远端客户端")
+          ]),
+          _vm._v(
+            "\n   \n   ./redis-cli -h host -p port -a password\n   \n   \n   \n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h2",
+        {
+          attrs: {
+            id: "redis-%E4%BA%94%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href:
+                  "#redis-%E4%BA%94%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" Redis 五种数据类型")
+        ]
+      ),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("String")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("命令：set /get  key value")]),
+          _vm._v(" "),
+          _c("pre", [_c("code", [_vm._v("   设置字符串 key / value\n")])]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("   "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> set str1 hello\n\tOK\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> get str1\n\t"),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"hello"')]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("637")]),
+              _vm._v("\n\t\n")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("命令：getrange key start end")]),
+          _vm._v(" "),
+          _c("pre", [_c("code", [_vm._v("    获取指定位置的字符串值\n")])]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> getrange str1 "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"el"')]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> getbit str1 "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+              _vm._v("\n\t(integer) "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> getrange str1 "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("20")]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"ello"')]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> getrange str1 "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("10")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("20")]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('""')]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> \n   \n")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("命令： getset key value")]),
+          _vm._v(" "),
+          _c("pre", [
+            _c("code", [
+              _vm._v("  \t设置字符串新值，并返回旧值，没有则返回nil\n")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("\n   "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> "),
+              _c("span", { staticClass: "hljs-function" }, [
+                _vm._v("getset str1 "),
+                _c("span", { staticClass: "hljs-title" }, [_vm._v("helloo")]),
+                _vm._v("\n\t"),
+                _c("span", { staticClass: "hljs-params" }, [_vm._v("(nil)")]),
+                _vm._v(
+                  '\n\t127.0.0.1:6379> getset str1 v\n\t"helloo"\n\t127.0.0.1:6379> get str1\n\t"v"\n\t127.0.0.1:6379> \n\t\n\n'
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("命令： append key value")]),
+          _vm._v(" "),
+          _c("pre", [
+            _c("code", [
+              _vm._v(
+                "  在存在的key的value是字符串，增加,如果key不存在则创建新的key值。\n"
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> set str2 vv2\n\tOK\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> APPEND str2 "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("43")]),
+              _vm._v("\n\t(integer) "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("5")]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> get str2\n\t"),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"vv243"')]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+              _vm._v(".0.1:"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+              _vm._v("> \n\n")
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h2", { attrs: { id: "hash" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#hash", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" Hash")
+      ]),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            ' 一个String类型的field和value的映射表，hash特别用户存储对象\n \n HMSET key value [field,value]...\n \n   设置hash值,key区分大小写，多个字段的值\n   \n HSET key field value 设置单个field 的值\n   \n   \n ```\n \n   127.0.0.1:6379>HMSET hashStr name "hello ,redis" desc "hello" like 20 \n\t>OK\n\t127.0.0.1:6379> hget hashStr\n\t(error) ERR wrong number of arguments for \'hget\' command\n\t127.0.0.1:6379> hgetall hashstr\n\t(empty list or set)\n\t127.0.0.1:6379> HGETALL hashStr\n\t1) "name"\n\t2) "hello ,redis"\n\t3) "desc"\n\t4) "hello"\n\t5) "like"\n\t6) "20"\n\t127.0.0.1:6379> \n\n    //获取单个key值\n    \n    127.0.0.1:6379> hget hashStr name\n\t\t"hello ,redis"\n\t\t127.0.0.1:6379> \n\n ```   \n \n 命令： HEXISTS KEY FIELD\n \n 》获取存储在哈希表中的指定字段的值\n \n```\n\t\t127.0.0.1:6379> hdel hashStr desc\n\t\t(integer) 1\n\t\t127.0.0.1:6379> hexists hashStr name\n\t\t(integer) 1\n\t\t127.0.0.1:6379> hexists hashStr desc\n\t\t(integer) 0\n\t\t127.0.0.1:6379> \n``` \n\n 命令： HLEN key\n \n ```\n      //获取hash key field的个数\n      \n      127.0.0.1:6379> hkeys key\n\t\t(empty list or set)\n\t\t127.0.0.1:6379> hlen hashStr\n\t\t(integer) 2\n\t\t127.0.0.1:6379> \n    \n ```\n \n 命令： HVALS KEY\n \n ```\n    //获取哈希表中所有的值\n      127.0.0.1:6379> hvals hashStr\n\t\t1) "hello ,redis"\n\t\t2) "22"\n\t\t127.0.0.1:6379> \n \n ```\n'
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h2", { attrs: { id: "list" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#list", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" List")
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("lpush key value")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("在 key 列表中添加 数值,")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "tip custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              " 最后一个写入的值的索引为0，先进 lpop 左边第一个元素弹出。\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("  "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+          _vm._v(".0.1:"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+          _vm._v("> "),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("lpush listStr "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("redis")]),
+            _vm._v("\n   "),
+            _c("span", { staticClass: "hljs-params" }, [_vm._v("(integer)")]),
+            _vm._v(" 1\n   127.0.0.1:6379> lpush listStr "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("mongodb")]),
+            _vm._v("\n   "),
+            _c("span", { staticClass: "hljs-params" }, [_vm._v("(integer)")]),
+            _vm._v(" 2\n   127.0.0.1:6379> lpush listStr "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("mysql")]),
+            _vm._v("\n   "),
+            _c("span", { staticClass: "hljs-params" }, [_vm._v("(integer)")]),
+            _vm._v(" 3\n   127.0.0.1:6379> \n   \n")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "BLPOP key timeout\n移出并获取列表的第一个元素， 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止。"
+        )
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//移除并返回第一个元素")
+          ]),
+          _vm._v("\n    \n    "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+          _vm._v(".0.1:"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+          _vm._v("> BLPOP listStr "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("\n   (nil)\n   ("),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1.00")]),
+          _vm._v("s)\n   "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+          _vm._v(".0.1:"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+          _vm._v(
+            ">\n   \n``` \nBRPOP key timeout\n\n移出并获取列表的最后一个元素， 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止。\n\ntimeout 时间单位为秒 \n\n```\n   \t "
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+          _vm._v(".0.1:"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+          _vm._v("> BLPOP listStr "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"listStr"')]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"345"')]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+          _vm._v(".0.1:"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+          _vm._v("> BRPOP listStr "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"listStr"')]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"123"')]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+          _vm._v(".0.1:"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+          _vm._v("> \n```\n\n lindex key index \n \n 通过索引获取值\n \n  "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+          _vm._v(".0.1:"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+          _vm._v("> lindex listStr "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v("\n   "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"234"')]),
+          _vm._v("\n   "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+          _vm._v(".0.1:"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+          _vm._v(
+            "> \n   \n   lpushx key value \n   \t\n    key 列表中头插入数据\n    \n   命令： lrange key start stop\n   \n    获取一定范围的元素\n    \n    \n    lset key index value \n    \n    通过index 设定列表的值，有值则覆盖。超出范围，则报错。\n    \n    rpoplpush source destination\n    \n    移除最后一个元素，并该元素添加另个一列表并返回，如果另一个list 表，不存在，则创建。\n    \n    \n    \n    \n   \n    \n    \n    \n    \n         \n         \n   \n   \n\n"
+          )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Vue-scrollLoading-pc.md?vue&type=template&id=fe582416&":
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Vue-scrollLoading-pc.md?vue&type=template&id=fe582416& ***!
@@ -82975,6 +83358,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/Redis-start-r1.md":
+/*!******************************************!*\
+  !*** ./src/docs/zh-CN/Redis-start-r1.md ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Redis_start_r1_md_vue_type_template_id_4cf6be51___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Redis-start-r1.md?vue&type=template&id=4cf6be51& */ "./src/docs/zh-CN/Redis-start-r1.md?vue&type=template&id=4cf6be51&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Redis_start_r1_md_vue_type_template_id_4cf6be51___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Redis_start_r1_md_vue_type_template_id_4cf6be51___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/Redis-start-r1.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/Redis-start-r1.md?vue&type=template&id=4cf6be51&":
+/*!*************************************************************************!*\
+  !*** ./src/docs/zh-CN/Redis-start-r1.md?vue&type=template&id=4cf6be51& ***!
+  \*************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Redis_start_r1_md_vue_type_template_id_4cf6be51___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./Redis-start-r1.md?vue&type=template&id=4cf6be51& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Redis-start-r1.md?vue&type=template&id=4cf6be51&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Redis_start_r1_md_vue_type_template_id_4cf6be51___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Redis_start_r1_md_vue_type_template_id_4cf6be51___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/Vue-scrollLoading-pc.md":
 /*!************************************************!*\
   !*** ./src/docs/zh-CN/Vue-scrollLoading-pc.md ***!
@@ -84140,6 +84576,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_MySql_start_r1_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../docs/zh-CN/MySql-start-r1.md */ "./src/docs/zh-CN/MySql-start-r1.md");
 /* harmony import */ var _docs_zh_CN_Mysql_type_r1_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../docs/zh-CN/Mysql-type-r1.md */ "./src/docs/zh-CN/Mysql-type-r1.md");
 /* harmony import */ var _docs_zh_CN_java_datatable_sample_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../docs/zh-CN/java-datatable-sample.md */ "./src/docs/zh-CN/java-datatable-sample.md");
+/* harmony import */ var _docs_zh_CN_Redis_start_r1_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../docs/zh-CN/Redis-start-r1.md */ "./src/docs/zh-CN/Redis-start-r1.md");
 
 
 
@@ -84149,6 +84586,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const  mircoList =[
+    {
+        name: "redisStartR1",
+        component: _docs_zh_CN_Redis_start_r1_md__WEBPACK_IMPORTED_MODULE_7__["default"],
+        title: "Redis 入门",
+        timestamp: '2017/5/24'
+    },
     {
         name: "javaDataTable",
         component: _docs_zh_CN_java_datatable_sample_md__WEBPACK_IMPORTED_MODULE_6__["default"],
@@ -84559,4 +85002,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-7b03b87d4322e2fbd38a.js.map
+//# sourceMappingURL=app-114823151731a06c6509.js.map

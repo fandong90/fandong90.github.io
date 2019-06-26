@@ -5,8 +5,14 @@ import dockerservicer4 from '../../docs/zh-CN/docker-service-r4.md';
 import mysqlStartr1 from '../../docs/zh-CN/MySql-start-r1.md';
 import mysqlTyper1  from '../../docs/zh-CN/Mysql-type-r1.md';
 import javaDataTable from '../../docs/zh-CN/java-datatable-sample.md';
-
+import redisStartR1 from '../../docs/zh-CN/Redis-start-r1.md';
 const  mircoList =[
+    {
+        name: "redisStartR1",
+        component: redisStartR1,
+        title: "Redis 入门",
+        timestamp: '2017/5/24'
+    },
     {
         name: "javaDataTable",
         component: javaDataTable,
