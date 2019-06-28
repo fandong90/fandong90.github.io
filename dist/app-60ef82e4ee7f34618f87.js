@@ -63934,7 +63934,7 @@ var staticRenderFns = [
         _c("img", {
           attrs: {
             src:
-              "https://fandong90.github.io/dist/static/img/redissubscriber1.png",
+              "http://fandong90.github.io/dist/static/img/redissubscriber1.png",
             alt: "subscribe"
           }
         })
@@ -63946,7 +63946,7 @@ var staticRenderFns = [
         _c("img", {
           attrs: {
             src:
-              "https://fandong90.github.io/dist/static/img/redissubscriber2.png",
+              "http://fandong90.github.io/dist/static/img/redissubscriber2.png",
             alt: "subscribe"
           }
         })
@@ -85232,4 +85232,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-1065a15ecb4fb3fdd456.js.map
+//# sourceMappingURL=app-60ef82e4ee7f34618f87.js.map
