@@ -63882,6 +63882,174 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Redis-subscribe-r1.md?vue&type=template&id=754c638e&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Redis-subscribe-r1.md?vue&type=template&id=754c638e& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c(
+        "h1",
+        { attrs: { id: "redis-%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85" } },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href: "#redis-%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" Redis 发布订阅")
+        ]
+      ),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Redis 发布订阅(pub/sub)是一种消息通信模式：发送者(pub)发送消息，订阅者(sub)接收消息。\nRedis 客户端可以订阅任意数量的频道。"
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src:
+              "https://fandong90.github.io/dist/static/img/redissubscriber1.png",
+            alt: "subscribe"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("新消息通过publish 推送给频道，订阅的接收消息")]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src:
+              "https://fandong90.github.io/dist/static/img/redissubscriber2.png",
+            alt: "subscribe"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E8%A1%8C%E5%8A%A8" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#%E8%A1%8C%E5%8A%A8", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 行动")
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("注册频道")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [_vm._v("    SUBSCRIBE redisChat\n\n")])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("    "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("//订阅")]),
+          _vm._v(
+            "\n    \n      psubscribe redisChat\n   \tReading messages... (press Ctrl-C to quit)\n   \t"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"psubscribe"')]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"redisChat"')]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3")]),
+          _vm._v(") (integer) "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"pmessage"')]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"redisChat"')]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"redisChat"')]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("4")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"nihao ,redis"')
+          ]),
+          _vm._v("\n\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("     "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("//退订")]),
+          _vm._v("\n     \n     "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+          _vm._v(".0.1:"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("6379")]),
+          _vm._v("> punsubscribe redisChat\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"punsubscribe"')
+          ]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v(") "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"redisChat"')]),
+          _vm._v("\n   \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3")]),
+          _vm._v(") (integer) "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v("\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          '···\n// 发布消息\n127.0.0.1:6379> publish redisChat "nihao ,redis 3333333"\n(integer) 1\n···'
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Vue-scrollLoading-pc.md?vue&type=template&id=fe582416&":
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Vue-scrollLoading-pc.md?vue&type=template&id=fe582416& ***!
@@ -83411,6 +83579,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/Redis-subscribe-r1.md":
+/*!**********************************************!*\
+  !*** ./src/docs/zh-CN/Redis-subscribe-r1.md ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Redis_subscribe_r1_md_vue_type_template_id_754c638e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Redis-subscribe-r1.md?vue&type=template&id=754c638e& */ "./src/docs/zh-CN/Redis-subscribe-r1.md?vue&type=template&id=754c638e&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Redis_subscribe_r1_md_vue_type_template_id_754c638e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Redis_subscribe_r1_md_vue_type_template_id_754c638e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/Redis-subscribe-r1.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/Redis-subscribe-r1.md?vue&type=template&id=754c638e&":
+/*!*****************************************************************************!*\
+  !*** ./src/docs/zh-CN/Redis-subscribe-r1.md?vue&type=template&id=754c638e& ***!
+  \*****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Redis_subscribe_r1_md_vue_type_template_id_754c638e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./Redis-subscribe-r1.md?vue&type=template&id=754c638e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Redis-subscribe-r1.md?vue&type=template&id=754c638e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Redis_subscribe_r1_md_vue_type_template_id_754c638e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Redis_subscribe_r1_md_vue_type_template_id_754c638e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/Vue-scrollLoading-pc.md":
 /*!************************************************!*\
   !*** ./src/docs/zh-CN/Vue-scrollLoading-pc.md ***!
@@ -84577,6 +84798,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_Mysql_type_r1_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../docs/zh-CN/Mysql-type-r1.md */ "./src/docs/zh-CN/Mysql-type-r1.md");
 /* harmony import */ var _docs_zh_CN_java_datatable_sample_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../docs/zh-CN/java-datatable-sample.md */ "./src/docs/zh-CN/java-datatable-sample.md");
 /* harmony import */ var _docs_zh_CN_Redis_start_r1_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../docs/zh-CN/Redis-start-r1.md */ "./src/docs/zh-CN/Redis-start-r1.md");
+/* harmony import */ var _docs_zh_CN_Redis_subscribe_r1_md__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../docs/zh-CN/Redis-subscribe-r1.md */ "./src/docs/zh-CN/Redis-subscribe-r1.md");
+
 
 
 
@@ -84586,6 +84809,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const  mircoList =[
+    {
+        name: "redisSubscribe",
+        component: _docs_zh_CN_Redis_subscribe_r1_md__WEBPACK_IMPORTED_MODULE_8__["default"],
+        title: "Redis 发布订阅",
+        timestamp: '2017/5/26'
+    },
     {
         name: "redisStartR1",
         component: _docs_zh_CN_Redis_start_r1_md__WEBPACK_IMPORTED_MODULE_7__["default"],
@@ -85002,4 +85231,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-114823151731a06c6509.js.map
+//# sourceMappingURL=app-1722b5cf4f5995c2ea80.js.map
