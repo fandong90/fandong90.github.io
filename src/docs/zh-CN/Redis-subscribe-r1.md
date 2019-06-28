@@ -7,7 +7,7 @@ Redis 客户端可以订阅任意数量的频道。
 
 新消息通过publish 推送给频道，订阅的接收消息
 
-![subscribe](http://fandong90.github.io/dist/static/img/redissubscriber2.png)
+![subscribe2](http://fandong90.github.io/dist/static/img/redissubscriber2.png)
 
 
 # 行动

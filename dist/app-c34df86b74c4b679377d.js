@@ -63947,7 +63947,7 @@ var staticRenderFns = [
           attrs: {
             src:
               "http://fandong90.github.io/dist/static/img/redissubscriber2.png",
-            alt: "subscribe"
+            alt: "subscribe2"
           }
         })
       ]),
@@ -85232,4 +85232,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-60ef82e4ee7f34618f87.js.map
+//# sourceMappingURL=app-c34df86b74c4b679377d.js.map

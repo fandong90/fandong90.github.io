@@ -13,7 +13,9 @@ module.exports = {
   watch: true,
   output: {
     filename: '[name]-[hash].js',
+    
     path: path.resolve(__dirname ,'..','dist'),
+    
   },
   module: {
     rules: rules.config
