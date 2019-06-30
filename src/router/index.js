@@ -4,6 +4,7 @@ import pages from './pages-list';
 import pagesInner from './pages-inner-list';
 import webpagesList from '../pages/webFont/web-page-list';
 import mircopagesList from '../pages/microService/micro-page-list';
+import bigDataList    from '../pages/bigData/big-page-list';
 Vue.use(VueRouter);
 
 const routes=[];
@@ -34,6 +35,17 @@ webpagesList.forEach(item=>{
 /****micro */
 
 mircopagesList.forEach(item=>{
+    routes.push({
+        path:'/'+item.name,
+        component:item.component
+    })
+})
+
+/**
+ * bigData
+ */
+
+bigDataList.forEach(item=>{
     routes.push({
         path:'/'+item.name,
         component:item.component
