@@ -69852,17 +69852,17 @@ var staticRenderFns = [
     return _c("div", { staticClass: "content" }, [
       _c("p", [_vm._v("#Js  this 指向及修改")]),
       _vm._v(" "),
-      _c("p", [_vm._v("::: tips")]),
-      _vm._v(" "),
-      _c("pre", [
-        _c("code", [
-          _vm._v(
-            "this 在函数中使用，this的指向不是在创建时指定，而是在运行时指定的\n"
-          )
+      _c("div", { staticClass: "tip custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "this 在函数中使用，this的指向不是在创建时指定，而是在运行时指定的\n"
+            )
+          ])
         ])
       ]),
-      _vm._v(" "),
-      _c("p", [_vm._v(":::")]),
       _vm._v(" "),
       _c("ul", [
         _c("li", [
@@ -86960,4 +86960,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-481d8b0da9ee433bf47c.js.map
+//# sourceMappingURL=app-0645d6df4cb1ff6b8857.js.map
