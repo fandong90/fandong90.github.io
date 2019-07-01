@@ -65472,6 +65472,181 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/bigData-hive-r1.md?vue&type=template&id=5c08d824&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/bigData-hive-r1.md?vue&type=template&id=5c08d824& ***!
+  \****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "content" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3),
+    _vm._v(" "),
+    _c("div", { staticClass: "tip custom-block" }, [
+      _c("p", { staticClass: "custom-block-title" }),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            " $ cd hive-x.y.z\n$ export HIVE_HOME=" +
+              _vm._s(_vm.pwd) +
+              "\n$ export PATH=$HIVE_HOME/bin:$PATH\n"
+          )
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("p", [_vm._v("*运行hive")]),
+    _vm._v(" "),
+    _vm._m(4),
+    _vm._v(" "),
+    _c("p", [_vm._v("*使用hive-cli 登录")]),
+    _vm._v(" "),
+    _vm._m(5),
+    _vm._v(" "),
+    _c("p", [_vm._v("*使用 beeline登录")]),
+    _vm._v(" "),
+    _vm._m(6),
+    _vm._v(" "),
+    _c("p", [_vm._v("::: tips")]),
+    _vm._v(" "),
+    _vm._m(7),
+    _vm._v(" "),
+    _c("p", [_vm._v(":::")]),
+    _vm._v(" "),
+    _c("p", [_vm._v("result:")]),
+    _vm._v(" "),
+    _vm._m(8)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h1", { attrs: { id: "hive-%E5%88%9B%E5%BB%BA" } }, [
+      _c(
+        "a",
+        {
+          staticClass: "header-anchor",
+          attrs: { href: "#hive-%E5%88%9B%E5%BB%BA", "aria-hidden": "true" }
+        },
+        [_vm._v("#")]
+      ),
+      _vm._v(" Hive  创建")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", [_c("li", [_vm._v("安装hive")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "tip custom-block" }, [
+      _c("p", { staticClass: "custom-block-title" }),
+      _vm._v(" "),
+      _c("pre", [_c("code", [_vm._v("$ tar -xzvf hive-x.y.z.tar.gz\n")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", [_c("li", [_vm._v("设置环境变量")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "tip custom-block" }, [
+      _c("p", { staticClass: "custom-block-title" }),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            "//设置hadoop的安装路径\nexport HADOOP_HOME=<hadoop-install-dir>\n\n//进入conf\n\ncp hive-env.sh.template   hive-env.sh\n\nvi hive-env.sh\n\n设置($HADOOP_HOME 已在profile 配置)\nHADOOP_HOME=$HADOOP_HOME\n\n// 进入 bin/hive-config.sh\nvi hive-config.sh\n同样设置这个\n"
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "tip custom-block" }, [
+      _c("p", { staticClass: "custom-block-title" }),
+      _vm._v(" "),
+      _c("pre", [_c("code", [_vm._v("bin/hive\n")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "warnning custom-block" }, [
+      _c("p", { staticClass: "custom-block-title" }),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            "hadoop增加了安全授权，所以使用这个登录前需要修改hadoop的core-site.xml\n\n增加两条信息\n\n///root 表示我当前的登录账号\n/// hadoop.proxyuser.XXX.hosts\n<property>\n\t<name>hadoop.proxyuser.root.hosts</name>\n\t<value>*</value>\n</property>\n\n\n<property>\n\t<name>hadoop.proxyuser.root.groups</name>\n\t<value>*</value>\n</property>\n"
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("pre", [
+      _c("code", [
+        _vm._v(
+          " 初始化连接，看都是使用mysql，目前为了学习使用hive，先使用自带的derby数据库\n\n$ $HIVE_HOME/bin/schematool -dbType <db type> -initSchema\n\n//<db type> 改为 derby\n\n2 启动hiveserver2\n\nbin/hiveserver2 &\n\n3 连接beeline\n\nbin/beeline -u jdbc:hive2://localhost:10000\n"
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c("img", {
+        attrs: {
+          src:
+            "http://fandong90.github.io/dist/static/img/bigdatahivestart.jpg",
+          alt: "beeline"
+        }
+      })
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/docker-centos-rstart.md?vue&type=template&id=32e44129&":
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/docker-centos-rstart.md?vue&type=template&id=32e44129& ***!
@@ -85297,6 +85472,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/bigData-hive-r1.md":
+/*!*******************************************!*\
+  !*** ./src/docs/zh-CN/bigData-hive-r1.md ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _bigData_hive_r1_md_vue_type_template_id_5c08d824___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bigData-hive-r1.md?vue&type=template&id=5c08d824& */ "./src/docs/zh-CN/bigData-hive-r1.md?vue&type=template&id=5c08d824&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _bigData_hive_r1_md_vue_type_template_id_5c08d824___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _bigData_hive_r1_md_vue_type_template_id_5c08d824___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/bigData-hive-r1.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/bigData-hive-r1.md?vue&type=template&id=5c08d824&":
+/*!**************************************************************************!*\
+  !*** ./src/docs/zh-CN/bigData-hive-r1.md?vue&type=template&id=5c08d824& ***!
+  \**************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_bigData_hive_r1_md_vue_type_template_id_5c08d824___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./bigData-hive-r1.md?vue&type=template&id=5c08d824& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/bigData-hive-r1.md?vue&type=template&id=5c08d824&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_bigData_hive_r1_md_vue_type_template_id_5c08d824___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_bigData_hive_r1_md_vue_type_template_id_5c08d824___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/docker-centos-rstart.md":
 /*!************************************************!*\
   !*** ./src/docs/zh-CN/docker-centos-rstart.md ***!
@@ -85929,8 +86157,16 @@ new vue__WEBPACK_IMPORTED_MODULE_0__["default"]({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_Hadoop_FileSystem_Shell_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../docs/zh-CN/Hadoop-FileSystem-Shell.md */ "./src/docs/zh-CN/Hadoop-FileSystem-Shell.md");
+/* harmony import */ var _docs_zh_CN_bigData_hive_r1_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../docs/zh-CN/bigData-hive-r1.md */ "./src/docs/zh-CN/bigData-hive-r1.md");
+
 
 const  bigData =[
+    {
+        name: "bigdatahiveShell",
+        component: _docs_zh_CN_bigData_hive_r1_md__WEBPACK_IMPORTED_MODULE_1__["default"],
+        title: "hive 开端--安装",
+        timestamp: '2017/6/30'
+    },
     {
         name: "hadoopFileSystemShell",
         component: _docs_zh_CN_Hadoop_FileSystem_Shell_md__WEBPACK_IMPORTED_MODULE_0__["default"],
@@ -86960,4 +87196,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-0645d6df4cb1ff6b8857.js.map
+//# sourceMappingURL=app-1cadc18d50c798a4b696.js.map
