@@ -69827,6 +69827,658 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/web-js-this-r1.md?vue&type=template&id=f561d56c&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/web-js-this-r1.md?vue&type=template&id=f561d56c& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("p", [_vm._v("#Js  this 指向及修改")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("::: tips")]),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            "this 在函数中使用，this的指向不是在创建时指定，而是在运行时指定的\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v(":::")]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("usage 1")]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("    "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//在浏览器器中，this指向的window对象")
+              ]),
+              _vm._v("\n\t <script type="),
+              _c("span", { staticClass: "hljs-string" }, [
+                _vm._v('"text/javascript"')
+              ]),
+              _vm._v(">\n        "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" name="),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"hello"')]),
+              _vm._v(";\n        "),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "hljs-title" }, [_vm._v("sayName")]),
+                _vm._v("("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(")")
+              ]),
+              _vm._v("{\n            "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" obj = "),
+              _c("span", { staticClass: "hljs-built_in" }, [
+                _vm._v("document")
+              ]),
+              _vm._v(".getElementById("),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"test"')]),
+              _vm._v(");\n            obj.innerText="),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(".name;\n        }\n    <"),
+              _c("span", { staticClass: "hljs-regexp" }, [
+                _vm._v("/script>\n    \n    /")
+              ]),
+              _c("span", { staticClass: "hljs-regexp" }, [
+                _vm._v("/result\n    \n    /")
+              ]),
+              _c("span", { staticClass: "hljs-regexp" }, [
+                _vm._v("/ hello\n    \n    /")
+              ]),
+              _c("span", { staticClass: "hljs-regexp" }, [
+                _vm._v(
+                  "/在nodejs 中,this 指向\n    \n      var  name ='hello';\n\t\tfunction sayName (){ \n\t\t    console.log(this.name);\n\t\t}\n\t\t\n\t  sayName(); /"
+                )
+              ]),
+              _c("span", { staticClass: "hljs-regexp" }, [
+                _vm._v("/result  undefined\n\t\t\n")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("img", {
+              attrs: {
+                src:
+                  "http://fandong90.github.io/dist/static/img/nodethisr1.jpg",
+                alt: "jsthisr1"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("usage 2")]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("     "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("// web 浏览器显示")
+              ]),
+              _vm._v("\n      <script type="),
+              _c("span", { staticClass: "hljs-string" }, [
+                _vm._v('"text/javascript"')
+              ]),
+              _vm._v(">\n        "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" name="),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"hello"')]),
+              _vm._v(";\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("// function sayName(){")
+              ]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v('//     var obj = document.getElementById("test");')
+              ]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//     obj.innerText=this.name;")
+              ]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [_vm._v("// }")]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" obj ={\n            "),
+              _c("span", { staticClass: "hljs-attr" }, [_vm._v("name")]),
+              _vm._v(":"),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v("'hehe'")]),
+              _vm._v(",\n            "),
+              _c("span", { staticClass: "hljs-attr" }, [_vm._v("sayName")]),
+              _vm._v(":"),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v("("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(")")
+              ]),
+              _vm._v("{\n                "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" obj = "),
+              _c("span", { staticClass: "hljs-built_in" }, [
+                _vm._v("document")
+              ]),
+              _vm._v(".getElementById("),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"test"')]),
+              _vm._v(");\n                obj.innerText="),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(".name;\n                "),
+              _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+              _vm._v(".log("),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(
+                ".name);\n            }\n        };\n        \n        obj.sayName();\n    "
+              ),
+              _c("span", { staticClass: "xml" }, [
+                _c("span", { staticClass: "hljs-tag" }, [
+                  _vm._v("</"),
+                  _c("span", { staticClass: "hljs-name" }, [_vm._v("script")]),
+                  _vm._v(">")
+                ])
+              ]),
+              _vm._v("\n    \n    "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("// result  hehe")
+              ]),
+              _vm._v("\n    \n            \n    "),
+              _c("span", { staticClass: "hljs-comment" }, [_vm._v("//node ")]),
+              _vm._v("\n    \n    "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" name="),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"hello"')]),
+              _vm._v(";\n\t\t"),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" obj={\n\t\t    "),
+              _c("span", { staticClass: "hljs-attr" }, [_vm._v("name")]),
+              _vm._v(":"),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v("'hehe'")]),
+              _vm._v(",\n\t\t    "),
+              _c("span", { staticClass: "hljs-attr" }, [_vm._v("sayName")]),
+              _vm._v(":"),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v("("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(")")
+              ]),
+              _vm._v("{\n\t\t        "),
+              _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+              _vm._v(".log("),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(
+                ".name);\n\t\t    }\n\t\t};\n\t\t\n\t\tobj.sayName();\n\t\t\n\t\t"
+              ),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//result  hehe;")
+              ]),
+              _vm._v("\n    \n")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("换一种一写法")]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//浏览器表现")
+              ]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" name="),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"hello"')]),
+              _vm._v(";\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("// function sayName(){")
+              ]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v('//     var obj = document.getElementById("test");')
+              ]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//     obj.innerText=this.name;")
+              ]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [_vm._v("// }")]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" obj ={\n            "),
+              _c("span", { staticClass: "hljs-attr" }, [_vm._v("name")]),
+              _vm._v(":"),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v("'hehe'")]),
+              _vm._v(",\n            "),
+              _c("span", { staticClass: "hljs-attr" }, [_vm._v("sayName")]),
+              _vm._v(":"),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v("("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(")")
+              ]),
+              _vm._v("{\n                "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" obj = "),
+              _c("span", { staticClass: "hljs-built_in" }, [
+                _vm._v("document")
+              ]),
+              _vm._v(".getElementById("),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"test"')]),
+              _vm._v(");\n                obj.innerText="),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(".name;\n                "),
+              _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+              _vm._v(".log("),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(".name);\n            }\n        };\n        \n       "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(
+                " fn= obj.sayName;\n       \n       fn();\n       \n        "
+              ),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//result  hello")
+              ]),
+              _vm._v("\n        \n        "),
+              _c("span", { staticClass: "hljs-comment" }, [_vm._v("//node")]),
+              _vm._v("\n        \n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//result  undefined")
+              ]),
+              _vm._v("\n        \n")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("usage 3")]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("         "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//浏览器表现")
+              ]),
+              _vm._v("\n         "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" name="),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"hello"')]),
+              _vm._v(";\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("// function sayName(){")
+              ]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v('//     var obj = document.getElementById("test");')
+              ]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//     obj.innerText=this.name;")
+              ]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [_vm._v("// }")]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" obj ={\n            "),
+              _c("span", { staticClass: "hljs-attr" }, [_vm._v("name")]),
+              _vm._v(":"),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v("'hehe'")]),
+              _vm._v(",\n            "),
+              _c("span", { staticClass: "hljs-attr" }, [_vm._v("sayName")]),
+              _vm._v(":"),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v("("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(")")
+              ]),
+              _vm._v("{\n                "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("return")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v(" ("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(") ")
+              ]),
+              _vm._v("{\n\n                    "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" obj = "),
+              _c("span", { staticClass: "hljs-built_in" }, [
+                _vm._v("document")
+              ]),
+              _vm._v(".getElementById("),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"test"')]),
+              _vm._v(");\n                        obj.innerText="),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(".name;\n                        "),
+              _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+              _vm._v(".log("),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(
+                ".name);\n                  }\n            }\n        };\n       \n       "
+              ),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" fn= obj.sayName;\n       fn()();\n       "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//result hello")
+              ]),
+              _vm._v("\n\n")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("usage 4 构造函数")]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("  \t"),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "hljs-title" }, [_vm._v("Person")]),
+                _vm._v("("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(")")
+              ]),
+              _vm._v("{\n  \t    "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(".name="),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"hello"')]),
+              _vm._v(";\n  \t}\n  \t\n  \t"),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" p = "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("new")]),
+              _vm._v(" Person();\n  \t"),
+              _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+              _vm._v(".log(p.name);\n  \t\n  \t"),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//返回值改变了this的指向")
+              ]),
+              _vm._v("\n  \t"),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "hljs-title" }, [
+                  _vm._v("PersonOne")
+                ]),
+                _vm._v("("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(")")
+              ]),
+              _vm._v("{\n  \t    "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(".name="),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"hello"')]),
+              _vm._v(";\n  \t    "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("return")]),
+              _vm._v(" {};\n  \t}\n  \t\n  \t"),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" p = "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("new")]),
+              _vm._v(" PersonOne();\n  \t"),
+              _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+              _vm._v(".log(p.name);\n\n")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("usage 5 DOM 对象调用")]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("     <div id="),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"test"')]),
+              _vm._v(" onclick="),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"hello()"')]),
+              _vm._v(">"),
+              _c("span", { staticClass: "xml" }, [
+                _c("span", { staticClass: "hljs-tag" }, [
+                  _vm._v("</"),
+                  _c("span", { staticClass: "hljs-name" }, [_vm._v("div")]),
+                  _vm._v(">")
+                ])
+              ]),
+              _vm._v("\n     <script type="),
+              _c("span", { staticClass: "hljs-string" }, [
+                _vm._v('"text/javascript"')
+              ]),
+              _vm._v(">\n         "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" name="),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"hello"')]),
+              _vm._v(";\n         "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("// function sayName(){")
+              ]),
+              _vm._v("\n         "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v('//     var obj = document.getElementById("test");')
+              ]),
+              _vm._v("\n         "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//     obj.innerText=this.name;")
+              ]),
+              _vm._v("\n         "),
+              _c("span", { staticClass: "hljs-comment" }, [_vm._v("// }")]),
+              _vm._v("\n         "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" obj ={\n             "),
+              _c("span", { staticClass: "hljs-attr" }, [_vm._v("name")]),
+              _vm._v(":"),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v("'hehe'")]),
+              _vm._v(",\n             "),
+              _c("span", { staticClass: "hljs-attr" }, [_vm._v("sayName")]),
+              _vm._v(":"),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v("("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(")")
+              ]),
+              _vm._v("{\n                 "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("return")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v(" ("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(") ")
+              ]),
+              _vm._v("{\n\n                     "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" obj = "),
+              _c("span", { staticClass: "hljs-built_in" }, [
+                _vm._v("document")
+              ]),
+              _vm._v(".getElementById("),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"test"')]),
+              _vm._v(");\n                         obj.innerText="),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(".name;\n                         "),
+              _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+              _vm._v(".log("),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(
+                ".name);\n                   }\n             }\n         };\n        \n        "
+              ),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" fn= obj.sayName;\n        fn()();\n\n        "),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "hljs-title" }, [_vm._v("hello")]),
+                _vm._v("("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(")")
+              ]),
+              _vm._v("{\n            alert("),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(".innerText);\n        }\n        \n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("// result   undefined")
+              ]),
+              _vm._v("\n        <div id="),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"test"')]),
+              _vm._v(" onclick="),
+              _c("span", { staticClass: "hljs-string" }, [
+                _vm._v('"alert(this.innerText)"')
+              ]),
+              _vm._v(">"),
+              _c("span", { staticClass: "xml" }, [
+                _c("span", { staticClass: "hljs-tag" }, [
+                  _vm._v("</"),
+                  _c("span", { staticClass: "hljs-name" }, [_vm._v("div")]),
+                  _vm._v(">")
+                ])
+              ]),
+              _vm._v("\n        "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//result   hello")
+              ]),
+              _vm._v("\n         "),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("var")]),
+              _vm._v(" obj = "),
+              _c("span", { staticClass: "hljs-built_in" }, [
+                _vm._v("document")
+              ]),
+              _vm._v(".getElementById("),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v('"test"')]),
+              _vm._v(");\n         obj.onclick="),
+              _c("span", { staticClass: "hljs-function" }, [
+                _c("span", { staticClass: "hljs-keyword" }, [
+                  _vm._v("function")
+                ]),
+                _vm._v("("),
+                _c("span", { staticClass: "hljs-params" }),
+                _vm._v(")")
+              ]),
+              _vm._v("{\n          alert("),
+              _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+              _vm._v(".innerText);\n         }\n         "),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//result hello")
+              ]),
+              _vm._v("\n        \n")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [_c("p", [_vm._v("usage 6 改变this")])])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("let")]),
+          _vm._v(" _this ="),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(";\n\t\n\t"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("function")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("name")]),
+            _vm._v("("),
+            _c("span", { staticClass: "hljs-params" }),
+            _vm._v(")")
+          ]),
+          _vm._v("{\n\t\t"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(".name="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'this'")]),
+          _vm._v(";\n\t\t"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("let")]),
+          _vm._v(" _this="),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(";\n\t\t"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("function")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("name1")]),
+            _vm._v("("),
+            _c("span", { staticClass: "hljs-params" }),
+            _vm._v(")")
+          ]),
+          _vm._v("{\n\t\t\t"),
+          _c("span", { staticClass: "hljs-built_in" }, [_vm._v("console")]),
+          _vm._v(".log(_this.name);\n\t\t}\n\t}\n\t\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("// call apply  bind")
+          ]),
+          _vm._v("\n   \n   obj.call("),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(",[arg])\n   \n   obj.apply("),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(",[arg..])\n   \n   obj.method.bind("),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("this")]),
+          _vm._v(")\n\n")
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/web-react-ios.md?vue&type=template&id=8b861212&":
 /*!**************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/web-react-ios.md?vue&type=template&id=8b861212& ***!
@@ -84963,6 +85615,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/web-js-this-r1.md":
+/*!******************************************!*\
+  !*** ./src/docs/zh-CN/web-js-this-r1.md ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _web_js_this_r1_md_vue_type_template_id_f561d56c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./web-js-this-r1.md?vue&type=template&id=f561d56c& */ "./src/docs/zh-CN/web-js-this-r1.md?vue&type=template&id=f561d56c&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _web_js_this_r1_md_vue_type_template_id_f561d56c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _web_js_this_r1_md_vue_type_template_id_f561d56c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/web-js-this-r1.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/web-js-this-r1.md?vue&type=template&id=f561d56c&":
+/*!*************************************************************************!*\
+  !*** ./src/docs/zh-CN/web-js-this-r1.md?vue&type=template&id=f561d56c& ***!
+  \*************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_js_this_r1_md_vue_type_template_id_f561d56c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./web-js-this-r1.md?vue&type=template&id=f561d56c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/web-js-this-r1.md?vue&type=template&id=f561d56c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_js_this_r1_md_vue_type_template_id_f561d56c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_web_js_this_r1_md_vue_type_template_id_f561d56c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/web-react-ios.md":
 /*!*****************************************!*\
   !*** ./src/docs/zh-CN/web-react-ios.md ***!
@@ -85978,6 +86683,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_Vue_scrollLoading_pc_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../docs/zh-CN/Vue-scrollLoading-pc.md */ "./src/docs/zh-CN/Vue-scrollLoading-pc.md");
 /* harmony import */ var _docs_zh_CN_Express_start_r1_md__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../docs/zh-CN/Express-start-r1.md */ "./src/docs/zh-CN/Express-start-r1.md");
 /* harmony import */ var _docs_zh_CN_Express_middleWare_r1_md__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../docs/zh-CN/Express-middleWare-r1.md */ "./src/docs/zh-CN/Express-middleWare-r1.md");
+/* harmony import */ var _docs_zh_CN_web_js_this_r1_md__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../docs/zh-CN/web-js-this-r1.md */ "./src/docs/zh-CN/web-js-this-r1.md");
+
 
 
 
@@ -85991,6 +86698,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const webpageList = [
+    {
+        name: "jsThisr1",
+        component: _docs_zh_CN_web_js_this_r1_md__WEBPACK_IMPORTED_MODULE_10__["default"],
+        title: "This 指向及修改",
+        timestamp: '2017/5/18'
+    },
     {
         name: "expressMiddleware",
         component: _docs_zh_CN_Express_middleWare_r1_md__WEBPACK_IMPORTED_MODULE_9__["default"],
@@ -86247,4 +86960,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-c50b4fdfee9d7dd33e01.js.map
+//# sourceMappingURL=app-481d8b0da9ee433bf47c.js.map
