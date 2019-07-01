@@ -65522,11 +65522,7 @@ var render = function() {
     _vm._v(" "),
     _vm._m(6),
     _vm._v(" "),
-    _c("p", [_vm._v("::: tips")]),
-    _vm._v(" "),
     _vm._m(7),
-    _vm._v(" "),
-    _c("p", [_vm._v(":::")]),
     _vm._v(" "),
     _c("p", [_vm._v("result:")]),
     _vm._v(" "),
@@ -65618,11 +65614,15 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("pre", [
-      _c("code", [
-        _vm._v(
-          " 初始化连接，看都是使用mysql，目前为了学习使用hive，先使用自带的derby数据库\n\n$ $HIVE_HOME/bin/schematool -dbType <db type> -initSchema\n\n//<db type> 改为 derby\n\n2 启动hiveserver2\n\nbin/hiveserver2 &\n\n3 连接beeline\n\nbin/beeline -u jdbc:hive2://localhost:10000\n"
-        )
+    return _c("div", { staticClass: "tip custom-block" }, [
+      _c("p", { staticClass: "custom-block-title" }),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            " 初始化连接，看都是使用mysql，目前为了学习使用hive，先使用自带的derby数据库\n\n$ $HIVE_HOME/bin/schematool -dbType <db type> -initSchema\n\n//<db type> 改为 derby\n\n2 启动hiveserver2\n\nbin/hiveserver2 &\n\n3 连接beeline\n\nbin/beeline -u jdbc:hive2://localhost:10000\n"
+          )
+        ])
       ])
     ])
   },
@@ -87196,4 +87196,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-1cadc18d50c798a4b696.js.map
+//# sourceMappingURL=app-81be936f687228f7e085.js.map
