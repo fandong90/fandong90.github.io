@@ -86587,6 +86587,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 const  bigData =[
     {
         name: "bigdatahiveddlr1",
@@ -87629,4 +87630,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-d2f19c153079ba83437f.js.map
+//# sourceMappingURL=app-7bb484e43d12742a8b1c.js.map
