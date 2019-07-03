@@ -86160,7 +86160,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_bigData_hive_r1_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../docs/zh-CN/bigData-hive-r1.md */ "./src/docs/zh-CN/bigData-hive-r1.md");
 
 
+
 const  bigData =[
+    {
+        name: "bigdatahiveddlr1",
+        component: _docs_zh_CN_bigData_hive_r1_md__WEBPACK_IMPORTED_MODULE_1__["default"],
+        title: "hive 开端--创建表结构",
+        timestamp: '2017/7/01'
+    },
     {
         name: "bigdatahiveShell",
         component: _docs_zh_CN_bigData_hive_r1_md__WEBPACK_IMPORTED_MODULE_1__["default"],
@@ -87196,4 +87203,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-81be936f687228f7e085.js.map
+//# sourceMappingURL=app-8fccea17897de22db20f.js.map

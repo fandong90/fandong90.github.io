@@ -1,6 +1,13 @@
 import hadoopFileSystemShell from '../../docs/zh-CN/Hadoop-FileSystem-Shell.md';
 import bigdatahiveShell     from '../../docs/zh-CN/bigData-hive-r1.md';
+import bigdatahiveddlr1 from '../../docs/zh-CN/bigData-hive-r1.md';
 const  bigData =[
+    {
+        name: "bigdatahiveddlr1",
+        component: bigdatahiveddlr1,
+        title: "hive 开端--创建表结构",
+        timestamp: '2017/7/01'
+    },
     {
         name: "bigdatahiveShell",
         component: bigdatahiveShell,
