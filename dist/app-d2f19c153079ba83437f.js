@@ -66395,11 +66395,15 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [_vm._v("从本地加载数据")]),
       _vm._v(" "),
-      _c("pre", [
-        _c("code", [
-          _vm._v(
-            "::: tip\n\n\t\t jdbc:hive2://localhost:10000> load data local inpath '/home/fandong/dataDemo/hadoop/input/ncdc/micro-tab/sample.txt'\n\t\t. . . . . . . . . . . . . . . .> overwrite into table blog.dm_dim_blog_weather_records;\n\t\t\n:::\t\n"
-          )
+      _c("div", { staticClass: "tip custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "\t\t jdbc:hive2://localhost:10000> load data local inpath '/home/fandong/dataDemo/hadoop/input/ncdc/micro-tab/sample.txt'\n\t\t. . . . . . . . . . . . . . . .> overwrite into table blog.dm_dim_blog_weather_records;\n"
+            )
+          ])
         ])
       ]),
       _vm._v(" "),
@@ -66415,36 +66419,38 @@ var staticRenderFns = [
             _c("li", [_vm._v("查询内置函数 show functions;")]),
             _vm._v(" "),
             _c("li", [_vm._v("查看函数描述 describe function [func name];")])
-          ]),
-          _vm._v(" "),
-          _c("pre", { staticClass: "hljs" }, [
-            _c("code", [
-              _vm._v("  "),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
-              _vm._v(": jdbc:hive2:"),
-              _c("span", { staticClass: "hljs-comment" }, [
-                _vm._v("//localhost:10000> describe function length;")
-              ]),
-              _vm._v(
-                "\n\t+----------------------------------------------------+\n\t|                      tab_name                      |\n\t+----------------------------------------------------+\n\t| length(str | binary) - Returns the length of str or number of bytes in binary data |\n\t+----------------------------------------------------+\n\t"
-              ),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
-              _vm._v(" "),
-              _c("span", { staticClass: "hljs-function" }, [
-                _vm._v("row "),
-                _c("span", { staticClass: "hljs-title" }, [_vm._v("selected")]),
-                _vm._v(" "),
-                _c("span", { staticClass: "hljs-params" }, [
-                  _vm._v("("),
-                  _c("span", { staticClass: "hljs-number" }, [_vm._v("0.083")]),
-                  _vm._v(" seconds)")
-                ]),
-                _vm._v("\n\t\n")
-              ])
-            ])
           ])
-        ]),
-        _vm._v(" "),
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("      "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(": jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//localhost:10000> describe function length;")
+          ]),
+          _vm._v(
+            "\n\t\t+----------------------------------------------------+\n\t\t|                      tab_name                      |\n\t\t+----------------------------------------------------+\n\t\t| length(str | binary) - Returns the length of str or number of bytes in binary data |\n\t\t+----------------------------------------------------+\n\t\t"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("row "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("selected")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("("),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0.083")]),
+              _vm._v(" seconds)")
+            ]),
+            _vm._v("\n\t\t\n")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [
         _c("li", [
           _c("p", [_vm._v("HIVE 托管表和外部表")]),
           _vm._v(" "),
@@ -66460,33 +66466,148 @@ var staticRenderFns = [
         _c("li", [
           _c("p", [_vm._v("HIVE 分区（partition) 和 桶 (bucket)")]),
           _vm._v(" "),
-          _c("ul", [_c("li", [_vm._v("创建一个分区表")])]),
-          _vm._v(" "),
-          _c("pre", { staticClass: "hljs" }, [
-            _c("code", [
-              _vm._v("    "),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
-              _vm._v(": jdbc:hive2:"),
-              _c("span", { staticClass: "hljs-comment" }, [
-                _vm._v("//localhost:10000> CREATE TABLE BLOG.LOGS(")
-              ]),
-              _vm._v("\n")
-            ])
+          _c("ul", [_c("li", [_vm._v("创建一个分区表")])])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t    "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(": jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//localhost:10000> CREATE TABLE BLOG.LOGS(")
+          ]),
+          _vm._v(
+            "\n. . . . . . . . . . . . . . . .> \n. . . . . . . . . . . . . . . .>      ts         BIGINT COMMENT "
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'记录ts'")]),
+          _vm._v(
+            "\n. . . . . . . . . . . . . . . .>     ,line        STRING COMMENT "
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'记录行数'")]),
+          _vm._v(
+            "\n. . . . . . . . . . . . . . . .> )\n. . . . . . . . . . . . . . . .> COMMENT "
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'记录日志表'")]),
+          _vm._v("\n. . . . . . . . . . . . . . . .> "),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("PARTITIONED "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("BY")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("(dt STRING, country STRING)")
+            ]),
+            _vm._v("\n. . . . . . . . . . . . . . . .> ")
+          ]),
+          _vm._v(";\n"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("No rows "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("affected")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("("),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0.3")]),
+              _vm._v(" seconds)")
+            ]),
+            _vm._v("\n\n\t\n")
           ])
         ])
       ]),
       _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          ". . . . . . . . . . . . . . . .>\n. . . . . . . . . . . . . . . .>      ts         BIGINT COMMENT '记录ts'\n. . . . . . . . . . . . . . . .>     ,line        STRING COMMENT '记录行数'\n. . . . . . . . . . . . . . . .> )\n. . . . . . . . . . . . . . . .> COMMENT '记录日志表'\n. . . . . . . . . . . . . . . .> PARTITIONED BY (dt STRING, country STRING)\n. . . . . . . . . . . . . . . .> ;\nNo rows affected (0.3 seconds)"
-        )
+      _c("pre", [_c("code", [_vm._v("插入数据\n")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "\t     . . . . . . . . . . . . . . . .> into table blog.logs\n\t\t. . . . . . . . . . . . . . . .> partition (dt="
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'2001-01-01'")]),
+          _vm._v(",country="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'GB'")]),
+          _vm._v(");\n\t\t"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("No rows "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("affected")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("("),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0.804")]),
+              _vm._v(" seconds)")
+            ]),
+            _vm._v("\n")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t \t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(": jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//localhost:10000> select * from logs;")
+          ]),
+          _vm._v(
+            "\n\t\t+----------+-------------+-------------+---------------+\n\t\t| logs.ts  |  logs.line  |   logs.dt   | logs.country  |\n\t\t+----------+-------------+-------------+---------------+\n\t\t| "
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("        | Log line "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("  | "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v(
+            "  | GB            |\n\t\t+----------+-------------+-------------+---------------+\n\t\t"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("row "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("selected")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("("),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0.282")]),
+              _vm._v(" seconds)")
+            ]),
+            _vm._v("\n\t\t\n\t\t\n\t\t0: jdbc:hive2:"),
+            _c("span", { staticClass: "hljs-comment" }, [
+              _vm._v("//localhost:10000> select * from blog.logs;")
+            ]),
+            _vm._v(
+              "\n\t\t+----------+-------------+-------------+---------------+\n\t\t| logs.ts  |  logs.line  |   logs.dt   | logs.country  |\n\t\t+----------+-------------+-------------+---------------+\n\t\t| 1        | Log line 1  | 2001-01-01  | GB            |\n\t\t| 1        | Log line 1  | 2001-01-02  | US            |\n\t\t+----------+-------------+-------------+---------------+\n\t\t\n"
+            )
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("pre", [
+        _c("code", [_vm._v(" hadoop hdfs 文件系统\n  通过文件通过分区\n")])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
         _c("code", [
+          _vm._v("\t   [root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
           _vm._v(
-            "```\n插入数据\n \n```\n     . . . . . . . . . . . . . . . .> into table blog.logs\n\t. . . . . . . . . . . . . . . .> partition (dt='2001-01-01',country='GB');\n\tNo rows affected (0.804 seconds)\n```\n \n```\n \t0: jdbc:hive2://localhost:10000> select * from logs;\n\t+----------+-------------+-------------+---------------+\n\t| logs.ts  |  logs.line  |   logs.dt   | logs.country  |\n\t+----------+-------------+-------------+---------------+\n\t| 1        | Log line 1  | 2001-01-01  | GB            |\n\t+----------+-------------+-------------+---------------+\n\t1 row selected (0.282 seconds)\n\t\n\t\n\t0: jdbc:hive2://localhost:10000> select * from blog.logs;\n\t+----------+-------------+-------------+---------------+\n\t| logs.ts  |  logs.line  |   logs.dt   | logs.country  |\n\t+----------+-------------+-------------+---------------+\n\t| 1        | Log line 1  | 2001-01-01  | GB            |\n\t| 1        | Log line 1  | 2001-01-02  | US            |\n\t+----------+-------------+-------------+---------------+\n\t\n```\n \n hadoop hdfs 文件系统\n  通过文件通过分区\n \n ```\n   [root@hadoop01 dm_dim_blog_logs]# hadoop fs -find /user  -name dt*\n\t/user/hive/warehouse/blog.db/logs/dt=2001-01-01\n\t/user/hive/warehouse/blog.db/logs/dt=2001-01-02\n \n ```\n"
-          )
+            "01 dm_dim_blog_logs]# hadoop fs -find /user  -name dt*\n\t\t/user/hive/warehouse/blog.db/logs/dt="
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("\n\t\t/user/hive/warehouse/blog.db/logs/dt="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("02")]),
+          _vm._v("\n\t \n")
         ])
       ]),
       _vm._v(" "),
@@ -66494,115 +66615,109 @@ var staticRenderFns = [
         _c("li", [
           _c("p", [_vm._v("查看表分区")]),
           _vm._v(" "),
-          _c("ul", [_c("li", [_vm._v("show partitions [table name];")])]),
-          _vm._v(" "),
-          _c("pre", { staticClass: "hljs" }, [
-            _c("code", [
-              _vm._v("    jdbc:hive2:"),
-              _c("span", { staticClass: "hljs-comment" }, [
-                _vm._v("//localhost:10000> show partitions logs;")
-              ]),
-              _vm._v(
-                "\n\t\t+---------------------------+\n\t\t|         partition         |\n\t\t+---------------------------+\n\t\t| dt="
-              ),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
-              _vm._v("-"),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
-              _vm._v("-"),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
-              _vm._v("/country=GB  |\n\t\t| dt="),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
-              _vm._v("-"),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
-              _vm._v("-"),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("02")]),
-              _vm._v("/country=US  |\n\t\t+---------------------------+\n \n")
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("p", [_vm._v("桶\n创建了4个桶分区")]),
-          _vm._v(" "),
-          _c("pre", { staticClass: "hljs" }, [
-            _c("code", [
-              _vm._v("  \n   "),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
-              _vm._v(": jdbc:hive2:"),
-              _c("span", { staticClass: "hljs-comment" }, [
-                _vm._v("//localhost:10000> ---author fandong")
-              ]),
-              _vm._v("\n\t"),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
-              _vm._v(": jdbc:hive2:"),
-              _c("span", { staticClass: "hljs-comment" }, [
-                _vm._v("//localhost:10000> ")
-              ]),
-              _vm._v("\n\t"),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
-              _vm._v(": jdbc:hive2:"),
-              _c("span", { staticClass: "hljs-comment" }, [
-                _vm._v(
-                  "//localhost:10000> ---output  blog.dm_dim_blog_bucketed_user"
-                )
-              ]),
-              _vm._v("\n\t"),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
-              _vm._v(": jdbc:hive2:"),
-              _c("span", { staticClass: "hljs-comment" }, [
-                _vm._v("//localhost:10000> ")
-              ]),
-              _vm._v("\n\t"),
-              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
-              _vm._v(": jdbc:hive2:"),
-              _c("span", { staticClass: "hljs-comment" }, [
-                _vm._v(
-                  "//localhost:10000> CREATE TABLE BLOG.dm_dim_blog_bucketed_user("
-                )
-              ]),
-              _vm._v(
-                "\n\t. . . . . . . . . . . . . . . .> \n\t. . . . . . . . . . . . . . . .>     id     INT           COMMENT "
-              ),
-              _c("span", { staticClass: "hljs-string" }, [_vm._v("'记录id'")]),
-              _vm._v(
-                "\n\t. . . . . . . . . . . . . . . .>        ,name    STRING        COMMENT "
-              ),
-              _c("span", { staticClass: "hljs-string" }, [
-                _vm._v("'记录name'")
-              ]),
-              _vm._v(
-                "\n\t. . . . . . . . . . . . . . . .> )\n\t. . . . . . . . . . . . . . . .> COMMENT "
-              ),
-              _c("span", { staticClass: "hljs-string" }, [
-                _vm._v("'练习使用桶表'")
-              ]),
-              _vm._v("\n\t. . . . . . . . . . . . . . . .> "),
-              _c("span", { staticClass: "hljs-function" }, [
-                _vm._v("CLUSTERED "),
-                _c("span", { staticClass: "hljs-title" }, [_vm._v("BY")]),
-                _vm._v(" "),
-                _c("span", { staticClass: "hljs-params" }, [_vm._v("(id)")]),
-                _vm._v(" SORTED "),
-                _c("span", { staticClass: "hljs-title" }, [_vm._v("BY")]),
-                _vm._v(" "),
-                _c("span", { staticClass: "hljs-params" }, [
-                  _vm._v("(id ASC)")
-                ]),
-                _vm._v(" INTO 4 BUCKETS")
-              ]),
-              _vm._v(";\n\t"),
-              _c("span", { staticClass: "hljs-function" }, [
-                _vm._v("No rows "),
-                _c("span", { staticClass: "hljs-title" }, [_vm._v("affected")]),
-                _vm._v(" "),
-                _c("span", { staticClass: "hljs-params" }, [
-                  _vm._v("("),
-                  _c("span", { staticClass: "hljs-number" }, [_vm._v("0.228")]),
-                  _vm._v(" seconds)")
-                ]),
-                _vm._v("\n\n")
-              ])
-            ])
+          _c("ul", [_c("li", [_vm._v("show partitions [table name];")])])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("        jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//localhost:10000> show partitions logs;")
+          ]),
+          _vm._v(
+            "\n\t\t\t+---------------------------+\n\t\t\t|         partition         |\n\t\t\t+---------------------------+\n\t\t\t| dt="
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("/country=GB  |\n\t\t\t| dt="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("02")]),
+          _vm._v("/country=US  |\n\t\t\t+---------------------------+\n     \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("桶\n创建了4个桶分区")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t  \n\t   "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(": jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//localhost:10000> ---author fandong")
+          ]),
+          _vm._v("\n\t\t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(": jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//localhost:10000> ")
+          ]),
+          _vm._v("\n\t\t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(": jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v(
+              "//localhost:10000> ---output  blog.dm_dim_blog_bucketed_user"
+            )
+          ]),
+          _vm._v("\n\t\t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(": jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//localhost:10000> ")
+          ]),
+          _vm._v("\n\t\t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(": jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v(
+              "//localhost:10000> CREATE TABLE BLOG.dm_dim_blog_bucketed_user("
+            )
+          ]),
+          _vm._v(
+            "\n\t\t. . . . . . . . . . . . . . . .> \n\t\t. . . . . . . . . . . . . . . .>     id     INT           COMMENT "
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'记录id'")]),
+          _vm._v(
+            "\n\t\t. . . . . . . . . . . . . . . .>        ,name    STRING        COMMENT "
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'记录name'")]),
+          _vm._v(
+            "\n\t\t. . . . . . . . . . . . . . . .> )\n\t\t. . . . . . . . . . . . . . . .> COMMENT "
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'练习使用桶表'")
+          ]),
+          _vm._v("\n\t\t. . . . . . . . . . . . . . . .> "),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("CLUSTERED "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("BY")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [_vm._v("(id)")]),
+            _vm._v(" SORTED "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("BY")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [_vm._v("(id ASC)")]),
+            _vm._v(" INTO 4 BUCKETS")
+          ]),
+          _vm._v(";\n\t\t"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("No rows "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("affected")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("("),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0.228")]),
+              _vm._v(" seconds)")
+            ]),
+            _vm._v("\n\t\n")
           ])
         ])
       ])
@@ -87514,4 +87629,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-b52d4aab9dc65b1c242c.js.map
+//# sourceMappingURL=app-d2f19c153079ba83437f.js.map
