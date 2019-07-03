@@ -66358,6 +66358,263 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/hive-ddl-r1.md?vue&type=template&id=415298a0&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/hive-ddl-r1.md?vue&type=template&id=415298a0& ***!
+  \************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("h1", { attrs: { id: "hive" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#hive", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" hive")
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("从本地加载数据")]),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            "::: tip\n\n\t\t jdbc:hive2://localhost:10000> load data local inpath '/home/fandong/dataDemo/hadoop/input/ncdc/micro-tab/sample.txt'\n\t\t. . . . . . . . . . . . . . . .> overwrite into table blog.dm_dim_blog_weather_records;\n\t\t\n:::\t\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("从hdfs中加载数据 ?")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("？？？")]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("HIVE 的内置函数")]),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [_vm._v("查询内置函数 show functions;")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("查看函数描述 describe function [func name];")])
+          ]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("  "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+              _vm._v(": jdbc:hive2:"),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//localhost:10000> describe function length;")
+              ]),
+              _vm._v(
+                "\n\t+----------------------------------------------------+\n\t|                      tab_name                      |\n\t+----------------------------------------------------+\n\t| length(str | binary) - Returns the length of str or number of bytes in binary data |\n\t+----------------------------------------------------+\n\t"
+              ),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "hljs-function" }, [
+                _vm._v("row "),
+                _c("span", { staticClass: "hljs-title" }, [_vm._v("selected")]),
+                _vm._v(" "),
+                _c("span", { staticClass: "hljs-params" }, [
+                  _vm._v("("),
+                  _c("span", { staticClass: "hljs-number" }, [_vm._v("0.083")]),
+                  _vm._v(" seconds)")
+                ]),
+                _vm._v("\n\t\n")
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("HIVE 托管表和外部表")]),
+          _vm._v(" "),
+          _c("pre", [
+            _c("code", [
+              _vm._v(
+                "  * 托管表 create table <table name> () ;\n  * drop table <table name>;\n  * 外部表 create external table <table name>();\n  * drop table external\n  ** 区别 **\n  外部表，hive只是负责处理数据，并不存储数据，丢弃外部表时，hive不会碰数据。只是删除源数据。\n"
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("HIVE 分区（partition) 和 桶 (bucket)")]),
+          _vm._v(" "),
+          _c("ul", [_c("li", [_vm._v("创建一个分区表")])]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("    "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+              _vm._v(": jdbc:hive2:"),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//localhost:10000> CREATE TABLE BLOG.LOGS(")
+              ]),
+              _vm._v("\n")
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          ". . . . . . . . . . . . . . . .>\n. . . . . . . . . . . . . . . .>      ts         BIGINT COMMENT '记录ts'\n. . . . . . . . . . . . . . . .>     ,line        STRING COMMENT '记录行数'\n. . . . . . . . . . . . . . . .> )\n. . . . . . . . . . . . . . . .> COMMENT '记录日志表'\n. . . . . . . . . . . . . . . .> PARTITIONED BY (dt STRING, country STRING)\n. . . . . . . . . . . . . . . .> ;\nNo rows affected (0.3 seconds)"
+        )
+      ]),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            "```\n插入数据\n \n```\n     . . . . . . . . . . . . . . . .> into table blog.logs\n\t. . . . . . . . . . . . . . . .> partition (dt='2001-01-01',country='GB');\n\tNo rows affected (0.804 seconds)\n```\n \n```\n \t0: jdbc:hive2://localhost:10000> select * from logs;\n\t+----------+-------------+-------------+---------------+\n\t| logs.ts  |  logs.line  |   logs.dt   | logs.country  |\n\t+----------+-------------+-------------+---------------+\n\t| 1        | Log line 1  | 2001-01-01  | GB            |\n\t+----------+-------------+-------------+---------------+\n\t1 row selected (0.282 seconds)\n\t\n\t\n\t0: jdbc:hive2://localhost:10000> select * from blog.logs;\n\t+----------+-------------+-------------+---------------+\n\t| logs.ts  |  logs.line  |   logs.dt   | logs.country  |\n\t+----------+-------------+-------------+---------------+\n\t| 1        | Log line 1  | 2001-01-01  | GB            |\n\t| 1        | Log line 1  | 2001-01-02  | US            |\n\t+----------+-------------+-------------+---------------+\n\t\n```\n \n hadoop hdfs 文件系统\n  通过文件通过分区\n \n ```\n   [root@hadoop01 dm_dim_blog_logs]# hadoop fs -find /user  -name dt*\n\t/user/hive/warehouse/blog.db/logs/dt=2001-01-01\n\t/user/hive/warehouse/blog.db/logs/dt=2001-01-02\n \n ```\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("查看表分区")]),
+          _vm._v(" "),
+          _c("ul", [_c("li", [_vm._v("show partitions [table name];")])]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("    jdbc:hive2:"),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//localhost:10000> show partitions logs;")
+              ]),
+              _vm._v(
+                "\n\t\t+---------------------------+\n\t\t|         partition         |\n\t\t+---------------------------+\n\t\t| dt="
+              ),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
+              _vm._v("-"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+              _vm._v("-"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+              _vm._v("/country=GB  |\n\t\t| dt="),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
+              _vm._v("-"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+              _vm._v("-"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("02")]),
+              _vm._v("/country=US  |\n\t\t+---------------------------+\n \n")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [_vm._v("桶\n创建了4个桶分区")]),
+          _vm._v(" "),
+          _c("pre", { staticClass: "hljs" }, [
+            _c("code", [
+              _vm._v("  \n   "),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+              _vm._v(": jdbc:hive2:"),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//localhost:10000> ---author fandong")
+              ]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+              _vm._v(": jdbc:hive2:"),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//localhost:10000> ")
+              ]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+              _vm._v(": jdbc:hive2:"),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v(
+                  "//localhost:10000> ---output  blog.dm_dim_blog_bucketed_user"
+                )
+              ]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+              _vm._v(": jdbc:hive2:"),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v("//localhost:10000> ")
+              ]),
+              _vm._v("\n\t"),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+              _vm._v(": jdbc:hive2:"),
+              _c("span", { staticClass: "hljs-comment" }, [
+                _vm._v(
+                  "//localhost:10000> CREATE TABLE BLOG.dm_dim_blog_bucketed_user("
+                )
+              ]),
+              _vm._v(
+                "\n\t. . . . . . . . . . . . . . . .> \n\t. . . . . . . . . . . . . . . .>     id     INT           COMMENT "
+              ),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v("'记录id'")]),
+              _vm._v(
+                "\n\t. . . . . . . . . . . . . . . .>        ,name    STRING        COMMENT "
+              ),
+              _c("span", { staticClass: "hljs-string" }, [
+                _vm._v("'记录name'")
+              ]),
+              _vm._v(
+                "\n\t. . . . . . . . . . . . . . . .> )\n\t. . . . . . . . . . . . . . . .> COMMENT "
+              ),
+              _c("span", { staticClass: "hljs-string" }, [
+                _vm._v("'练习使用桶表'")
+              ]),
+              _vm._v("\n\t. . . . . . . . . . . . . . . .> "),
+              _c("span", { staticClass: "hljs-function" }, [
+                _vm._v("CLUSTERED "),
+                _c("span", { staticClass: "hljs-title" }, [_vm._v("BY")]),
+                _vm._v(" "),
+                _c("span", { staticClass: "hljs-params" }, [_vm._v("(id)")]),
+                _vm._v(" SORTED "),
+                _c("span", { staticClass: "hljs-title" }, [_vm._v("BY")]),
+                _vm._v(" "),
+                _c("span", { staticClass: "hljs-params" }, [
+                  _vm._v("(id ASC)")
+                ]),
+                _vm._v(" INTO 4 BUCKETS")
+              ]),
+              _vm._v(";\n\t"),
+              _c("span", { staticClass: "hljs-function" }, [
+                _vm._v("No rows "),
+                _c("span", { staticClass: "hljs-title" }, [_vm._v("affected")]),
+                _vm._v(" "),
+                _c("span", { staticClass: "hljs-params" }, [
+                  _vm._v("("),
+                  _c("span", { staticClass: "hljs-number" }, [_vm._v("0.228")]),
+                  _vm._v(" seconds)")
+                ]),
+                _vm._v("\n\n")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/java-datatable-sample.md?vue&type=template&id=4ce50c02&":
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/java-datatable-sample.md?vue&type=template&id=4ce50c02& ***!
@@ -85684,6 +85941,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/hive-ddl-r1.md":
+/*!***************************************!*\
+  !*** ./src/docs/zh-CN/hive-ddl-r1.md ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _hive_ddl_r1_md_vue_type_template_id_415298a0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hive-ddl-r1.md?vue&type=template&id=415298a0& */ "./src/docs/zh-CN/hive-ddl-r1.md?vue&type=template&id=415298a0&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _hive_ddl_r1_md_vue_type_template_id_415298a0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _hive_ddl_r1_md_vue_type_template_id_415298a0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/hive-ddl-r1.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/hive-ddl-r1.md?vue&type=template&id=415298a0&":
+/*!**********************************************************************!*\
+  !*** ./src/docs/zh-CN/hive-ddl-r1.md?vue&type=template&id=415298a0& ***!
+  \**********************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_hive_ddl_r1_md_vue_type_template_id_415298a0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./hive-ddl-r1.md?vue&type=template&id=415298a0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/hive-ddl-r1.md?vue&type=template&id=415298a0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_hive_ddl_r1_md_vue_type_template_id_415298a0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_hive_ddl_r1_md_vue_type_template_id_415298a0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/java-datatable-sample.md":
 /*!*************************************************!*\
   !*** ./src/docs/zh-CN/java-datatable-sample.md ***!
@@ -86158,13 +86468,14 @@ new vue__WEBPACK_IMPORTED_MODULE_0__["default"]({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_Hadoop_FileSystem_Shell_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../docs/zh-CN/Hadoop-FileSystem-Shell.md */ "./src/docs/zh-CN/Hadoop-FileSystem-Shell.md");
 /* harmony import */ var _docs_zh_CN_bigData_hive_r1_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../docs/zh-CN/bigData-hive-r1.md */ "./src/docs/zh-CN/bigData-hive-r1.md");
+/* harmony import */ var _docs_zh_CN_hive_ddl_r1_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../docs/zh-CN/hive-ddl-r1.md */ "./src/docs/zh-CN/hive-ddl-r1.md");
 
 
 
 const  bigData =[
     {
         name: "bigdatahiveddlr1",
-        component: _docs_zh_CN_bigData_hive_r1_md__WEBPACK_IMPORTED_MODULE_1__["default"],
+        component: _docs_zh_CN_hive_ddl_r1_md__WEBPACK_IMPORTED_MODULE_2__["default"],
         title: "hive 开端--创建表结构",
         timestamp: '2017/7/01'
     },
@@ -87203,4 +87514,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-8fccea17897de22db20f.js.map
+//# sourceMappingURL=app-b52d4aab9dc65b1c242c.js.map
