@@ -128,10 +128,104 @@ No rows affected (0.3 seconds)
 		. . . . . . . . . . . . . . . .> CLUSTERED BY (id) SORTED BY (id ASC) INTO 4 BUCKETS;
 		No rows affected (0.228 seconds)
 	
+???
 ```
 
+分区添加数据;
+
+```
+0: jdbc:hive2://localhost:10000> insert into table logs
+. . . . . . . . . . . . . . . .> partition(dt='2001-01-02',country='GR')
+. . . . . . . . . . . . . . . .> select 1,'line 2' from logs;
+
+```
+```
+		+----------+-------------+-------------+---------------+
+	| logs.ts  |  logs.line  |   logs.dt   | logs.country  |
+	+----------+-------------+-------------+---------------+
+	| 1        | Log line 1  | 2001-01-01  | GB            |
+	| 1        | line 2      | 2001-01-02  | GR            |
+	| 1        | line 2      | 2001-01-02  | GR            |
+	| 1        | Log line 1  | 2001-01-02  | US            |
+	+----------+-------------+-------------+---------------+
+
+```	
+:::tip
 	
+	insert into table  [table name](ts,line)values(1,'33');
+	
+	无法给分区加数据。
+
+:::
   
+```
+	
+0: jdbc:hive2://localhost:10000> CREATE TABLE logs_1
+. . . . . . . . . . . . . . . .> AS
+. . . . . . . . . . . . . . . .> SELECT ts,line
+. . . . . . . . . . . . . . . .> FROM logs;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+No rows affected (11.068 seconds)
+0: jdbc:hive2://localhost:10000> select * from logs_1;
++------------+--------------+
+| logs_1.ts  | logs_1.line  |
++------------+--------------+
+| 1          | Log line 1   |
+| 1          | line 2       |
+| 1          | line 2       |
+| 1          | Log line 1   |
++------------+--------------+
+4 rows selected (0.213 seconds)
+
+```
+
+# 表修改
+
+* 修改表名字
+
+```
+
+alter table logs_1 rename to logs_2;
+
+```
+
+* 增加了列
+
+```
+	ALTER TABLE logs_2 ADD COLUMNS (col3 STRING COMMENT 'last add comment');
+No rows affected (0.1 seconds)
+0: jdbc:hive2://localhost:10000> desc logs_2;
++-----------+------------+-------------------+
+| col_name  | data_type  |      comment      |
++-----------+------------+-------------------+
+| ts        | bigint     |                   |
+| line      | string     |                   |
+| col3      | string     | last add comment  |
++-----------+------------+-------------------+
+
+```
+* 修改列名
+
+```
+	
+	0: jdbc:hive2://localhost:10000> ALTER TABLE logs_2 
+	. . . . . . . . . . . . . . . .> CHANGE
+	. . . . . . . . . . . . . . . .> line  col2 STRING
+	. . . . . . . . . . . . . . . .> AFTER col3;
+	No rows affected (0.143 seconds)
+
+```
+:::tip
+		更换列后，发现col3列的数据是原来line『col2」的数据
+:::
+
+* 修改表注释
+
+```
+
+	ALTER TABLE 表名 SET TBLPROPERTIES('comment' = '表注释内容');
+	
+```
    
 
 

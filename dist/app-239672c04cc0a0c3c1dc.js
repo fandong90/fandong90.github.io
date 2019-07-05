@@ -66717,8 +66717,258 @@ var staticRenderFns = [
               _c("span", { staticClass: "hljs-number" }, [_vm._v("0.228")]),
               _vm._v(" seconds)")
             ]),
-            _vm._v("\n\t\n")
+            _vm._v("\n\t\n???\n")
           ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("分区添加数据;")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(": jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//localhost:10000> insert into table logs")
+          ]),
+          _vm._v("\n. . . . . . . . . . . . . . . .> partition(dt="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'2001-01-02'")]),
+          _vm._v(",country="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'GR'")]),
+          _vm._v(")\n. . . . . . . . . . . . . . . .> select "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(","),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'line 2'")]),
+          _vm._v(" from logs;\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "\t\t+----------+-------------+-------------+---------------+\n\t| logs.ts  |  logs.line  |   logs.dt   | logs.country  |\n\t+----------+-------------+-------------+---------------+\n\t| "
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("        | Log line "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("  | "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("  | GB            |\n\t| "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("        | line "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v("      | "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("02")]),
+          _vm._v("  | GR            |\n\t| "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("        | line "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v("      | "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("02")]),
+          _vm._v("  | GR            |\n\t| "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("        | Log line "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("  | "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2001")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("01")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("02")]),
+          _vm._v(
+            "  | US            |\n\t+----------+-------------+-------------+---------------+\n\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "tip custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "insert into table  [table name](ts,line)values(1,'33');\n\n无法给分区加数据。\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t\n"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(": jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//localhost:10000> CREATE TABLE logs_1")
+          ]),
+          _vm._v(
+            "\n. . . . . . . . . . . . . . . .> AS\n. . . . . . . . . . . . . . . .> SELECT ts,line\n. . . . . . . . . . . . . . . .> FROM logs;\nWARNING: Hive-on-MR is deprecated in Hive "
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v(" and may not be available in the future versions. "),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("Consider using a different execution "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("engine")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("(i.e. spark, tez)")
+            ]),
+            _vm._v(" or using Hive 1.X releases.\nNo rows "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("affected")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("("),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("11.068")]),
+              _vm._v(" seconds)")
+            ]),
+            _vm._v("\n0: jdbc:hive2:"),
+            _c("span", { staticClass: "hljs-comment" }, [
+              _vm._v("//localhost:10000> select * from logs_1;")
+            ]),
+            _vm._v(
+              "\n+------------+--------------+\n| logs_1.ts  | logs_1.line  |\n+------------+--------------+\n| 1          | Log line 1   |\n| 1          | line 2       |\n| 1          | line 2       |\n| 1          | Log line 1   |\n+------------+--------------+\n4 rows "
+            ),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("selected")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("("),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0.213")]),
+              _vm._v(" seconds)")
+            ]),
+            _vm._v("\n\n")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E8%A1%A8%E4%BF%AE%E6%94%B9" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E8%A1%A8%E4%BF%AE%E6%94%B9",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 表修改")
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("修改表名字")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [_vm._v("\nalter table logs_1 rename to logs_2;\n\n")])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("增加了列")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("ALTER TABLE logs_2 ADD "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("COLUMNS")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("(col3 STRING COMMENT "),
+              _c("span", { staticClass: "hljs-string" }, [
+                _vm._v("'last add comment'")
+              ]),
+              _vm._v(")")
+            ])
+          ]),
+          _vm._v(";\n"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("No rows "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("affected")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("("),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0.1")]),
+              _vm._v(" seconds)")
+            ]),
+            _vm._v("\n0: jdbc:hive2:"),
+            _c("span", { staticClass: "hljs-comment" }, [
+              _vm._v("//localhost:10000> desc logs_2;")
+            ]),
+            _vm._v(
+              "\n+-----------+------------+-------------------+\n| col_name  | data_type  |      comment      |\n+-----------+------------+-------------------+\n| ts        | bigint     |                   |\n| line      | string     |                   |\n| col3      | string     | last add comment  |\n+-----------+------------+-------------------+\n\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("修改列名")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t\n\t"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(": jdbc:hive2:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//localhost:10000> ALTER TABLE logs_2 ")
+          ]),
+          _vm._v(
+            "\n\t. . . . . . . . . . . . . . . .> CHANGE\n\t. . . . . . . . . . . . . . . .> line  col2 STRING\n\t. . . . . . . . . . . . . . . .> AFTER col3;\n\t"
+          ),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("No rows "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("affected")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("("),
+              _c("span", { staticClass: "hljs-number" }, [_vm._v("0.143")]),
+              _vm._v(" seconds)")
+            ]),
+            _vm._v("\n\n")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "tip custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v("\t更换列后，发现col3列的数据是原来line『col2」的数据\n")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("修改表注释")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\n\tALTER TABLE 表名 "),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("SET "),
+            _c("span", { staticClass: "hljs-title" }, [
+              _vm._v("TBLPROPERTIES")
+            ]),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("("),
+              _c("span", { staticClass: "hljs-string" }, [_vm._v("'comment'")]),
+              _vm._v(" = "),
+              _c("span", { staticClass: "hljs-string" }, [
+                _vm._v("'表注释内容'")
+              ]),
+              _vm._v(")")
+            ])
+          ]),
+          _vm._v(";\n\t\n")
         ])
       ])
     ])
@@ -87630,4 +87880,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-7bb484e43d12742a8b1c.js.map
+//# sourceMappingURL=app-239672c04cc0a0c3c1dc.js.map
