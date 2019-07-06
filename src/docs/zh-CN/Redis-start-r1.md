@@ -24,6 +24,7 @@
 
 ## Redis 五种数据类型
 
+
 * String 
 
 	命令：set /get  key value 

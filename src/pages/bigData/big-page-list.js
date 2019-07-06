@@ -2,6 +2,8 @@ import hadoopFileSystemShell from '../../docs/zh-CN/Hadoop-FileSystem-Shell.md';
 import bigdatahiveShell     from '../../docs/zh-CN/bigData-hive-r1.md';
 import bigdatahiveddlr1 from '../../docs/zh-CN/hive-ddl-r1.md';
 import hiveDMLr1 from '../../docs/zh-CN/Hive-DML-r1.md';
+
+
 const  bigData =[
     {
         name: "hiveDMLr1",
