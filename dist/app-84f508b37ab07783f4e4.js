@@ -73933,6 +73933,157 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-cn/Python-https-r1.md?vue&type=template&id=033b7daa&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-cn/Python-https-r1.md?vue&type=template&id=033b7daa& ***!
+  \****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("p", [_vm._v("#Python 爬虫遇到坑")]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("https")])]),
+      _vm._v(" "),
+      _c("div", { staticClass: "danger custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1051)>\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "warnning custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "网络解决办法：\nssl._create_default_https_context = ssl._create_unverified_context\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "warnning custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "失败，同样报错\n\n1.需要在python3.7 安装的地方安装证书。\n\nApplication / python3.7  \n安装证书\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src: "http://fandong90.github.io/dist/static/img/httpserror.png",
+            alt: "error"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "success custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("p", [_vm._v("成功！")])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("::: tips")]),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            "使用urllib.request 方法header 的user_agent会显示urllib 代理，不利于爬虫，需要在header修改代理信息\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v(":::")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "warnning custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }, [
+          _vm._v("使用selenium 点击网站")
+        ]),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "我使用的是chrome driver ，下载相应的驱动\nurl:http://chromedriver.storage.googleapis.com/index.html\n"
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("p", [_vm._v("mac: 把解压后的chromeDriver 放到 /user/local/bin 下")])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("    #python 代码\n\tfrom selenium "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+          _vm._v(
+            " webdriver\n\t\n\tbrowser = webdriver.Chrome()\n\tbrowser.get("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'https://www.zhipin.com'")
+          ]),
+          _vm._v(")\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h1",
+        {
+          attrs: {
+            id: "selenium-%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href: "#selenium-%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" selenium 常用的方法")
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/App.vue?vue&type=template&id=7ba5bd90&":
 /*!**********************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=7ba5bd90& ***!
@@ -87336,6 +87487,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-cn/Python-https-r1.md":
+/*!*******************************************!*\
+  !*** ./src/docs/zh-cn/Python-https-r1.md ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Python_https_r1_md_vue_type_template_id_033b7daa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Python-https-r1.md?vue&type=template&id=033b7daa& */ "./src/docs/zh-cn/Python-https-r1.md?vue&type=template&id=033b7daa&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Python_https_r1_md_vue_type_template_id_033b7daa___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Python_https_r1_md_vue_type_template_id_033b7daa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-cn/Python-https-r1.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-cn/Python-https-r1.md?vue&type=template&id=033b7daa&":
+/*!**************************************************************************!*\
+  !*** ./src/docs/zh-cn/Python-https-r1.md?vue&type=template&id=033b7daa& ***!
+  \**************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Python_https_r1_md_vue_type_template_id_033b7daa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./Python-https-r1.md?vue&type=template&id=033b7daa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-cn/Python-https-r1.md?vue&type=template&id=033b7daa&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Python_https_r1_md_vue_type_template_id_033b7daa___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Python_https_r1_md_vue_type_template_id_033b7daa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
@@ -87388,12 +87592,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_bigData_hive_r1_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../docs/zh-CN/bigData-hive-r1.md */ "./src/docs/zh-CN/bigData-hive-r1.md");
 /* harmony import */ var _docs_zh_CN_hive_ddl_r1_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../docs/zh-CN/hive-ddl-r1.md */ "./src/docs/zh-CN/hive-ddl-r1.md");
 /* harmony import */ var _docs_zh_CN_Hive_DML_r1_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../docs/zh-CN/Hive-DML-r1.md */ "./src/docs/zh-CN/Hive-DML-r1.md");
+/* harmony import */ var _docs_zh_cn_Python_https_r1_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../docs/zh-cn/Python-https-r1.md */ "./src/docs/zh-cn/Python-https-r1.md");
+
+
+
 
 
 
 
 
 const  bigData =[
+    {
+        name: "pythonspiderr1",
+        component: _docs_zh_cn_Python_https_r1_md__WEBPACK_IMPORTED_MODULE_4__["default"],
+        title: "爬虫构建",
+        timestamp: '2017/7/7'
+    },
     {
         name: "hiveDMLr1",
         component: _docs_zh_CN_Hive_DML_r1_md__WEBPACK_IMPORTED_MODULE_3__["default"],
@@ -88441,4 +88655,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-a0b0b8b2b8095eca5958.js.map
+//# sourceMappingURL=app-84f508b37ab07783f4e4.js.map

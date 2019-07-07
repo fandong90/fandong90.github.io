@@ -1,6 +1,6 @@
 {
-  "app.js": "app-a0b0b8b2b8095eca5958.js",
-  "app.js.map": "app-a0b0b8b2b8095eca5958.js.map",
+  "app.js": "app-84f508b37ab07783f4e4.js",
+  "app.js.map": "app-84f508b37ab07783f4e4.js.map",
   "element-icons.woff": "535877f50039c0cb49a6196a5b7517cd.woff",
   "element-icons.ttf": "732389ded34cb9c52dd88271f1345af9.ttf",
   "index.html": "index.html",
@@ -23,6 +23,7 @@
   "static/img/dockervaildHello.png": "static/img/dockervaildHello.png",
   "static/img/expressMiddlewareflow.png": "static/img/expressMiddlewareflow.png",
   "static/img/heapChrom.png": "static/img/heapChrom.png",
+  "static/img/httpserror.png": "static/img/httpserror.png",
   "static/img/markSweep.gif": "static/img/markSweep.gif",
   "static/img/middlewareresult.png": "static/img/middlewareresult.png",
   "static/img/nodeclusterfilea.png": "static/img/nodeclusterfilea.png",

@@ -3,7 +3,16 @@ import bigdatahiveShell     from '../../docs/zh-CN/bigData-hive-r1.md';
 import bigdatahiveddlr1 from '../../docs/zh-CN/hive-ddl-r1.md';
 
 import hiveDMLr1 from '../../docs/zh-CN/Hive-DML-r1.md';
+import pythonspiderr1 from '../../docs/zh-cn/Python-https-r1.md';
+
+
 const  bigData =[
+    {
+        name: "pythonspiderr1",
+        component: pythonspiderr1,
+        title: "爬虫构建",
+        timestamp: '2017/7/7'
+    },
     {
         name: "hiveDMLr1",
         component: hiveDMLr1,
