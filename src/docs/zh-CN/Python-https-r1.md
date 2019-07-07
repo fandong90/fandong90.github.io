@@ -244,3 +244,14 @@ def is_number(s):
  
     return False
 ```
+
+# 结果
+
+![data](http://fandong90.github.io/dist/static/img/bossjoblistr1.jpg)
+
+:::tip
+
+	爬取了二十分钟后，网站出现了404.。。，爬虫有待优化
+
+:::
+![datar1](http://fandong90.github.io/dist/static/img/bossdatar1.jpeg)

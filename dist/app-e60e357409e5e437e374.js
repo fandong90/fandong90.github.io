@@ -74579,6 +74579,46 @@ var staticRenderFns = [
             _vm._v(":\n        pass\n \n    return False\n")
           ])
         ])
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E7%BB%93%E6%9E%9C" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: { href: "#%E7%BB%93%E6%9E%9C", "aria-hidden": "true" }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 结果")
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src: "http://fandong90.github.io/dist/static/img/bossjoblistr1.jpg",
+            alt: "data"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "tip custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v("爬取了二十分钟后，网站出现了404.。。，爬虫有待优化\n")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src: "http://fandong90.github.io/dist/static/img/bossdatar1.jpeg",
+            alt: "datar1"
+          }
+        })
       ])
     ])
   }
@@ -89160,4 +89200,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-2ad8dd04fc179a720767.js.map
+//# sourceMappingURL=app-e60e357409e5e437e374.js.map
