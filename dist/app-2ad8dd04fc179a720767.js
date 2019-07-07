@@ -74053,28 +74053,533 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c(
-        "h1",
-        {
-          attrs: {
-            id: "selenium-%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95"
-          }
-        },
-        [
-          _c(
-            "a",
-            {
-              staticClass: "header-anchor",
-              attrs: {
-                href: "#selenium-%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95",
-                "aria-hidden": "true"
-              }
-            },
-            [_vm._v("#")]
+      _c("h1", { attrs: { id: "%E6%9F%90%E6%8B%9B%E8%81%98" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E6%9F%90%E6%8B%9B%E8%81%98",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 某招聘")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\n\t# -*- coding: UTF-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("8")]),
+          _vm._v(" -*- \n#  爬取boss 直聘数据\n#  设定导入模块目录\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+          _vm._v(
+            " sys,os,time\nbaseDir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nsys.path.append(baseDir)\n\nfrom utils.fileFormat "
           ),
-          _vm._v(" selenium 常用的方法")
-        ]
-      )
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+          _vm._v(" writeListFile\nfrom utils.stringutil "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+          _vm._v(" is_number\nfrom selenium "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+          _vm._v(" webdriver\nfrom selenium.webdriver "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+          _vm._v(" ActionChains\nfrom bs4 "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+          _vm._v(" BeautifulSoup\n"),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+          _vm._v(" time\n\n#获取公司的招聘信息\n"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("def "),
+            _c("span", { staticClass: "hljs-title" }, [
+              _vm._v("detailJobList")
+            ]),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("(driver,text)")
+            ]),
+            _vm._v(":\n    ##点击元素\n    jobList")
+          ]),
+          _vm._v("= driver.find_elements_by_xpath("),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("\"//div[@class='job-list']/ul/li\"")
+          ]),
+          _vm._v(")\n    clickText = text\n    currDate = time.strftime("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'%Y-%m-%d'")]),
+          _vm._v(",time.localtime())\n    arrayList =[]\n    "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("for")]),
+          _vm._v(
+            " li in jobList:\n        bsLiObj = BeautifulSoup(li.get_attribute("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'innerHTML'")]),
+          _vm._v("),features="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"html.parser"')]),
+          _vm._v(")\n        detailItemPrimaryObj = bsLiObj.find("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'div'")]),
+          _vm._v(",{"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"class"')]),
+          _vm._v(":"),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"info-primary"')
+          ]),
+          _vm._v("})\n        detailItemCompanyObj = bsLiObj.find("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"div"')]),
+          _vm._v(",{"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"class"')]),
+          _vm._v(":"),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"info-company"')
+          ]),
+          _vm._v("})\n        detailItemHrObj      = bsLiObj.find("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"div"')]),
+          _vm._v(",{"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"class"')]),
+          _vm._v(":"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"info-publis"')]),
+          _vm._v(
+            "})\n        #招聘的职位\n        jobTitle = detailItemPrimaryObj.find("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"div"')]),
+          _vm._v(",{"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"class"')]),
+          _vm._v(":"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"job-title"')]),
+          _vm._v(
+            "}).get_text()\n        salaryRange = detailItemPrimaryObj.find("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"span"')]),
+          _vm._v(",{"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"class"')]),
+          _vm._v(":"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"red"')]),
+          _vm._v(
+            "}).get_text()\n        arr1           = str(detailItemPrimaryObj.p).split("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'<em class=\"vline\"></em>'")
+          ]),
+          _vm._v(
+            ")\n        arr1Count      = len(arr1)\n        companyAddress="
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v("\n        workyear="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v("\n        education="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v("\n        "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("if")]),
+          _vm._v("(arr1Count>"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v("):\n            companyAddress = arr1["),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v("].replace("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'<p>'")]),
+          _vm._v(","),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v(")\n        "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("if")]),
+          _vm._v("(arr1Count>"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("):\n            workyear       = arr1["),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("]\n        "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("if")]),
+          _vm._v("(arr1Count>"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v("):\n            education      = arr1["),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v("].replace("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'</p>'")]),
+          _vm._v(","),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v(
+            ")\n        \n        #获取职位描述\n\n        #jobdesc        = detailItemPrimaryObj.find("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"div"')]),
+          _vm._v(",{"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"class"')]),
+          _vm._v(":"),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"detail-bottom-text"')
+          ]),
+          _vm._v(
+            "}).get_text()\n        # 公司性质\n        companyName    = detailItemCompanyObj.find("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"h3"')]),
+          _vm._v(",{"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"class"')]),
+          _vm._v(":"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"name"')]),
+          _vm._v(
+            "}).get_text()\n        arr2           = str(detailItemCompanyObj.div.p).split("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'<em class=\"vline\"></em>'")
+          ]),
+          _vm._v(
+            ")\n        arr2Count      = len(arr2)\n        propertyName="
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v("\n        propertyName2="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v("\n        propertyName3="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v("\n        "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("if")]),
+          _vm._v("(arr2Count>"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v("):\n            propertyName   = arr2["),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v("].replace("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'<p>'")]),
+          _vm._v(","),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v(")\n        "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("if")]),
+          _vm._v("(arr2Count>"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(
+            "):\n            propertyName2  = str(detailItemCompanyObj.div.p).split("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'<em class=\"vline\"></em>'")
+          ]),
+          _vm._v(")["),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("]\n        "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("if")]),
+          _vm._v("(arr2Count>"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v(
+            "):\n            propertyName3  = str(detailItemCompanyObj.div.p).split("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("'<em class=\"vline\"></em>'")
+          ]),
+          _vm._v(")["),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+          _vm._v("].replace("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'</p>'")]),
+          _vm._v(","),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v(
+            ")\n        #发布者\n        pushName       = detailItemHrObj.h3.get_text()\n       # pushJob        = detailItemHrObj.h3.find("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"em"')]),
+          _vm._v(").get_text()\n       \n        obj ={"),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"category_lv3"')
+          ]),
+          _vm._v(":clickText,\n              "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"job"')]),
+          _vm._v(":jobTitle,"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"salary"')]),
+          _vm._v(":salaryRange,\n              "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"company"')]),
+          _vm._v(":companyName,\n              "),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"companyAddress"')
+          ]),
+          _vm._v(":companyAddress,\n              "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"pro"')]),
+          _vm._v(":propertyName,\n              "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"pro_1"')]),
+          _vm._v(":propertyName2,\n              "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"pro_2"')]),
+          _vm._v(":propertyName3,\n              "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"year"')]),
+          _vm._v(":workyear,\n              "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"education"')]),
+          _vm._v(": education,\n              "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"push"')]),
+          _vm._v(":pushName,\n             # "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"pushjob"')]),
+          _vm._v(":pushJob,\n              "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"jobDesc"')]),
+          _vm._v(":"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('""')]),
+          _vm._v("\n              }\n        arrayList.append(obj)\n    "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("return")]),
+          _vm._v(" arrayList\n\n#获取三级的a标签\n"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("def "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("getCategory")]),
+            _c("span", { staticClass: "hljs-params" }, [_vm._v("(url)")]),
+            _vm._v(":\n    #获取相关数据\n    driver ")
+          ]),
+          _vm._v(
+            "= webdriver.Chrome()\n    driver.get(url)\n    jobMenuElement=driver.find_element_by_class_name("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"job-menu"')]),
+          _vm._v(")\n    bsObj = BeautifulSoup(jobMenuElement.get_attribute("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'innerHTML'")]),
+          _vm._v("),features="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"html.parser"')]),
+          _vm._v(")\n    #鼠标悬停事件\n    pList = bsObj.findAll("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"p"')]),
+          _vm._v(",{"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"class"')]),
+          _vm._v(":"),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"menu-article"')
+          ]),
+          _vm._v("})\n    "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("for")]),
+          _vm._v(
+            " p in pList:\n        # 移动到指定元素上，获取鼠标触发事件\n        "
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("try")]),
+          _vm._v(
+            ":\n            #获取界面，防止数据session过期丢失\n            driver.get(url)\n            curElement=driver.find_element_by_xpath("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"//b[text()=\'"')
+          ]),
+          _vm._v("+p.get_text()+"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"\']"')]),
+          _vm._v(
+            ")\n            ActionChains(driver).move_to_element(curElement).perform()\n            # 找到相应的触发事件元素\n            curElement= driver.find_element_by_xpath("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v(
+              "\"//div[@class='menu-sub']/p[@class='menu-article'][text()='\""
+            )
+          ]),
+          _vm._v("+p.get_text()+"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"\']/.."')]),
+          _vm._v(
+            ")\n            \n            # curElement= driver.find_element_by_xpath("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("\"//p[@class='menu-article',text()='\"")
+          ]),
+          _vm._v("+p.get_text()+"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"\']/.."')]),
+          _vm._v(
+            ")\n            bsSubObj = BeautifulSoup(curElement.get_attribute("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"innerHTML"')]),
+          _vm._v("),features="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"html.parser"')]),
+          _vm._v(")\n            h4List = bsSubObj.findAll("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'h4'")]),
+          _vm._v(")\n            "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("for")]),
+          _vm._v(
+            " h4 in h4List:\n                #分二级目录\n                #print(h4.get_text())\n                "
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("try")]),
+          _vm._v(
+            ":\n                    #获取界面，防止数据session过期丢失\n                    driver.get(url)\n                    curElement = driver.find_element_by_xpath("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v(
+              "\"//div[@class='menu-sub']/p[@class='menu-article'][text()='\""
+            )
+          ]),
+          _vm._v("+p.get_text()+"),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("\"']/../ul/li/h4[text()='\"")
+          ]),
+          _vm._v("+h4.get_text()+"),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("\"']/../div[@class='text']\"")
+          ]),
+          _vm._v(
+            ")\n                    bsSub2Obj = BeautifulSoup(curElement.get_attribute("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"innerHTML"')]),
+          _vm._v("),features="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"html.parser"')]),
+          _vm._v(")\n                    aList = bsSub2Obj.findAll("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"a"')]),
+          _vm._v(")\n                    "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("for")]),
+          _vm._v(" a in aList:\n                        ahref= a.get("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'href'")]),
+          _vm._v(
+            ")\n                        print(url+ahref)\n                        driver.get(url+ahref)\n                        #执行当前页\n                        arr=detailJobList(driver,a.get_text())\n                        writeListFile(arr,"
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"boss-job-list"')
+          ]),
+          _vm._v("+a.get_text().replace("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'/'")]),
+          _vm._v(","),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v(")+"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('".txt"')]),
+          _vm._v(","),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"a+"')]),
+          _vm._v(
+            ")\n                        #获取页码\n                        #pageList = driver.find_elements_by_xpath("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("\"//div[@class='page']/a\"")
+          ]),
+          _vm._v(")\n                        isContinue="),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("True\n                        "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("while")]),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("(isContinue)")
+            ]),
+            _vm._v(
+              ":\n                            #获取当前页是否为最后一页\n                            "
+            ),
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("try")]),
+            _vm._v(":\n                                nextpage ")
+          ]),
+          _vm._v("= driver.find_element_by_xpath("),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v("\"//div[@class='page']/a[@class='next']\"")
+          ]),
+          _vm._v(")\n                                "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("if")]),
+          _vm._v(
+            "(nextpage is not None):\n                                    nextUrl =nextpage.get_attribute("
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'href'")]),
+          _vm._v(")\n                                    "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("if")]),
+          _vm._v("(nextUrl=="),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"javascript:;"')
+          ]),
+          _vm._v(
+            "):\n                                        isContinue=False\n                                    "
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("else")]),
+          _vm._v(
+            ":\n                                        print(nextUrl)\n                                        driver.get(nextUrl)\n                                        arr=detailJobList(driver,a.get_text())\n                                        writeListFile(arr,"
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"boss-job-list"')
+          ]),
+          _vm._v("+a.get_text().replace("),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'/'")]),
+          _vm._v(","),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v(")+"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('".txt"')]),
+          _vm._v(","),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"a+"')]),
+          _vm._v(")\n                                "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("else")]),
+          _vm._v(
+            ":\n                                    isContinue=False \n                            except Exception as e:\n                                isContinue=False \n                except Exception as e:\n                    pass  \n        except Exception as e:\n            print(e)\n            pass\n\n"
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("if")]),
+          _vm._v(" __name__ == "),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v('"__main__"')]),
+          _vm._v(":\n    #移动到a标签去点击执行\n    url="),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"https://www.zhipin.com"')
+          ]),
+          _vm._v("\n    getCategory(url)\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E5%86%99%E6%96%87%E4%BB%B6" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E5%86%99%E6%96%87%E4%BB%B6",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 写文件")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("# -*- coding: UTF-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("8")]),
+          _vm._v(
+            " -*- \n\n# 输出文件内容即格式\n\n#处理sList数组元素到文件中，并以\\t分割\n"
+          ),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("def "),
+            _c("span", { staticClass: "hljs-title" }, [
+              _vm._v("writeListFile")
+            ]),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("(array,filePath,mode)")
+            ]),
+            _vm._v(":\n    with "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("open")]),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("(filePath,mode)")
+            ]),
+            _vm._v(" as f:\n        "),
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("for")]),
+            _vm._v(" dict in array:\n            dictStr")
+          ]),
+          _vm._v("="),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("''")]),
+          _vm._v("\n            "),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("for")]),
+          _vm._v(
+            " key in dict:\n                dictStr = dictStr+str(dict[key])+"
+          ),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'\\t'")]),
+          _vm._v("\n            f.write(dictStr+"),
+          _c("span", { staticClass: "hljs-string" }, [_vm._v("'\\r\\n'")]),
+          _vm._v(")\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h1", { attrs: { id: "%E5%AD%97%E7%AC%A6%E5%A4%84%E7%90%86" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E5%AD%97%E7%AC%A6%E5%A4%84%E7%90%86",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 字符处理")
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("# -*- coding: UTF-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("8")]),
+          _vm._v(" -*- \n\n# 判断是否为数字\n"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("def "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("is_number")]),
+            _c("span", { staticClass: "hljs-params" }, [_vm._v("(s)")]),
+            _vm._v(":\n    "),
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("try")]),
+            _vm._v(":\n        "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("float")]),
+            _c("span", { staticClass: "hljs-params" }, [_vm._v("(s)")]),
+            _vm._v(
+              "\n        return True\n    except ValueError:\n        pass\n \n    "
+            ),
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("try")]),
+            _vm._v(":\n        "),
+            _c("span", { staticClass: "hljs-keyword" }, [_vm._v("import")]),
+            _vm._v(" unicodedata\n        unicodedata."),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("numeric")]),
+            _c("span", { staticClass: "hljs-params" }, [_vm._v("(s)")]),
+            _vm._v("\n        return True\n    "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("except")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [
+              _vm._v("(TypeError, ValueError)")
+            ]),
+            _vm._v(":\n        pass\n \n    return False\n")
+          ])
+        ])
+      ])
     ])
   }
 ]
@@ -88655,4 +89160,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-84f508b37ab07783f4e4.js.map
+//# sourceMappingURL=app-2ad8dd04fc179a720767.js.map
