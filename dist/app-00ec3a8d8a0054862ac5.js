@@ -63328,6 +63328,232 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Hbase_study_qs_r1.md?vue&type=template&id=9085e5c6&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Hbase_study_qs_r1.md?vue&type=template&id=9085e5c6& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c(
+        "h1",
+        { attrs: { id: "hbase-%E5%AD%A6%E4%B9%A0%E7%96%91%E9%97%AE" } },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "header-anchor",
+              attrs: {
+                href: "#hbase-%E5%AD%A6%E4%B9%A0%E7%96%91%E9%97%AE",
+                "aria-hidden": "true"
+              }
+            },
+            [_vm._v("#")]
+          ),
+          _vm._v(" Hbase  学习疑问")
+        ]
+      ),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("strong", [_vm._v("HTable Api 的高级方法，用在哪些地方？")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "danger custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "void prewarmRegionCache(Map<HRegionInfo,HServerAddress> regionMap)\n\nstatic void setRegionCachePrefetch(table,enable)\n\nstatic boolean getRegionCachePrefetch(table)\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "success custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              " 用于操作耗时的操作的方法，用户可以先获取一个region的信息来预热一个下region。\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("Bytes vs  ByteBuffer 类")])]),
+      _vm._v(" "),
+      _c("div", { staticClass: "warnning custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [_c("code", [_vm._v("Bytes 是静态方法。\n")])])
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("过滤器 参考列过滤器（DependentColumnFilter)")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("参考过滤的使用方式？？？")]),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [
+              _vm._v("DependentColumnFilter(byte[] family,byte[] qualifier)")
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "DependentColumnFilter(byte[] family,byte[] qualifier,boolean dropDependentColumn)"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v(
+                "DependentColumnFilter(byte[] family,byte[] qualifier,boolean\ndropDependentColumn,CompareOp valueCompareOp,ByteArrayComparable valueComparator)"
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("如何理解这个过滤器：\n？？？")]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("分页过滤器 PageFilter")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "在物理分区上分离的服务器中并行执行过滤操作时，在不同的region 服务器上并行的过滤器不能共享他们的现在的状态和边界，因此，每个过滤器都会在完成扫描前获取pageCount行的结果，这种情况使得分页过滤器可能失效，极有可能返回的比所需要的多，最后客户端在合并结果时可以选择返回的结构也可以使用api进行过滤。"
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("为什么 并行执行扫描 分页过滤器会失效 ？？？？？")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("解决之道：")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "客户端代码会记录本地扫描的最后行，并在下一次获取数据时把记录的上次扫描的最后一行设为这次扫描的起始行，同时保留相同的过滤属性，然后依次迭代。\n分页时，对一次返回的数据设定了严格的要求，一次扫描的行数大于分页的大小，一旦发生，过滤器有一种机制通知region服务器停止扫描。"
+        )
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("Import data to hbase")])]),
+      _vm._v(" "),
+      _c("div", { staticClass: "danger custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "java.lang.NoClassDefFoundError: org/apache/http/client/HttpClient\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "success custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "引入相应的jar包\n<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->\n<dependency>\n    <groupId>org.apache.httpcomponents</groupId>\n    <artifactId>httpclient</artifactId>\n    <version>4.5.6</version>\n</dependency>\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("实现一个 web在线查询应用")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "  \n    font tech: Nodejs + Vue\n    \n    服务： spring boot\n    \n    后端： hadoop + sqoop + hive + hbase\n    \n    "
+          ),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//查询 、分页、 写入")
+          ]),
+          _vm._v("\n  \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [_vm._v("    导入数据：\n\n    \n\n")])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [_vm._v("\n    ??????\n    \n")])
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("Hbase 返回某一列的值，是去重之后的结果，怎么做？")])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [
+            _vm._v(
+              "Hbase 分区返回一个Pair<byte[][],byte[][]>  table.getStartEndKeys();"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "success custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "第一个开始key：  endKey: getfirst()[0]\n第二个开始key是  是第一个结束key  endKey  getSecond()[0]\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [_c("p", [_vm._v("Hbase 如何修改列名")])]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", [
+            _vm._v(
+              "Hbase 使用 avro ，thrif 开启网关服务。，为什么使用avro、thrif 框架。"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("如何使用？")])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Hive-DML-r1.md?vue&type=template&id=e9edd712&":
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/docs/zh-CN/Hive-DML-r1.md?vue&type=template&id=e9edd712& ***!
@@ -86972,6 +87198,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/docs/zh-CN/Hbase_study_qs_r1.md":
+/*!*********************************************!*\
+  !*** ./src/docs/zh-CN/Hbase_study_qs_r1.md ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Hbase_study_qs_r1_md_vue_type_template_id_9085e5c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Hbase_study_qs_r1.md?vue&type=template&id=9085e5c6& */ "./src/docs/zh-CN/Hbase_study_qs_r1.md?vue&type=template&id=9085e5c6&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Hbase_study_qs_r1_md_vue_type_template_id_9085e5c6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Hbase_study_qs_r1_md_vue_type_template_id_9085e5c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/docs/zh-CN/Hbase_study_qs_r1.md"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/docs/zh-CN/Hbase_study_qs_r1.md?vue&type=template&id=9085e5c6&":
+/*!****************************************************************************!*\
+  !*** ./src/docs/zh-CN/Hbase_study_qs_r1.md?vue&type=template&id=9085e5c6& ***!
+  \****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Hbase_study_qs_r1_md_vue_type_template_id_9085e5c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./Hbase_study_qs_r1.md?vue&type=template&id=9085e5c6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/docs/zh-CN/Hbase_study_qs_r1.md?vue&type=template&id=9085e5c6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Hbase_study_qs_r1_md_vue_type_template_id_9085e5c6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_Hbase_study_qs_r1_md_vue_type_template_id_9085e5c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/docs/zh-CN/Hive-DML-r1.md":
 /*!***************************************!*\
   !*** ./src/docs/zh-CN/Hive-DML-r1.md ***!
@@ -88136,8 +88415,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _docs_zh_CN_Hadoop_FileSystem_Shell_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../docs/zh-CN/Hadoop-FileSystem-Shell.md */ "./src/docs/zh-CN/Hadoop-FileSystem-Shell.md");
 /* harmony import */ var _docs_zh_CN_bigData_hive_r1_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../docs/zh-CN/bigData-hive-r1.md */ "./src/docs/zh-CN/bigData-hive-r1.md");
 /* harmony import */ var _docs_zh_CN_hive_ddl_r1_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../docs/zh-CN/hive-ddl-r1.md */ "./src/docs/zh-CN/hive-ddl-r1.md");
-/* harmony import */ var _docs_zh_CN_Hive_DML_r1_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../docs/zh-CN/Hive-DML-r1.md */ "./src/docs/zh-CN/Hive-DML-r1.md");
-/* harmony import */ var _docs_zh_cn_Python_https_r1_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../docs/zh-cn/Python-https-r1.md */ "./src/docs/zh-cn/Python-https-r1.md");
+/* harmony import */ var _docs_zh_CN_Hbase_study_qs_r1_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../docs/zh-CN/Hbase_study_qs_r1.md */ "./src/docs/zh-CN/Hbase_study_qs_r1.md");
+/* harmony import */ var _docs_zh_CN_Hive_DML_r1_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../docs/zh-CN/Hive-DML-r1.md */ "./src/docs/zh-CN/Hive-DML-r1.md");
+/* harmony import */ var _docs_zh_cn_Python_https_r1_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../docs/zh-cn/Python-https-r1.md */ "./src/docs/zh-cn/Python-https-r1.md");
+
 
 
 
@@ -88148,14 +88429,20 @@ __webpack_require__.r(__webpack_exports__);
 
 const  bigData =[
     {
+        name: "hbaseqsr1",
+        component: _docs_zh_CN_Hbase_study_qs_r1_md__WEBPACK_IMPORTED_MODULE_3__["default"],
+        title: "Hbase学习疑问",
+        timestamp: '2017/7/23'
+    },
+    {
         name: "pythonspiderr1",
-        component: _docs_zh_cn_Python_https_r1_md__WEBPACK_IMPORTED_MODULE_4__["default"],
+        component: _docs_zh_cn_Python_https_r1_md__WEBPACK_IMPORTED_MODULE_5__["default"],
         title: "爬虫构建",
         timestamp: '2017/7/7'
     },
     {
         name: "hiveDMLr1",
-        component: _docs_zh_CN_Hive_DML_r1_md__WEBPACK_IMPORTED_MODULE_3__["default"],
+        component: _docs_zh_CN_Hive_DML_r1_md__WEBPACK_IMPORTED_MODULE_4__["default"],
         title: "hive 查询",
         timestamp: '2017/7/01'
     },
@@ -89200,4 +89487,4 @@ if(false) {}
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-e60e357409e5e437e374.js.map
+//# sourceMappingURL=app-00ec3a8d8a0054862ac5.js.map
