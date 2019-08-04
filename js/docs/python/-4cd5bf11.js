@@ -158,7 +158,7 @@ var staticRenderFns = [
       _c("p", [
         _c("img", {
           attrs: {
-            src: "http://fandong90.github.io/dist/static/img/httpserror.png",
+            src: "http://fandong90.github.io/static/img/httpserror.png",
             alt: "error"
           }
         })
@@ -755,7 +755,7 @@ var staticRenderFns = [
       _c("p", [
         _c("img", {
           attrs: {
-            src: "http://fandong90.github.io/dist/static/img/bossjoblistr1.jpg",
+            src: "http://fandong90.github.io/static/img/bossjoblistr1.jpg",
             alt: "data"
           }
         })
@@ -774,7 +774,7 @@ var staticRenderFns = [
       _c("p", [
         _c("img", {
           attrs: {
-            src: "http://fandong90.github.io/dist/static/img/bossdatar1.jpeg",
+            src: "http://fandong90.github.io/static/img/bossdatar1.jpeg",
             alt: "datar1"
           }
         })
