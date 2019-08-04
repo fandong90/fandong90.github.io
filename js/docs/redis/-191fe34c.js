@@ -149,7 +149,7 @@ var staticRenderFns = [
         })
       ]),
       _vm._v(" "),
-      _c("p", [_vm._v("新消息通过publish 推送给频道，订阅的接收消息")]),
+      _c("p", [_vm._v("新消息通过publish 推送给频道， 订阅的接收消息")]),
       _vm._v(" "),
       _c("p", [
         _c("img", {
