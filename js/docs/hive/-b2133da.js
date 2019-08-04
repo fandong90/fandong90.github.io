@@ -253,8 +253,7 @@ var staticRenderFns = [
     return _c("p", [
       _c("img", {
         attrs: {
-          src:
-            "http://fandong90.github.io/dist/static/img/bigdatahivestart.jpg",
+          src: "http://fandong90.github.io/static/img/bigdatahivestart.jpg",
           alt: "beeline"
         }
       })

@@ -143,8 +143,7 @@ var staticRenderFns = [
       _c("p", [
         _c("img", {
           attrs: {
-            src:
-              "http://fandong90.github.io/dist/static/img/redissubscriber1.png",
+            src: "http://fandong90.github.io/static/img/redissubscriber1.png",
             alt: "subscribe"
           }
         })
@@ -155,8 +154,7 @@ var staticRenderFns = [
       _c("p", [
         _c("img", {
           attrs: {
-            src:
-              "http://fandong90.github.io/dist/static/img/redissubscriber2.png",
+            src: "http://fandong90.github.io/static/img/redissubscriber2.png",
             alt: "subscribe2"
           }
         })
