@@ -126,7 +126,6 @@ __webpack_require__.r(__webpack_exports__);
     },
     computed: {
         pageObj(){
-            debugger;
             this.getfilter(this.$store.state.pageObj);
             return this.$store.state.pageObj;
         },
