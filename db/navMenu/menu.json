@@ -15,7 +15,8 @@
             {"order":"1-2","title":"hive","indentity":"/bigData/hive","type":"text"},
             {"order":"1-3","title":"hbase","indentity":"/bigData/hbase","type":"text"},
             {"order":"1-4","title":"flink","indentity":"/bigData/flink","type":"text"},
-            {"order":"1-5","title":"spark","indentity":"/bigData/spark","type":"text"}
+            {"order":"1-5","title":"spark","indentity":"/bigData/spark","type":"text"},
+            {"order":"1-6","title":"zookeeper","indentity":"/bigData/zookeeper","type":"text"}
         ]
     },
     {
