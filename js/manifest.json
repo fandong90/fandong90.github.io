@@ -1,4 +1,12 @@
 {
+  "/docs/avascript/2f97ddb2.js": "/docs/avascript/2f97ddb2.js",
+  "/docs/avascript/2f97ddb2.js.map": "/docs/avascript/2f97ddb2.js.map",
+  "/docs/docker/-1922e9bb.js": "/docs/docker/-1922e9bb.js",
+  "/docs/docker/-1922e9bb.js.map": "/docs/docker/-1922e9bb.js.map",
+  "/docs/docker/-574eb2df.js": "/docs/docker/-574eb2df.js",
+  "/docs/docker/-574eb2df.js.map": "/docs/docker/-574eb2df.js.map",
+  "/docs/express/-13796fb0.js": "/docs/express/-13796fb0.js",
+  "/docs/express/-13796fb0.js.map": "/docs/express/-13796fb0.js.map",
   "/docs/flink/-19215f2f.js": "/docs/flink/-19215f2f.js",
   "/docs/flink/-19215f2f.js.map": "/docs/flink/-19215f2f.js.map",
   "/docs/hadoop/-1b265fff.js": "/docs/hadoop/-1b265fff.js",
@@ -13,10 +21,14 @@
   "/docs/hive/-c78fd7a.js.map": "/docs/hive/-c78fd7a.js.map",
   "/docs/java/2ec8cbe2.js": "/docs/java/2ec8cbe2.js",
   "/docs/java/2ec8cbe2.js.map": "/docs/java/2ec8cbe2.js.map",
+  "/docs/nodejs/-55cee04c.js": "/docs/nodejs/-55cee04c.js",
+  "/docs/nodejs/-55cee04c.js.map": "/docs/nodejs/-55cee04c.js.map",
   "/docs/python/-4cd5bf11.js": "/docs/python/-4cd5bf11.js",
   "/docs/python/-4cd5bf11.js.map": "/docs/python/-4cd5bf11.js.map",
   "/docs/redis/-191fe34c.js": "/docs/redis/-191fe34c.js",
   "/docs/redis/-191fe34c.js.map": "/docs/redis/-191fe34c.js.map",
   "/docs/redis/-19221a74.js": "/docs/redis/-19221a74.js",
-  "/docs/redis/-19221a74.js.map": "/docs/redis/-19221a74.js.map"
+  "/docs/redis/-19221a74.js.map": "/docs/redis/-19221a74.js.map",
+  "/docs/vue/-c784734.js": "/docs/vue/-c784734.js",
+  "/docs/vue/-c784734.js.map": "/docs/vue/-c784734.js.map"
 }
