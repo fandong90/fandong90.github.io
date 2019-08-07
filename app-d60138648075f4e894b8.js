@@ -164,7 +164,7 @@
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n.el-container{\n    margin:-4px -4px;\n}\n.el-header{\n    background-color: #40caffe6;\n    margin:auto auto;\n    width: 100%;\n    padding:0px 0px;\n}\n.el-main{\n    /* margin-top:8px; */\n    padding: 0px 0px;\n    margin-bottom: -9px;\n}\n.box-card{\n    background: #40caffe6;\n    height: auto;\n    color: aliceblue;\n    font-size: 16px;\n}\n.el-dialog__header{\n    border-left:5px solid #40caffe6;\n}\n\n\n", ""]);
+exports.push([module.i, "\n.el-header{\n    background-color: #40caffe6;\n    margin:auto auto;\n    width: 100%;\n    padding:0px 0px;\n}\n.el-main{\n    /* margin-top:8px; */\n    padding: 0px 0px;\n    margin-bottom: -9px;\n}\n.box-card{\n    background: #40caffe6;\n    height: auto;\n    color: aliceblue;\n    font-size: 16px;\n}\n.el-dialog__header{\n    border-left:5px solid #40caffe6;\n}\n\n\n", ""]);
 
 
 /***/ }),
@@ -442,6 +442,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -455,6 +456,8 @@ __webpack_require__.r(__webpack_exports__);
   created(){
     this.getData();
     this.getlayout();
+    this.height=window.document.documentElement.clientHeight-120;
+    console.log(this.height);
   },
   data() {
     return {
@@ -910,6 +913,7 @@ var render = function() {
         ? _c(
             "grid-layout",
             {
+              style: { height: _vm.height + "px" },
               attrs: {
                 layout: _vm.layout,
                 "col-num": 12,
@@ -1681,8 +1685,13 @@ const pagelist=[
 ,"/lang/java"
 ,"/lang/python"
 ,"/lang/cSharp"
+,"/lang/shell"
 ,"/tools/ide"
 ,"/tools/versionControl"
+,"/tools/docker"
+,"/web/nodejs"
+,"/web/express"
+,"/web/vue"
 ];
 /* harmony default export */ __webpack_exports__["default"] = (pagelist);
 
@@ -1751,4 +1760,4 @@ function getTimeStamp(){
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app-1aefbfc208dab6321636.js.map
+//# sourceMappingURL=app-d60138648075f4e894b8.js.map
