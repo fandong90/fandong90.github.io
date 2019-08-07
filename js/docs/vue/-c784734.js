@@ -445,8 +445,7 @@ var staticRenderFns = [
           _c("p", [
             _c("img", {
               attrs: {
-                src:
-                  "http://fandong90.github.io/dist/static/img/demo1frame.png",
+                src: "http://fandong90.github.io/static/img/demo1frame.png",
                 alt: "demo1目录结构图"
               }
             })

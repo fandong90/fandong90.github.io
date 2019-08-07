@@ -241,14 +241,14 @@ var staticRenderFns = [
             _c("img", {
               attrs: {
                 src:
-                  "http://fandong90.github.io/dist/static/img/contianervsvirtual.png",
+                  "http://fandong90.github.io/static/img/contianervsvirtual.png",
                 alt: "container vs virtual machine"
               }
             })
           ])
         ]),
         _vm._v(" "),
-        _c("li", [_c("p", [_vm._v("Docker 基础命令")])])
+        _c("li", [_c("p", [_vm._v("Docker 基础命令s")])])
       ]),
       _vm._v(" "),
       _c("pre", { staticClass: "hljs" }, [

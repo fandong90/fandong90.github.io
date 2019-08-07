@@ -334,7 +334,7 @@ var staticRenderFns = [
         _c("img", {
           attrs: {
             src:
-              "http://fandong90.github.io/dist/static/img/nodejsclusterserver.png",
+              "http://fandong90.github.io/static/img/nodejsclusterserver.png",
             alt: "Nodejs服务启动"
           }
         })
@@ -405,8 +405,7 @@ var staticRenderFns = [
       _c("p", [
         _c("img", {
           attrs: {
-            src:
-              "http://fandong90.github.io/dist/static/img/nodeclusterfilea.png",
+            src: "http://fandong90.github.io/static/img/nodeclusterfilea.png",
             alt: "请求结果"
           }
         })
@@ -430,7 +429,7 @@ var staticRenderFns = [
         _c("img", {
           attrs: {
             src:
-              "http://fandong90.github.io/dist/static/img/nodeclustertestcount.png",
+              "http://fandong90.github.io/static/img/nodeclustertestcount.png",
             alt: "test"
           }
         })
