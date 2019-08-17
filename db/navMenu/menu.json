@@ -86,7 +86,8 @@
         "indentity":"/example",
         "type":"node",
         "children":[
-            {"order":"8-1","title":"Nodejs","indentity":"/example/bigData","type":"text"}
+            {"order":"8-1","title":"Nodejs","indentity":"/example/nodejs","type":"text"},
+            {"order":"8-2","title":"大数据实战","indentity":"/example/bigData","type":"text"}
         ]
     }
 ]
