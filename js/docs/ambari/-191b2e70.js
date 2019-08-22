@@ -189,6 +189,25 @@ var staticRenderFns = [
         ]
       ),
       _vm._v(" "),
+      _c("p", [
+        _c("a", { attrs: { href: "https://supportmatrix.hortonworks.com" } }, [
+          _vm._v("查看ambari支持版本")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c(
+          "a",
+          {
+            attrs: {
+              href:
+                "https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/bk_ambari-installation/content/mmsr_pkg_inode_reqs.html"
+            }
+          },
+          [_vm._v("ambari自动安装参考文档")]
+        )
+      ]),
+      _vm._v(" "),
       _c("ul", [
         _c("li", [
           _c("p", [_vm._v("什么是ambari ？")]),
@@ -553,6 +572,120 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("打包为rpm")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\n\t[root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
+          _vm._v("01 apache-ambari-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2.7")]),
+          _vm._v(".3-src]# mvn -B clean install rpm:rpm -DnewVersion="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2.7")]),
+          _vm._v(".3.0.0 -DbuildNumber="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("4295")]),
+          _vm._v(
+            "bb16c439cbc8fb0e7362f19768dde1477868 -DskipTests -Dpython.ver="
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"python >= 2.6"')
+          ]),
+          _vm._v("\n\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "warnning custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v("必须按照rpmbuild 命令\n\nyum install rpm-build\n")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "danger custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              'pClassLoader@5c647e05]\n[DEBUG] Configuring mojo \'com.github.eirslett:frontend-maven-plugin:1.4:install-node-and-yarn\' with basic configurator -->\n[DEBUG]   (f) environmentVariables = {npm_config_tmp=/tmp/npm_config_tmp}\n[DEBUG]   (f) nodeDownloadRoot = https://nodejs.org/dist/\n[DEBUG]   (f) nodeVersion = v4.5.0\n[DEBUG]   (f) project = MavenProject: org.apache.ambari:ambari-web:2.7.3.0.0 @ /opt/ambari/apache-ambari-2.7.3-src/ambari-web/pom.xml\n[DEBUG]   (f) repositorySystemSession = org.eclipse.aether.DefaultRepositorySystemSession@37b56ac7\n[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@e322ec9\n[DEBUG]   (f) skip = false\n[DEBUG]   (f) skipTests = true\n[DEBUG]   (f) testFailureIgnore = false\n[DEBUG]   (f) workingDirectory = /opt/ambari/apache-ambari-2.7.3-src/ambari-web\n[DEBUG]   (f) yarnDownloadRoot = https://github.com/yarnpkg/yarn/releases/download/\n[DEBUG]   (f) yarnVersion = v0.23.2\n[DEBUG]   (f) execution = com.github.eirslett:frontend-maven-plugin:1.4:install-node-and-yarn {execution: install node and yarn}\n[DEBUG] -- end configuration --\n[DEBUG] Executing command line [/opt/ambari/apache-ambari-2.7.3-src/ambari-web/node/node, --version]\n[DEBUG] Exit value 0\n[INFO] Node v4.5.0 is already installed.\n[DEBUG] Executing command line [/opt/ambari/apache-ambari-2.7.3-src/ambari-web/node/yarn/dist/bin/yarn, --version]\n[INFO] Installing Yarn version v0.23.2\n[INFO] Downloading https://github.com/yarnpkg/yarn/releases/download/v0.23.2/yarn-v0.23.2.tar.gz to /root/.m2/repository/com/github/eirslett/yarn/0.23.2/yarn-0.23.2./yarn-v0.23.2.tar.gz\n[INFO] No proxies configured\n[INFO] No proxy was configured, downloading directly\n八月 17, 2019 4:08:45 上午 org.apache.http.client.protocol.ResponseProcessCookies processCookies\n警告: Invalid cookie header: "Set-Cookie: has_recent_activity=1; path=/; expires=Sat, 17 Aug 2019 09:08:44 -0000". Invalid \'expires\' attribute: Sat, 17 Aug 2019 09:08:44 -0000\n八月 17, 2019 4:08:45 上午 org.apache.http.client.protocol.ResponseProcessCookies processCookies\n警告: Invalid cookie header: "Set-Cookie: logged_in=no; domain=.github.com; path=/; expires=Wed, 17 Aug 2039 08:08:44 -0000; secure; HttpOnly". Invalid \'expires\' attribute: Wed, 17 Aug 2039 08:08:44 -0000\n[INFO] Unpacking /root/.m2/repository/com/github/eirslett/yarn/0.23.2/yarn-0.23.2./yarn-v0.23.2.tar.gz into /opt/ambari/apache-ambari-2.7.3-src/ambari-web/node/yarn\n[INFO] Installed Yarn locally.\n[INFO] \n[INFO] --- frontend-maven-plugin:1.4:yarn (yarn install) @ ambari-web ---\n[DEBUG] Configuring mojo com.github.eirslett:frontend-maven-plugin:1.4:yarn from plugin realm ClassRealm[plugin>com.github.eirslett:frontend-maven-plugin:1.4, parent: sun.misc.Launcher$AppClassLoader@5c647e05]\n[DEBUG] Configuring mojo \'com.github.eirslett:frontend-maven-plugin:1.4:yarn\' with basic configurator -->\n[DEBUG]   (f) arguments = install --ignore-engines --pure-lockfile\n[DEBUG]   (f) environmentVariables = {npm_config_tmp=/tmp/npm_config_tmp}\n[DEBUG]   (f) project = MavenProject: org.apache.ambari:ambari-web:2.7.3.0.0 @ /opt/ambari/apache-ambari-2.7.3-src/ambari-web/pom.xml\n[DEBUG]   (f) repositorySystemSession = org.eclipse.aether.DefaultRepositorySystemSession@37b56ac7\n[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@e322ec9\n[DEBUG]   (f) skip = false\n[DEBUG]   (f) skipTests = true\n[DEBUG]   (f) testFailureIgnore = false\n[DEBUG]   (f) workingDirectory = /opt/ambari/apache-ambari-2.7.3-src/ambari-web\n[DEBUG]   (f) yarnInheritsProxyConfigFromMaven = true\n[DEBUG]   (f) execution = com.github.eirslett:frontend-maven-plugin:1.4:yarn {execution: yarn install}\n[DEBUG] -- end configuration --\n[INFO] Running \'yarn install --ignore-engines --pure-lockfile\' in /opt/ambari/apache-ambari-2.7.3-src/ambari-web\n[DEBUG] Executing command line [/opt/ambari/apache-ambari-2.7.3-src/ambari-web/node/yarn/dist/bin/yarn, install, --ignore-engines, --pure-lockfile]\n[INFO] yarn install v0.23.2\n[ERROR] warning Ambari@2.4.0: No license field\n[INFO] [1/4] Resolving packages...\n[INFO] [2/4] Fetching packages...\n[ERROR] warning fsevents@0.3.8: The platform "linux" is incompatible with this module.\n[INFO] info "fsevents@0.3.8" is an optional dependency and failed compatibility check. Excluding it from installation.\n[INFO] info "fsevents@1.1.1" is an optional dependency and failed compatibility check. Excluding it from installation.\n[ERROR] warning fsevents@1.1.1: The platform "linux" is incompatible with this module.\n[INFO] [3/4] Linking dependencies...\n[INFO] [4/4] Building fresh packages...\n[ERROR] error /opt/ambari/apache-ambari-2.7.3-src/ambari-web/node_modules/mocha-phantomjs/node_modules/phantomjs: Command failed.\n[INFO] info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.\n[ERROR] Exit code: 1\n[ERROR] Command: sh\n[ERROR] Arguments: -c node install.js\n[ERROR] Directory: /opt/ambari/apache-ambari-2.7.3-src/ambari-web/node_modules/mocha-phantomjs/node_modules/phantomjs\n[ERROR] Output:\n[ERROR] Downloading https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2\n[ERROR] Saving to /tmp/phantomjs/phantomjs-1.9.7-linux-x86_64.tar.bz2\n[ERROR] Receiving...\n[ERROR] \n[ERROR] Error making request.\n[ERROR] Error: read ECONNRESET\n[ERROR]     at exports._errnoException (util.js:907:11)\n[ERROR]     at TLSWrap.onread (net.js:557:26)\n[ERROR] \n[ERROR] Please report this full log at https://github.com/Medium/phantomjs\n'
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "**发现编译保持，原因是yarn变量冲突，开始我服务器是使用脚本安装过hadoop的，全局变量并没有删除，\n注释掉全局变量后，在重新安装。即可\n**"
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "warnning custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "[INFO] Ambari Main 2.7.3.0.0 .............................. SUCCESS [  9.725 s]\n[INFO] Apache Ambari Project POM 2.7.3.0.0 ................ SUCCESS [  0.255 s]\n[INFO] Ambari Web 2.7.3.0.0 ............................... SUCCESS [01:57 min]\n[INFO] Ambari Views 2.7.3.0.0 ............................. SUCCESS [09:44 min]\n[INFO] Ambari Admin View 2.7.3.0.0 ........................ FAILURE [05:03 min]\n[INFO] ambari-utility 1.0.0.0-SNAPSHOT .................... SKIPPED\n[INFO] ambari-metrics 2.7.3.0.0 ........................... SKIPPED\n[INFO] Ambari Metrics Common 2.7.3.0.0 .................... SKIPPED\n[INFO] Ambari Metrics Hadoop Sink 2.7.3.0.0 ............... SKIPPED\n....\n[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:1.2.1:exec (Bower install) on project ambari-admin: Command execution failed. Process exited with an error: 1 (Exit value: 1) -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException\n[ERROR] \n[ERROR] After correcting the problems, you can resume the build with the command\n[ERROR]   mvn <goals> -rf :ambari-admin\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_c("strong", [_vm._v("问题多多啊")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//提示过多的验证")
+          ]),
+          _vm._v(
+            "\n\t \n\t[ERROR] Failed to execute goal org.apache.rat:apache-rat-plugin:"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0.12")]),
+          _vm._v(":check ("),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("default")]),
+          _vm._v(
+            ") on project ambari: Too many files with unapproved license: "
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(" See RAT report in: /opt/ambari/apache-ambari-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2.7")]),
+          _vm._v(".3-src/target/rat.txt -> [Help "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v("]\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_c("strong", [_vm._v("解决办法")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\tmvn -B clean install rpm:rpm -DnewVersion="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("2.7")]),
+          _vm._v(".3.0.0 -DbuildNumber="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("4295")]),
+          _vm._v(
+            "bb16c439cbc8fb0e7362f19768dde1477868 -DskipTests -Dpython.ver="
+          ),
+          _c("span", { staticClass: "hljs-string" }, [
+            _vm._v('"python >= 2.6"')
+          ]),
+          _vm._v(" -Drat.skip="),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("true")]),
+          _vm._v("\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("strong", [
+          _vm._v("放弃从网络下载安装！！！！，网络不行啊 啊啊啊啊啊啊")
+        ])
+      ]),
+      _vm._v(" "),
       _c("p", [
         _c(
           "a",
@@ -566,9 +699,387 @@ var staticRenderFns = [
         )
       ]),
       _vm._v(" "),
+      _c("h2", { attrs: { id: "%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "header-anchor",
+            attrs: {
+              href: "#%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85",
+              "aria-hidden": "true"
+            }
+          },
+          [_vm._v("#")]
+        ),
+        _vm._v(" 离线安装")
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _vm._v("配置一个本地源服务\n"),
+          _c("ul", [
+            _c("li", [
+              _vm._v("安装服务器 "),
+              _c(
+                "a",
+                { attrs: { href: "http://httpd.apache.org/docs/2.4/" } },
+                [_vm._v("apache httpd")]
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "    sudo yum install httpd\n\tsudo systemctl enable httpd\n\tsudo systemctl start httpd\n   \n   "
+          ),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//查看配置httpd.conf")
+          ]),
+          _vm._v("\n   [root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
+          _vm._v("01 ~]# vi /etc/httpd/conf/httpd.conf \n   \n   "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//获取配置网站的目录")
+          ]),
+          _vm._v(
+            "\n   \n   <Directory />\n     AllowOverride none\n     Require all denied\n   </Directory>\n\n\n   "
+          ),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("//chrome ")]),
+          _vm._v("\n   \n   验证是否OK！\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("机器节点安装ssh 免密登录")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("    "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("//执行这个")]),
+          _vm._v("\n    [root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
+          _vm._v("01 /]# ssh-keygen\n    \n    "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//将生成的公钥copy授权列表")
+          ]),
+          _vm._v("\n    [root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
+          _vm._v("01 /]# id_rsa.pub >> .ssh/authorize_keys\n    \n    "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("//test")]),
+          _vm._v("\n    \n    ssh localhost\n    \n    "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//进入则表示成功")
+          ]),
+          _vm._v("\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "danger custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [_c("code", [_vm._v(" 一定要做ssh localhost 自验证。\n")])])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("**copy id_rsa.pub **")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\tssh-copy-id -i .ssh/id_rsa.pub  username"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@ip")]),
+          _vm._v("\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [_c("li", [_vm._v("时间同步")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "    yum install -y ntpdate\n   \n    ntpdate cn.pool.ntp.org\n   \n    "
+          ),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("//查看 ")]),
+          _vm._v("\n    date\n    \n    "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("//硬件时间")]),
+          _vm._v("\n    hwclock\n    \n    "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("//修改时区")]),
+          _vm._v("\n\t timedatectl set-timezone Asia/Shanghai\n\t\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _c("p", [_vm._v("虚拟机器")]),
+          _vm._v(" "),
+          _c("p", [_c("strong", [_vm._v("先假定集群的ips")])])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "tip custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "hostname: hadoop01  192.168.1.125 (这个不是)\nhostname: hadoop02  192.168.1.124\nhostname: hadoop03  192.168.1.123\nhostname: hadoop04  192.168.1.122\nhostname: hadoop05  192.168.1.121\n"
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("strong", [_vm._v("其他的虚拟机在我开发电脑上，哎硬件有限")])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("1、 step 首先设定机器固定IP")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("   "),
+          _c("span", { staticClass: "hljs-comment" }, [_vm._v("//进入 ")]),
+          _vm._v("\n [root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
+          _vm._v("01 /]#  cd /etc/sysconfig/network-scripts/\n \n [root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
+          _vm._v("01 network-scripts]# vi ifcfg-enp0s31f6\n \n [root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
+          _vm._v(
+            "01 network-scripts]# vi ifcfg-enp0s31f6\n\n   TYPE=Ethernet\n   PROXY_METHOD=none\n   BROWSER_ONLY=no\n   BOOTPROTO="
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("static")]),
+          _vm._v(
+            "\n   DEFROUTE=yes\n   IPV4_FAILURE_FATAL=no\n   IPV6INIT=yes\n   IPV6_AUTOCONF=yes\n   IPV6_DEFROUTE=yes\n   IPV6_FAILURE_FATAL=no\n   IPV6_ADDR_GEN_MODE=stable-privacy\n   NAME=enp0s31f6\n   UUID=ba77043f-"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("7270")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("490")]),
+          _vm._v("b-a74a-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(
+            "b7d790a628b\n   DEVICE=enp0s31f6\n   ONBOOT=yes\n   PREFIXO0="
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("255.255")]),
+          _vm._v(".255.0\n   GATEWAY0="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _vm._v(".1.1\n   DNS0="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("8.8")]),
+          _vm._v(".8.8\n   DNS1="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("8.8")]),
+          _vm._v(".4.4\n   IPADDR="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _vm._v(".1.125\n   PREFIX="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("32")]),
+          _vm._v("\n   GATEWAY="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _vm._v(".1.1\n   \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_c("strong", [_vm._v("另一个ip配置")])]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v(
+            "\tTYPE=Ethernet\n   PROXY_METHOD=none\n   BROWSER_ONLY=no\n   BOOTPROTO="
+          ),
+          _c("span", { staticClass: "hljs-keyword" }, [_vm._v("static")]),
+          _vm._v(
+            "\n   DEFROUTE=yes\n   IPV4_FAILURE_FATAL=no\n   IPV6INIT=yes\n   IPV6_AUTOCONF=yes\n   IPV6_DEFROUTE=yes\n   IPV6_FAILURE_FATAL=no\n   IPV6_ADDR_GEN_MODE=stable-privacy\n   NAME=enp0s31f6\n   UUID=ba77043f-"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("7270")]),
+          _vm._v("-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("490")]),
+          _vm._v("b-a74a-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("0")]),
+          _vm._v(
+            "b7d790a628b\n   DEVICE=enp0s31f6\n   ONBOOT=yes\n   PREFIXO0="
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("255.255")]),
+          _vm._v(".255.0\n   GATEWAY0="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _vm._v(".1.1\n   DNS0="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("8.8")]),
+          _vm._v(".8.8\n   DNS1="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("8.8")]),
+          _vm._v(".4.4\n   IPADDR="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _vm._v(".1.124\n   PREFIX="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("32")]),
+          _vm._v("\n   GATEWAY="),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _vm._v(".1.1\n   \n   ....\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("2、修改hosts")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\t\n\t[root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
+          _vm._v(
+            "01 network-scripts]# vi /etc/hosts\n\n   #修改 localhost.localdomain 为hadoop01\n   "
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _vm._v(".1.125 hadoop01\n   "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _vm._v(".1.124 hadoop02\n   "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _vm._v(".1.123 hadoop03\n   "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _vm._v(".1.122 hadoop04\n   "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("192.168")]),
+          _vm._v(".1.121 hadoop05\n   "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("127.0")]),
+          _vm._v(
+            ".0.1   localhost localhost.localdomain localhost4 localhost4.domain4\n   ::"
+          ),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+          _vm._v(
+            "         localhost localhost.localdomain localhost6 localhost6.domain6\n   \n   \n\n"
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("3、验证域名")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\n\t[root"),
+          _c("span", { staticClass: "hljs-meta" }, [_vm._v("@hadoop")]),
+          _vm._v("01 network-scripts]# hostname\n   hadoop01\n\n")
+        ])
+      ]),
+      _vm._v(" "),
       _c("ul", [_c("li", [_vm._v("机器是centos 7 系统")])]),
       _vm._v(" "),
-      _c("pre", { staticClass: "hljs" }, [_c("code", [_vm._v("   \n\n")])])
+      _c("p", [_vm._v("使用")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\n\t\tOS\tFormat\tURL\n\t\tRedHat "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("7")]),
+          _vm._v("\n\t\t\n\t\tCentOS "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("7")]),
+          _vm._v("\n\t\t\n\t\tOracle Linux "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("7")]),
+          _vm._v("\n\t\t\n\t\tBase URL\thttp:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v(
+              "//public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.7.3.0"
+            )
+          ]),
+          _vm._v("\n\t\tRepo File\thttp:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v(
+              "//public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.7.3.0/ambari.repo"
+            )
+          ]),
+          _vm._v("\n\t\tTarball md5 | asc\thttp:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v(
+              "//public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.7.3.0/ambari-2.7.3.0-centos7.tar.gz"
+            )
+          ]),
+          _vm._v("\n   \n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("hdp")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("\n\tRedHat "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("7")]),
+          _vm._v("\n\n\tCentOS "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("7")]),
+          _vm._v("\n\t\n\tOracle Linux "),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("7")]),
+          _vm._v("\n\t\n\tHDP-"),
+          _c("span", { staticClass: "hljs-number" }, [_vm._v("3.1")]),
+          _vm._v(".0.0\t"),
+          _c("span", { staticClass: "hljs-function" }, [
+            _vm._v("HDP\tVersion Definition "),
+            _c("span", { staticClass: "hljs-title" }, [_vm._v("File")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "hljs-params" }, [_vm._v("(VDF)")]),
+            _vm._v("\thttp:"),
+            _c("span", { staticClass: "hljs-comment" }, [
+              _vm._v(
+                "//public-repo-1.hortonworks.com/HDP/centos7/3.x/updates/3.1.0.0/HDP-3.1.0.0-78.xml"
+              )
+            ]),
+            _vm._v("\n\tBase URL\thttp:"),
+            _c("span", { staticClass: "hljs-comment" }, [
+              _vm._v(
+                "//public-repo-1.hortonworks.com/HDP/centos7/3.x/updates/3.1.0.0"
+              )
+            ]),
+            _vm._v("\n\tRepo File\thttp:"),
+            _c("span", { staticClass: "hljs-comment" }, [
+              _vm._v(
+                "//public-repo-1.hortonworks.com/HDP/centos7/3.x/updates/3.1.0.0/hdp.repo"
+              )
+            ]),
+            _vm._v("\n\tTarball md5 | asc\thttp:"),
+            _c("span", { staticClass: "hljs-comment" }, [
+              _vm._v(
+                "//public-repo-1.hortonworks.com/HDP/centos7/3.x/updates/3.1.0.0/HDP-3.1.0.0-centos7-rpm.tar.gz"
+              )
+            ]),
+            _vm._v("\n\n")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("使用公共：")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("      "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//下载yum 仓库")
+          ]),
+          _vm._v("\n      wget  http:"),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v(
+              "//public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.7.3.0/ambari.repo"
+            )
+          ]),
+          _vm._v("\n      \n      "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v("//拷贝到域名下")
+          ]),
+          _vm._v("\n      cp ambari.repo /etc/yum.repos.d/\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("安装ambari-server")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [_vm._v("    yum install -y ambari-server\n\n")])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("设定ambari-server 默认链接")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [
+          _vm._v("    "),
+          _c("span", { staticClass: "hljs-comment" }, [
+            _vm._v(
+              "//第一次链接推荐默认数据库，本人在使用mysql时出现n多bug，最后不得不重装，重装出现的更多的bug。"
+            )
+          ]),
+          _vm._v("\n    ambari-server setup -silent\n\n")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("在各节点上安装ambari-agent")]),
+      _vm._v(" "),
+      _c("pre", { staticClass: "hljs" }, [
+        _c("code", [_vm._v("\n   yum install -y  ambari-agent\n   \n\n")])
+      ])
     ])
   }
 ]
