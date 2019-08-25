@@ -87,15 +87,15 @@ System.register([], function(__WEBPACK_DYNAMIC_EXPORT__) {
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/md/db_mongo_基础_1-1_操作.md");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/md/db_mongodb_基础_1-1_操作.md");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/pages/md/db_mongo_基础_1-1_操作.md?vue&type=template&id=eff8d95a&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/pages/md/db_mongo_基础_1-1_操作.md?vue&type=template&id=eff8d95a& ***!
-  \*****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/pages/md/db_mongodb_基础_1-1_操作.md?vue&type=template&id=6c462f55&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/pages/md/db_mongodb_基础_1-1_操作.md?vue&type=template&id=6c462f55& ***!
+  \*******************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -920,16 +920,16 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ "./src/pages/md/db_mongo_基础_1-1_操作.md":
-/*!********************************************!*\
-  !*** ./src/pages/md/db_mongo_基础_1-1_操作.md ***!
-  \********************************************/
+/***/ "./src/pages/md/db_mongodb_基础_1-1_操作.md":
+/*!**********************************************!*\
+  !*** ./src/pages/md/db_mongodb_基础_1-1_操作.md ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _db_mongo_1_1_md_vue_type_template_id_eff8d95a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./db_mongo_基础_1-1_操作.md?vue&type=template&id=eff8d95a& */ "./src/pages/md/db_mongo_基础_1-1_操作.md?vue&type=template&id=eff8d95a&");
+/* harmony import */ var _db_mongodb_1_1_md_vue_type_template_id_6c462f55___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./db_mongodb_基础_1-1_操作.md?vue&type=template&id=6c462f55& */ "./src/pages/md/db_mongodb_基础_1-1_操作.md?vue&type=template&id=6c462f55&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
@@ -939,8 +939,8 @@ var script = {}
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
   script,
-  _db_mongo_1_1_md_vue_type_template_id_eff8d95a___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _db_mongo_1_1_md_vue_type_template_id_eff8d95a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _db_mongodb_1_1_md_vue_type_template_id_6c462f55___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _db_mongodb_1_1_md_vue_type_template_id_6c462f55___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -950,24 +950,24 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "src/pages/md/db_mongo_基础_1-1_操作.md"
+component.options.__file = "src/pages/md/db_mongodb_基础_1-1_操作.md"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./src/pages/md/db_mongo_基础_1-1_操作.md?vue&type=template&id=eff8d95a&":
-/*!***************************************************************************!*\
-  !*** ./src/pages/md/db_mongo_基础_1-1_操作.md?vue&type=template&id=eff8d95a& ***!
-  \***************************************************************************/
+/***/ "./src/pages/md/db_mongodb_基础_1-1_操作.md?vue&type=template&id=6c462f55&":
+/*!*****************************************************************************!*\
+  !*** ./src/pages/md/db_mongodb_基础_1-1_操作.md?vue&type=template&id=6c462f55& ***!
+  \*****************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_db_mongo_1_1_md_vue_type_template_id_eff8d95a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./db_mongo_基础_1-1_操作.md?vue&type=template&id=eff8d95a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/pages/md/db_mongo_基础_1-1_操作.md?vue&type=template&id=eff8d95a&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_db_mongo_1_1_md_vue_type_template_id_eff8d95a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_db_mongodb_1_1_md_vue_type_template_id_6c462f55___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./db_mongodb_基础_1-1_操作.md?vue&type=template&id=6c462f55& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/pages/md/db_mongodb_基础_1-1_操作.md?vue&type=template&id=6c462f55&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_db_mongodb_1_1_md_vue_type_template_id_6c462f55___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_db_mongo_1_1_md_vue_type_template_id_eff8d95a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_db_mongodb_1_1_md_vue_type_template_id_6c462f55___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
