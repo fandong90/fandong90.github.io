@@ -42,7 +42,8 @@
         "type":"node",
         "children":[
             {"order":"4-1","title":"redis","indentity":"/db/redis","type":"text"},
-            {"order":"4-2","title":"mysql","indentity":"/db/mysql","type":"text"}
+            {"order":"4-2","title":"mysql","indentity":"/db/mysql","type":"text"},
+            {"order":"4-3","title":"mongodb","indentity":"/db/mongodb","type":"text"}
         ]
     },
     {
