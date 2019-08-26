@@ -22,9 +22,13 @@
     },
     {
         "order":"2",
-        "title":"设计模式",
+        "title":"模式",
         "indentity":"/design",
-        "type":"text"
+        "type":"node",
+        "children":[
+            {"order":"1-1","title":"设计模式","indentity":"/design/pattern","type":"text"},
+            {"order":"1-2","title":"UML","indentity":"/design/uml","type":"text"}
+        ]
     },
     {
         "order":"3",
