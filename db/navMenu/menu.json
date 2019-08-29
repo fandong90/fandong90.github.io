@@ -36,7 +36,8 @@
         "indentity":"/microservice",
         "type":"node",
         "children":[
-            {"order":"3-1","title":"spring boot","indentity":"/microservice/springboot","type":"text"}
+            {"order":"3-1","title":"spring boot","indentity":"/microservice/springboot","type":"text"},
+            {"order":"3-2","title":"spring Cloud","indentity":"/microservice/springCloud","type":"text"}
         ]
     },
     {
