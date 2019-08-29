@@ -26,8 +26,8 @@
         "indentity":"/design",
         "type":"node",
         "children":[
-            {"order":"1-1","title":"设计模式","indentity":"/design/pattern","type":"text"},
-            {"order":"1-2","title":"UML","indentity":"/design/uml","type":"text"}
+            {"order":"2-1","title":"设计模式","indentity":"/design/pattern","type":"text"}
+            
         ]
     },
     {
