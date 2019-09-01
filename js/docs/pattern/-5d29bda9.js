@@ -458,6 +458,14 @@ var staticRenderFns = [
             )
           ])
         ])
+      ]),
+      _vm._v(" "),
+      _c("pre", [
+        _c("code", [
+          _vm._v(
+            "![code](https://fandong90.github.io/static/img/zhifubaoWeCode.png)\n"
+          )
+        ])
       ])
     ])
   }

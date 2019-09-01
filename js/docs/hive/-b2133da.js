@@ -146,7 +146,11 @@ var render = function() {
     _vm._v(" "),
     _c("p", [_vm._v("result:")]),
     _vm._v(" "),
-    _vm._m(8)
+    _vm._m(8),
+    _vm._v(" "),
+    _c("p", [_vm._v("打赏（支付宝）")]),
+    _vm._v(" "),
+    _vm._m(9)
   ])
 }
 var staticRenderFns = [
@@ -255,6 +259,19 @@ var staticRenderFns = [
         attrs: {
           src: "http://fandong90.github.io/static/img/bigdatahivestart.jpg",
           alt: "beeline"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c("img", {
+        attrs: {
+          src: "https://fandong90.github.io/static/img/zhifubaoWeCode.png",
+          alt: "code"
         }
       })
     ])
