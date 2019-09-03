@@ -152,7 +152,16 @@ var staticRenderFns = [
         })
       ]),
       _vm._v(" "),
-      _c("hr")
+      _c("hr"),
+      _vm._v(" "),
+      _c("p", [
+        _c("img", {
+          attrs: {
+            src: "https://fandong90.github.io/static/img/zhifubaoWeCode.png",
+            alt: "code"
+          }
+        })
+      ])
     ])
   }
 ]

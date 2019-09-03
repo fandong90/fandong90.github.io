@@ -87,14 +87,14 @@ System.register([], function(__WEBPACK_DYNAMIC_EXPORT__) {
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/md/design_pattern_模式_1-1_单例模式.md");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/md/design_pattern_基础_1-1_单例模式.md");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/pages/md/design_pattern_模式_1-1_单例模式.md?vue&type=template&id=475f68aa&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/pages/md/design_pattern_基础_1-1_单例模式.md?vue&type=template&id=8dc149bc&":
 /*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/pages/md/design_pattern_模式_1-1_单例模式.md?vue&type=template&id=475f68aa& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??ref--5-0!./build/md-loader!./src/pages/md/design_pattern_基础_1-1_单例模式.md?vue&type=template&id=8dc149bc& ***!
   \*************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -662,16 +662,16 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ "./src/pages/md/design_pattern_模式_1-1_单例模式.md":
+/***/ "./src/pages/md/design_pattern_基础_1-1_单例模式.md":
 /*!****************************************************!*\
-  !*** ./src/pages/md/design_pattern_模式_1-1_单例模式.md ***!
+  !*** ./src/pages/md/design_pattern_基础_1-1_单例模式.md ***!
   \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _design_pattern_1_1_md_vue_type_template_id_475f68aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./design_pattern_模式_1-1_单例模式.md?vue&type=template&id=475f68aa& */ "./src/pages/md/design_pattern_模式_1-1_单例模式.md?vue&type=template&id=475f68aa&");
+/* harmony import */ var _design_pattern_1_1_md_vue_type_template_id_8dc149bc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./design_pattern_基础_1-1_单例模式.md?vue&type=template&id=8dc149bc& */ "./src/pages/md/design_pattern_基础_1-1_单例模式.md?vue&type=template&id=8dc149bc&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
@@ -681,8 +681,8 @@ var script = {}
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
   script,
-  _design_pattern_1_1_md_vue_type_template_id_475f68aa___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _design_pattern_1_1_md_vue_type_template_id_475f68aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _design_pattern_1_1_md_vue_type_template_id_8dc149bc___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _design_pattern_1_1_md_vue_type_template_id_8dc149bc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -692,24 +692,24 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "src/pages/md/design_pattern_模式_1-1_单例模式.md"
+component.options.__file = "src/pages/md/design_pattern_基础_1-1_单例模式.md"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./src/pages/md/design_pattern_模式_1-1_单例模式.md?vue&type=template&id=475f68aa&":
+/***/ "./src/pages/md/design_pattern_基础_1-1_单例模式.md?vue&type=template&id=8dc149bc&":
 /*!***********************************************************************************!*\
-  !*** ./src/pages/md/design_pattern_模式_1-1_单例模式.md?vue&type=template&id=475f68aa& ***!
+  !*** ./src/pages/md/design_pattern_基础_1-1_单例模式.md?vue&type=template&id=8dc149bc& ***!
   \***********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_design_pattern_1_1_md_vue_type_template_id_475f68aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./design_pattern_模式_1-1_单例模式.md?vue&type=template&id=475f68aa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/pages/md/design_pattern_模式_1-1_单例模式.md?vue&type=template&id=475f68aa&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_design_pattern_1_1_md_vue_type_template_id_475f68aa___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_design_pattern_1_1_md_vue_type_template_id_8dc149bc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??ref--5-0!../../../build/md-loader!./design_pattern_基础_1-1_单例模式.md?vue&type=template&id=8dc149bc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./build/md-loader/index.js!./src/pages/md/design_pattern_基础_1-1_单例模式.md?vue&type=template&id=8dc149bc&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_design_pattern_1_1_md_vue_type_template_id_8dc149bc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_design_pattern_1_1_md_vue_type_template_id_475f68aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_ref_5_0_build_md_loader_index_js_design_pattern_1_1_md_vue_type_template_id_8dc149bc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
