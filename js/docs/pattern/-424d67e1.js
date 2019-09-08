@@ -168,13 +168,13 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("hr"),
       _vm._v(" "),
-      _c("p", [_vm._v(":::warning")]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v("装饰模式增加了许多子类，如果过度使用会使程序变得很复杂。")
+      _c("div", { staticClass: "warnning custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("装饰模式增加了许多子类，如果过度使用会使程序变得很复杂。")
+        ])
       ]),
-      _vm._v(" "),
-      _c("p", [_vm._v(":::")]),
       _vm._v(" "),
       _c("ul", [_c("li", [_vm._v("装饰模式的基本结构")])]),
       _vm._v(" "),
