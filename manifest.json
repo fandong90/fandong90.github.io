@@ -34,6 +34,8 @@
   "js/docs/hadoop/-1b265fff.js.map": "js/docs/hadoop/-1b265fff.js.map",
   "js/docs/hadoop/-5c3776ad.js": "js/docs/hadoop/-5c3776ad.js",
   "js/docs/hadoop/-5c3776ad.js.map": "js/docs/hadoop/-5c3776ad.js.map",
+  "js/docs/hadoop/1f7ea565.js": "js/docs/hadoop/1f7ea565.js",
+  "js/docs/hadoop/1f7ea565.js.map": "js/docs/hadoop/1f7ea565.js.map",
   "js/docs/hadoop/74769dd8.js": "js/docs/hadoop/74769dd8.js",
   "js/docs/hadoop/74769dd8.js.map": "js/docs/hadoop/74769dd8.js.map",
   "js/docs/hbase/8e06a89.js": "js/docs/hbase/8e06a89.js",
@@ -169,5 +171,6 @@
   "static/img/window/zititie.png": "static/img/window/zititie.png",
   "static/img/yarn1.png": "static/img/yarn1.png",
   "static/img/yarnJob3.png": "static/img/yarnJob3.png",
+  "static/img/yarn_capacity1.png": "static/img/yarn_capacity1.png",
   "static/img/zhifubaoWeCode.png": "static/img/zhifubaoWeCode.png"
 }
