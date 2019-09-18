@@ -93,7 +93,8 @@
         "type":"node",
         "children":[
             {"order":"8-1","title":"Nodejs","indentity":"/example/nodejs","type":"text"},
-            {"order":"8-2","title":"大数据实战","indentity":"/example/ambari","type":"text"}
+            {"order":"8-2","title":"大数据实战","indentity":"/example/ambari","type":"text"},
+            {"order":"8-3","title":"算法实战","indentity":"/example/algorithms","type":"text"}
         ]
     }
 ]
