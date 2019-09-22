@@ -121,19 +121,19 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [_vm._v("jar 包的管理及数据本地化性")]),
       _vm._v(" "),
-      _c("div", { staticClass: "tip custom-block" }, [
-        _c("p", { staticClass: "custom-block-title" }),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "分布式在于移动计算，而非数据。\n1、移动数据会消耗 磁盘IO 、网络，"
-          )
-        ])
+      _c("p", [_vm._v(":::TIP")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "分布式在于移动计算，而非数据。\n1、移动数据会消耗 磁盘IO 、网络，"
+        )
       ]),
+      _vm._v(" "),
+      _c("p", [_vm._v(":::")]),
       _vm._v(" "),
       _c("p", [_vm._v("结论：")]),
       _vm._v(" "),
-      _c("p", [_vm._v(":::")]),
+      _c("p", [_vm._v(":::SUCCESS")]),
       _vm._v(" "),
       _c("pre", [_c("code", [_vm._v("合理设置数据的副本。\n")])]),
       _vm._v(" "),
@@ -545,7 +545,7 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("p", [_vm._v(":::sucess")]),
+      _c("p", [_vm._v(":::SUCCESS")]),
       _vm._v(" "),
       _c("pre", [
         _c("code", [
