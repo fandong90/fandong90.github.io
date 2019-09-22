@@ -121,23 +121,23 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [_vm._v("jar 包的管理及数据本地化性")]),
       _vm._v(" "),
-      _c("p", [_vm._v(":::TIP")]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "分布式在于移动计算，而非数据。\n1、移动数据会消耗 磁盘IO 、网络，"
-        )
+      _c("div", { staticClass: "tip custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "分布式在于移动计算，而非数据。\n1、移动数据会消耗 磁盘IO 、网络，"
+          )
+        ])
       ]),
-      _vm._v(" "),
-      _c("p", [_vm._v(":::")]),
       _vm._v(" "),
       _c("p", [_vm._v("结论：")]),
       _vm._v(" "),
-      _c("p", [_vm._v(":::SUCCESS")]),
-      _vm._v(" "),
-      _c("pre", [_c("code", [_vm._v("合理设置数据的副本。\n")])]),
-      _vm._v(" "),
-      _c("p", [_vm._v(":::")]),
+      _c("div", { staticClass: "success custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [_c("code", [_vm._v("合理设置数据的副本。\n")])])
+      ]),
       _vm._v(" "),
       _c("p", [_vm._v("性能最优到最差")]),
       _vm._v(" "),
@@ -545,17 +545,17 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("p", [_vm._v(":::SUCCESS")]),
-      _vm._v(" "),
-      _c("pre", [
-        _c("code", [
-          _vm._v(
-            "这个需要反复调试，这个也要注意本地化基本提升了，数据执行时间是否相应的缩短了，如果变长了，也是不合理的调试。\nSpark 程序运行在yarn 上可以根据实际情况分配 num-Executors  8 \n executor-cores 5\n Driver-memory 2g\n 等调节。\n"
-          )
+      _c("div", { staticClass: "success custom-block" }, [
+        _c("p", { staticClass: "custom-block-title" }),
+        _vm._v(" "),
+        _c("pre", [
+          _c("code", [
+            _vm._v(
+              "这个需要反复调试，这个也要注意本地化基本提升了，数据执行时间是否相应的缩短了，如果变长了，也是不合理的调试。\nSpark 程序运行在yarn 上可以根据实际情况分配 num-Executors  8 \n executor-cores 5\n Driver-memory 2g\n 等调节。\n"
+            )
+          ])
         ])
       ]),
-      _vm._v(" "),
-      _c("p", [_vm._v(":::")]),
       _vm._v(" "),
       _c("p", [_vm._v("Yarn 队列资源不足的情况，")]),
       _vm._v(" "),
