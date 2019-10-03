@@ -122,6 +122,10 @@
   "js/docs/springCloud/-6f473161.js.map": "js/docs/springCloud/-6f473161.js.map",
   "js/docs/springCloud/-dae4861.js": "js/docs/springCloud/-dae4861.js",
   "js/docs/springCloud/-dae4861.js.map": "js/docs/springCloud/-dae4861.js.map",
+  "js/docs/springCloud/2bfc1e49.js": "js/docs/springCloud/2bfc1e49.js",
+  "js/docs/springCloud/2bfc1e49.js.map": "js/docs/springCloud/2bfc1e49.js.map",
+  "js/docs/springCloud/7d640bb8.js": "js/docs/springCloud/7d640bb8.js",
+  "js/docs/springCloud/7d640bb8.js.map": "js/docs/springCloud/7d640bb8.js.map",
   "js/docs/vue/-19215f2f.js": "js/docs/vue/-19215f2f.js",
   "js/docs/vue/-19215f2f.js.map": "js/docs/vue/-19215f2f.js.map",
   "js/docs/vue/-192d2c07.js": "js/docs/vue/-192d2c07.js",
@@ -201,5 +205,6 @@
   "static/img/yarn1.png": "static/img/yarn1.png",
   "static/img/yarnJob3.png": "static/img/yarnJob3.png",
   "static/img/yarn_capacity1.png": "static/img/yarn_capacity1.png",
-  "static/img/zhifubaoWeCode.png": "static/img/zhifubaoWeCode.png"
+  "static/img/zhifubaoWeCode.png": "static/img/zhifubaoWeCode.png",
+  "static/img/zuul1.png": "static/img/zuul1.png"
 }
